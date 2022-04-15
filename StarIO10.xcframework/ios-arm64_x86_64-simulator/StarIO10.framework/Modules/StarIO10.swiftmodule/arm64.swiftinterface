@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.5 (swiftlang-1300.0.31.1 clang-1300.0.29.1)
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name StarIO10
 import CoreBluetooth
 import ExternalAccessory
@@ -71,15 +71,6 @@ extension StarIO10.StarXpandCommand {
     @objc public init(width: Swift.Int, height: Swift.Int)
     @objc deinit
   }
-}
-@_inheritsConvenienceInitializers @objc public class Internal : ObjectiveC.NSObject {
-  @_inheritsConvenienceInitializers @objc(STARIO10InternalInterface) @objcMembers public class InternalInterface : ObjectiveC.NSObject {
-    @objc override dynamic public init()
-    @objc public static func appendLogHeader(_ header: Swift.String)
-    @objc deinit
-  }
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc(STARIO10DisplayDelegate) public protocol DisplayDelegate {
   @objc func display(printer: StarIO10.StarPrinter, communicationErrorDidOccur error: Swift.Error)
@@ -540,7 +531,7 @@ extension StarIO10.StarXpandCommand.Printer {
     }
   }
 }
-@available(iOS 15.0, *)
+@available(iOS 13.0, *)
 extension StarIO10.StarPrinter {
   
   #if compiler(>=5.3) && $AsyncAwait
@@ -759,17 +750,17 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc func managerDidFinishDiscovery(_ manager: StarIO10.StarDeviceDiscoveryManager)
 }
 extension StarIO10.StarPrinter {
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use open() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use open() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func open(completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use close() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use close() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func close(completion: @escaping () -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use read(size:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use read(size:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func read(size: Swift.Int, completion: @escaping (Foundation.Data?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use print(raw:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(raw:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func print(raw: Foundation.Data, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use print(command:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(command:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func print(command: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 15.0, message: "Not available on iOS 15 or later: Please use getStatus() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12-14, but this method works properly on iOS 12-14.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getStatus() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
   dynamic public func getStatus(completion: @escaping (StarIO10.StarPrinterStatus?, Swift.Error?) -> Swift.Void)
 }
 extension StarIO10.StarXpandCommand.Printer {

@@ -118,7 +118,7 @@ class PrintingViewController: UIViewController {
         // Use the different methods of StarPrinter class depending on the OS version.
         // Please refer to the following URL for details.
         // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html
-        if #available(iOS 15.0, *) {
+        if #available(iOS 13.0, *) {
             Task {
                 do {
                     try await printer.open()

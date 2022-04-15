@@ -89,10 +89,6 @@ https://star-m.jp/eng/products/s_print/apple_app_mfi.html
 
 [Please refer here.](https://www.star-m.jp/starxpandsdk-oml.html)
 
-## Known Issues
-
-- Unable to run applications built with Xcode13.2/13.2.1 on iOS 12 devices #1
-
 ## Examples
 
 ### Discover devices
@@ -154,7 +150,7 @@ func print() {
     // Use the different methods of StarPrinter class depending on the OS version.
     // Please refer to the following URL for details.
     // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
-    if #available(iOS 15.0, *) {
+    if #available(iOS 13.0, *) {
         Task {
             do {
                 // Connect to the printer.
@@ -291,7 +287,7 @@ func getStatus() {
     // Use the different methods of StarPrinter class depending on the OS version.
     // Please refer to the following URL for details.
     // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
-    if #available(iOS 15.0, *) {
+    if #available(iOS 13.0, *) {
         Task {
             do {
                 // Connect to the printer.
@@ -367,7 +363,7 @@ func monitor() async {
     // Use the different methods of StarPrinter class depending on the OS version.
     // Please refer to the following URL for details.
     // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
-    if #available(iOS 15.0, *) {
+    if #available(iOS 13.0, *) {
         Task {
             do {
                 // Connect to the printer.
