@@ -2,6 +2,10 @@
 
 # Change Log
 
+## 2.2.0 (2022/05/10)
+
+* Added POP10CI support.
+
 ## 2.0.0 (2022/04/07)
 
 * Confirmed that the issue has been resolved in Xcode13.3, which is unable to run applications built with Xcode13.2/13.2.1 on iOS 12 devices. #1
