@@ -2,7 +2,7 @@
 name: Question
 about: Please submit your questions to us.
 title: ''
-labels: ''
+labels: triage
 assignees: ''
 
 ---
