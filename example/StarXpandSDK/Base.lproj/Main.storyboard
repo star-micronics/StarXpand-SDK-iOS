@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9f-iL-C8I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9f-iL-C8I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -33,8 +33,16 @@
                                     <segue destination="QT7-Lp-lj1" kind="show" id="Ie1-Vk-gUQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA9-9J-ffv">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-OX-LHC">
                                 <rect key="frame" x="20" y="308" width="374" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Printing -Spooler-"/>
+                                <connections>
+                                    <segue destination="pch-XV-xM0" kind="show" id="4FI-g8-edp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA9-9J-ffv">
+                                <rect key="frame" x="20" y="378" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Monitor"/>
                                 <connections>
@@ -42,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gY-Pm-1rB">
-                                <rect key="frame" x="20" y="378" width="374" height="30"/>
+                                <rect key="frame" x="20" y="448" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Status"/>
                                 <connections>
@@ -53,18 +61,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eBa-OX-LHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Fm-f4-1aM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CA9-9J-ffv" secondAttribute="trailing" constant="20" id="9UJ-2u-ZJj"/>
                             <constraint firstItem="CA9-9J-ffv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Uh-cz-8EZ"/>
+                            <constraint firstItem="eBa-OX-LHC" firstAttribute="top" secondItem="HKC-a5-hTP" secondAttribute="bottom" constant="40" id="IS9-Qn-reJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7gY-Pm-1rB" secondAttribute="trailing" constant="20" id="Jkm-34-ZKo"/>
-                            <constraint firstItem="CA9-9J-ffv" firstAttribute="top" secondItem="HKC-a5-hTP" secondAttribute="bottom" constant="40" id="OcZ-RV-g7e"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKC-a5-hTP" secondAttribute="trailing" constant="20" id="Rxp-3d-PEI"/>
-                            <constraint firstItem="7gY-Pm-1rB" firstAttribute="top" secondItem="CA9-9J-ffv" secondAttribute="bottom" constant="40" id="Twt-gA-pmO"/>
                             <constraint firstItem="Vhq-OW-EGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X5f-O7-HjX"/>
                             <constraint firstItem="Vhq-OW-EGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="cbJ-2S-zkv"/>
+                            <constraint firstItem="7gY-Pm-1rB" firstAttribute="top" secondItem="CA9-9J-ffv" secondAttribute="bottom" constant="40" id="iNL-Lp-Fcz"/>
                             <constraint firstItem="7gY-Pm-1rB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j6l-C7-iwF"/>
                             <constraint firstItem="HKC-a5-hTP" firstAttribute="top" secondItem="Vhq-OW-EGP" secondAttribute="bottom" constant="40" id="oyc-E5-utC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vhq-OW-EGP" secondAttribute="trailing" constant="20" id="ptR-gu-qzR"/>
                             <constraint firstItem="HKC-a5-hTP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q9V-pM-gGa"/>
+                            <constraint firstItem="CA9-9J-ffv" firstAttribute="top" secondItem="eBa-OX-LHC" secondAttribute="bottom" constant="40" id="tpS-NY-iRE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eBa-OX-LHC" secondAttribute="trailing" constant="20" id="wOh-Rq-UNz"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="RH1-6l-n5I"/>
@@ -400,6 +411,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E1a-nM-GI8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="656.52173913043487" y="541.74107142857144"/>
+        </scene>
+        <!--Spooler View Controller-->
+        <scene sceneID="xI6-0C-Wuj">
+            <objects>
+                <viewController id="pch-XV-xM0" customClass="SpoolerViewController" customModule="StarXpandSDK" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lvh-JW-q87">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F37-ON-sy1">
+                                <rect key="frame" x="8" y="98" width="398" height="32"/>
+                                <segments>
+                                    <segment title="LAN"/>
+                                    <segment title="Bluetooth"/>
+                                    <segment title="Bluetooth LE"/>
+                                    <segment title="USB"/>
+                                </segments>
+                            </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-7f-6Ll">
+                                <rect key="frame" x="8" y="149" width="398" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-HX-Uum">
+                                <rect key="frame" x="20" y="203" width="374" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Spool Print"/>
+                                <connections>
+                                    <action selector="touchUpSpoolPrintButton:" destination="pch-XV-xM0" eventType="touchUpInside" id="6K0-Qf-Tw7"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JobID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-gd-soM">
+                                <rect key="frame" x="8" y="253" width="195" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpX-Pt-62g">
+                                <rect key="frame" x="211" y="253" width="195" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Get Job Status"/>
+                                <connections>
+                                    <action selector="touchUpGetJobStatusButton:" destination="pch-XV-xM0" eventType="touchUpInside" id="aRl-fR-Obq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W1q-dR-y3p">
+                                <rect key="frame" x="8" y="295" width="398" height="559"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bjQ-am-uee"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bjQ-am-uee" firstAttribute="trailing" secondItem="1ud-HX-Uum" secondAttribute="trailing" constant="20" id="4J9-VP-88b"/>
+                            <constraint firstItem="YpX-Pt-62g" firstAttribute="top" secondItem="1ud-HX-Uum" secondAttribute="bottom" constant="20" id="97i-Kh-uXe"/>
+                            <constraint firstItem="F37-ON-sy1" firstAttribute="leading" secondItem="bjQ-am-uee" secondAttribute="leading" constant="8" id="BH5-6L-Ydq"/>
+                            <constraint firstItem="bjQ-am-uee" firstAttribute="trailing" secondItem="lkn-7f-6Ll" secondAttribute="trailing" constant="8" id="Cfg-GD-lY3"/>
+                            <constraint firstItem="1ud-HX-Uum" firstAttribute="leading" secondItem="bjQ-am-uee" secondAttribute="leading" constant="20" id="E1Q-Mi-mZ5"/>
+                            <constraint firstItem="1ud-HX-Uum" firstAttribute="top" secondItem="lkn-7f-6Ll" secondAttribute="bottom" constant="20" id="Geh-a8-pjw"/>
+                            <constraint firstAttribute="trailing" secondItem="W1q-dR-y3p" secondAttribute="trailing" constant="8" id="Hch-4B-kY3"/>
+                            <constraint firstItem="bjQ-am-uee" firstAttribute="bottom" secondItem="W1q-dR-y3p" secondAttribute="bottom" constant="8" id="HeJ-41-Akp"/>
+                            <constraint firstItem="lkn-7f-6Ll" firstAttribute="leading" secondItem="bjQ-am-uee" secondAttribute="leading" constant="8" id="M8p-Rx-kSe"/>
+                            <constraint firstItem="W1q-dR-y3p" firstAttribute="leading" secondItem="bjQ-am-uee" secondAttribute="leading" constant="8" id="OFS-cL-ShC"/>
+                            <constraint firstItem="YpX-Pt-62g" firstAttribute="height" secondItem="ubu-gd-soM" secondAttribute="height" id="RR0-A2-cV4"/>
+                            <constraint firstItem="W1q-dR-y3p" firstAttribute="top" secondItem="ubu-gd-soM" secondAttribute="bottom" constant="8" id="bfH-ro-kV3"/>
+                            <constraint firstItem="F37-ON-sy1" firstAttribute="top" secondItem="bjQ-am-uee" secondAttribute="top" constant="10" id="idE-Zs-Iof"/>
+                            <constraint firstItem="YpX-Pt-62g" firstAttribute="leading" secondItem="ubu-gd-soM" secondAttribute="trailing" constant="8" id="jPe-ab-0GG"/>
+                            <constraint firstItem="bjQ-am-uee" firstAttribute="trailing" secondItem="F37-ON-sy1" secondAttribute="trailing" constant="8" id="kTy-NY-jbB"/>
+                            <constraint firstItem="ubu-gd-soM" firstAttribute="top" secondItem="1ud-HX-Uum" secondAttribute="bottom" constant="20" id="mAP-WQ-o6G"/>
+                            <constraint firstItem="lkn-7f-6Ll" firstAttribute="top" secondItem="F37-ON-sy1" secondAttribute="bottom" constant="20" id="oQo-c7-Ffq"/>
+                            <constraint firstItem="YpX-Pt-62g" firstAttribute="width" secondItem="ubu-gd-soM" secondAttribute="width" id="qMJ-82-VFL"/>
+                            <constraint firstItem="bjQ-am-uee" firstAttribute="trailing" secondItem="YpX-Pt-62g" secondAttribute="trailing" constant="8" id="rLy-1A-71E"/>
+                            <constraint firstItem="ubu-gd-soM" firstAttribute="leading" secondItem="bjQ-am-uee" secondAttribute="leading" constant="8" id="vj9-Sq-OvC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="KeI-lV-F0S"/>
+                    <connections>
+                        <outlet property="getJobStatusButton" destination="YpX-Pt-62g" id="V8O-xB-eJ6"/>
+                        <outlet property="identifierTextField" destination="lkn-7f-6Ll" id="aSG-h3-Gyh"/>
+                        <outlet property="interfaceSelector" destination="F37-ON-sy1" id="Y6Y-Lt-Pw5"/>
+                        <outlet property="jobIdTextFIeld" destination="ubu-gd-soM" id="Gng-tF-KF8"/>
+                        <outlet property="spoolPrintButton" destination="1ud-HX-Uum" id="4TT-4R-zGl"/>
+                        <outlet property="statusTextView" destination="W1q-dR-y3p" id="Ipp-2S-VaJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vYZ-BQ-Hci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3908.6956521739135" y="194.86607142857142"/>
         </scene>
     </scenes>
     <resources>

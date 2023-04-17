@@ -14,6 +14,12 @@
 
 This software development kit provides the StarIO10 framework (StarIO10.xcframework) as a framework to control the Star Micronics devices.
 
+## Documentation
+
+Please refer [here](https://www.star-m.jp/starxpandsdk-oml.html) for StarXpand SDK documentation.
+
+Documentation includes an overview of the SDK, how to build a sample application, how to use the API, and a API reference.
+
 ## Requirements
 
 | Platform | Version | Arch |
@@ -85,196 +91,27 @@ https://star-m.jp/eng/products/s_print/apple_app_mfi.html
 
 > :warning: In case of a Bluetooth Low Energy printer, you do not need to obtain this app approval.
 
-## Documentation
-
-[Please refer here.](https://www.star-m.jp/starxpandsdk-oml.html)
-
 ## Examples
 
-### Discover devices
-```swift
-class DiscoveryViewController: UIViewController, StarDeviceDiscoveryManagerDelegate {
-    var manager: StarDeviceDiscoveryManager? = nil
-    
-    func discovery() async {
-        do {
-            // Specify your printer interface types.
-            manager = try StarDeviceDiscoveryManagerFactory.create(interfaceTypes: [
-                InterfaceType.lan,
-                InterfaceType.bluetooth,
-                InterfaceType.bluetoothLE,
-                InterfaceType.usb
-            ])
-            guard let manager = manager else {
-                return
-            }
+StarXpand SDK includes an [example](example) application that can be used in combination with the printer to check its operation. Please use it in conjunction with the explanations of each function in the linked pages.
 
-            manager.delegate = self
+#### 1. [Discover printers](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/searchPrinter.html)
 
-            // Set discovery time. (option)
-            manager.discoveryTime = 10000
-            
-            // Start discovery.
-            try manager.startDiscovery()
-            
-            // Stop discovery.
-            // manager.stopDiscovery()
-        } catch let error {
-            // Error.
-            print(error)
-        }
-    }
-    
-    func manager(_ manager: StarDeviceDiscoveryManager, didFind printer: StarPrinter) {
-        // Callback for printer found.
-        print(printer)
-    }
-    
-    func managerDidFinishDiscovery(_ manager: StarDeviceDiscoveryManager) {
-        // Callback for discovery finished. (option)
-        print("Discovery finished.")
-    }
+#### 2. [Create printing data](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/basic-step1.html)
 
-    // ...
-```
+Printing samples of labels (sample code and print results) for each type of business that you can use for your print layouts are [also available](example/StarXpandSDK/PrintingSamples/PrintingSamples.md).
 
-### Print
-```swift
-func print() {
-    // Specify your printer connection settings.
-    let starConnectionSettings = StarConnectionSettings(interfaceType: .lan,
-                                                        identifier: "00:11:62:00:00:00")
-    
-    let printer = StarPrinter(starConnectionSettings)
-    
-    // Use the different methods of StarPrinter class depending on the OS version.
-    // Please refer to the following URL for details.
-    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
-    if #available(iOS 13.0, *) {
-        Task {
-            do {
-                // Connect to the printer.
-                try await printer.open()
-                defer {
-                    // Disconnect from the printer.
-                    Task {
-                        await printer.close()
-                    }
-                }
-    
-                // Print.
-                try await printer.print(command: command)
-                print("Success")
-            } catch let error {
-                // Error.
-                print(error)
-            }
-        }
-    } else {
-        // Connect to the printer.
-        printer.open(completion: { error in
-            if let error = error {
-                // Error.
-                print(error)
-                // Disconnect from the printer.
-                printer.close { }
-                return
-            }
-            
-            // Print.
-            printer.print(command: command, completion: {error in
-                if let error = error {
-                    // Error.
-                    print(error)
-                    // Disconnect from the printer.
-                    printer.close { }
-                    return
-                }
-                
-                print("Success")
+> :warning: Some printer models may not be able to print some samples. Please adjust the layout accordingly when using this samples.
 
-                // Disconnect from the printer.
-                printer.close { }
-            })
-        })
-    }
-}
-```
+#### 3. [Send printing data](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/basic-step2.html)
 
-### Create printing data
-```swift
-// Create printing data using StarXpandCommandBuilder object.
-let builder = StarXpandCommand.StarXpandCommandBuilder()
-_ = builder.addDocument(StarXpandCommand.DocumentBuilder.init()
-    .addPrinter(StarXpandCommand.PrinterBuilder()
-        .actionPrintImage(StarXpandCommand.Printer.ImageParamete(image: logo, width: 406))
-        .styleInternationalCharacter(.usa)
-        .styleCharacterSpace(0)
-        .styleAlignment(.center)
-        .actionPrintText("Star Clothing Boutique\n" +
-                         "123 Star Road\n" +
-                         "City, State 12345\n" +
-                         "\n")
-        .styleAlignment(.left)
-        .actionPrintText("Date:MM/DD/YYYY    Time:HH:MM PM\n" +
-                         "--------------------------------\n" +
-                         "\n")
-        .add(
-            StarXpandCommand.PrinterBuilder()
-                .styleBold(true)
-                .actionPrintText("SALE \n")
-        )
-        .actionPrintText("SKU         Description    Total\n" +
-                         "300678566   PLAIN T-SHIRT  10.99\n" +
-                         "300692003   BLACK DENIM    29.99\n" +
-                         "300651148   BLUE DENIM     29.99\n" +
-                         "300642980   STRIPED DRESS  49.99\n" +
-                         "300638471   BLACK BOOTS    35.99\n" +
-                         "\n" +
-                         "Subtotal                  156.95\n" +
-                         "Tax                         0.00\n" +
-                         "--------------------------------\n")
-        .actionPrintText("Total     ")
-        .add(
-            StarXpandCommand.PrinterBuilder()
-                .styleMagnification(StarXpandCommand.MagnificationParameter(width: 2, height: 2))
-                .actionPrintText("   $156.95\n")
-        )
-        .actionPrintText("--------------------------------\n" +
-                         "\n" +
-                         "Charge\n" +
-                         "156.95\n" +
-                         "Visa XXXX-XXXX-XXXX-0123\n" +
-                         "\n")
-        .add(
-            StarXpandCommand.PrinterBuilder()
-                .styleInvert(true)
-                .actionPrintText("Refunds and Exchanges\n")
-        )
-        .actionPrintText("Within ")
-        .add(
-            StarXpandCommand.PrinterBuilder()
-                .styleUnderLine(true)
-                .actionPrintText("30 days")
-        )
-        .actionPrintText(" with receipt\n" +
-                         "And tags attached\n" +
-                         "\n")
-        .styleAlignment(.center)
-        .actionPrintBarcode(StarXpandCommand.Printer.BarcodeParamete(content: "0123456", symbology: .jan8)
-                                .setBarDots(3)
-                                .setHeight(5)
-                                .setPrintHRI(true))
-        .actionFeedLine(1)
-        .actionPrintQRCode(StarXpandCommand.Printer.QRCodeParamete(content: "Hello World.\n")
-                            .setLevel(.l)
-                            .setCellSize(8))
-        .actionCut(StarXpandCommand.Printer.CutType.partial)))
+#### 4. [Send printing data using spooler function](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/spooler.html)
 
-// Get printing data from StarXpandCommandBuilder object.
-let command = builder.getCommands()
-```
+#### 5. [Get printer status](#GetPrinterStatus)
 
+#### 6. [Monitor printer](#MonitorPrinter)
+
+<a id="GetPrinterStatus"></a>
 ### Get printer status
 ```swift
 func getStatus() {
@@ -286,7 +123,7 @@ func getStatus() {
     
     // Use the different methods of StarPrinter class depending on the OS version.
     // Please refer to the following URL for details.
-    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
+    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer/index.html 
     if #available(iOS 13.0, *) {
         Task {
             do {
@@ -341,6 +178,8 @@ func getStatus() {
     }
 }
 ```
+
+<a id="MonitorPrinter"></a>
 ### Monitor printer
 ```swift
 var printer: StarPrinter?
@@ -362,7 +201,7 @@ func monitor() async {
     
     // Use the different methods of StarPrinter class depending on the OS version.
     // Please refer to the following URL for details.
-    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html 
+    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer/index.html 
     if #available(iOS 13.0, *) {
         Task {
             do {
@@ -405,8 +244,6 @@ func displayDidConnect(printer: StarPrinter) {
 // ...
 // Please refer to document for other callback.
 ```
-
-- [`example` project is located in this directory.](example)
 
 ## Copyright
 

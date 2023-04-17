@@ -2,6 +2,20 @@
 
 # Change Log
 
+## 2.3.0 (2023/03/31)
+
+* Added mC-Label3 support.
+* Added API for spooler function.
+* Added API for Page Mode.
+* Added API for setting/getting Star Configuration.
+* Added API for getting detailed status.
+* Added printing samples of the spooler function and several samples of printing patterns for labels to the example app.
+* Supported for Xcode 14.
+  * Changed to not include Bitcode based on Apple policy.
+
+* Bug Fix:
+  * Fixed an issue that command generation does not execute when adding a Builder immediately after instantiation.
+
 ## 2.2.0 (2022/05/10)
 
 * Added POP10CI support.
