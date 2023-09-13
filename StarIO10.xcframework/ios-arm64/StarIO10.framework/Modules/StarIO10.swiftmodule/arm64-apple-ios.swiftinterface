@@ -664,6 +664,7 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10StarPrinterModelTSP100IIILAN) case tsp100IIILAN
   @objc(STARIO10StarPrinterModelTSP100IIIBI) case tsp100IIIBI
   @objc(STARIO10StarPrinterModelTSP100IIIU) case tsp100IIIU
+  @objc(STARIO10StarPrinterModelTSP100IV_SK) case tsp100IV_SK
   @objc(STARIO10StarPrinterModelTSP100IV) case tsp100IV
   @objc(STARIO10StarPrinterModelmPOP) case mPOP
   @objc(STARIO10StarPrinterModelmC_Print2) case mC_Print2
@@ -1000,27 +1001,27 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc func managerDidFinishDiscovery(_ manager: StarIO10.StarDeviceDiscoveryManager)
 }
 extension StarIO10.StarPrinter {
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use open() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use open() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func open(completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use close() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use close() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func close(completion: @escaping () -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(raw:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(raw:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func print(raw: Foundation.Data, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(command:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(command:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func print(command: Swift.String, completion: @escaping (Swift.Error?) -> Swift.Void)
-  @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(command:StarSpoolJobSettings) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use print(command:StarSpoolJobSettings) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   public func print(command: Swift.String, starSpoolJobSettings: StarIO10.StarSpoolJobSettings, completion: @escaping (Swift.Int?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getStatus() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getStatus() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func getStatus(completion: @escaping (StarIO10.StarPrinterStatus?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func getSpoolJobStatus(jobId: Swift.Int, completion: @escaping (StarIO10.StarSpoolJobStatus?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func getSpoolJobStatusList(size: Swift.Int, completion: @escaping ([StarIO10.StarSpoolJobStatus]?, Swift.Error?) -> Swift.Void)
-  @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use setStarConfiguration(starConfiguration:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use setStarConfiguration(starConfiguration:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   public func setStarConfiguration(starConfiguration: Swift.String, completion: @escaping (StarIO10.StarConfigurationSetResult?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func getStarConfiguration(password: Swift.String? = nil, completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
-  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.")
+  @objc @available(iOS, deprecated: 12.0, obsoleted: 13.0, message: "Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.")
   dynamic public func getDefaultStarConfiguration(completion: @escaping (Swift.String?, Swift.Error?) -> Swift.Void)
 }
 extension StarIO10.StarXpandCommand.Printer {

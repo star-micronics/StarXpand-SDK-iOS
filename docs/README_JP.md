@@ -24,7 +24,7 @@ StarXpand SDKのドキュメントは[こちら](https://www.star-m.jp/starxpand
 
 | Platform | OS Version | Arch |
 | --- | --- | --- |
-| iOS | iOS 12.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 |
+| iOS | iOS 13.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 |
 
 ## 導入
 
@@ -121,60 +121,24 @@ func getStatus() {
     
     let printer = StarPrinter(starConnectionSettings)
     
-    // Use the different methods of StarPrinter class depending on the OS version.
-    // Please refer to the following URL for details.
-    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer/index.html
-    if #available(iOS 13.0, *) {
-        Task {
-            do {
-                // Connect to the printer.
-                try await printer.open()
-                defer {
-                    Task {
-                        // Disconnect from the printer.
-                        await printer.close()
-                    }
-                }
-    
-                 // Get printer status.
-                let status = try await printer.getStatus()
-                print(status)
-            } catch let error {
-              // Error.
-                print(error)
-            }
-        }
-    } else {
-        // Connect to the printer.
-        printer.open(completion: { error in
-            if let error = error {
-                // Error.
-                print(error)
-    
-                // Disconnect from the printer.
-                printer.close { }
-                return
-            }
-    
-            // Get printer status.
-            printer.getStatus(completion: {status, error in
-                if let error = error {
-                    // Error.
-                    print(error)
-    
+    Task {
+        do {
+            // Connect to the printer.
+            try await printer.open()
+            defer {
+                Task {
                     // Disconnect from the printer.
-                    printer.close { }
-                    return
+                    await printer.close()
                 }
-                
-                if let status = status {
-                    print(status)
-                }
-    
-                // Disconnect from the printer.
-                printer.close { }
-            })
-        })
+            }
+
+            // Get printer status.
+            let status = try await printer.getStatus()
+            print(status)
+        } catch let error {
+            // Error.
+            print(error)
+        }
     }
 }
 ```
@@ -199,27 +163,14 @@ func monitor() async {
     printer.inputDeviceDelegate = self
     printer.displayDelegate = self
     
-    // Use the different methods of StarPrinter class depending on the OS version.
-    // Please refer to the following URL for details.
-    // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer/index.html
-    if #available(iOS 13.0, *) {
-        Task {
-            do {
-                // Connect to the printer.
-                try await printer.open()
-            } catch let error {
-                // Error.
-                print(error)
-            }
+    Task {
+        do {
+            // Connect to the printer.
+            try await printer.open()
+        } catch let error {
+            // Error.
+            print(error)
         }
-    } else {
-        // Connect to the printer.
-        self.printer.open(completion: { error in
-            if let error = error {
-                // Error.
-                print(error)
-            }
-        })
     }
 }
 

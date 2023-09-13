@@ -2,6 +2,23 @@
 
 # Change Log
 
+## 2.4.0 (2023/09/08)
+
+* Added TSP100IV SK support.
+* Changed minimum supported OS version from 12 to 13.
+  * The methods for iOS 12 in the StarPrinter class are deprecated. The following methods are provided only for compatibility of applications supporting iOS 12 and will be removed in the future when the minimum supported OS version of this SDK is raised to iOS 15.
+    - open(completion: @escaping (Error?) -> Void) 　　
+    - print(command: String, completion: @escaping (Error?) -> Void) 　　
+    - print(command: String, starSpoolJobSettings: StarSpoolJobSettings, completion: @escaping (Int?, Error?) -> Void) 　　
+    - print(raw: Data, completion: @escaping (Error?) -> Void) 　　
+    - getStatus(completion: @escaping (StarIO10.StarPrinterStatus?, Error?) -> Void) 　　
+    - getSpoolJobStatus(jobId: Int, completion: @escaping (StarSpoolJobStatus?, Error?) -> Void) 　　
+    - getSpoolJobStatusList(size: Int, completion: @escaping ([StarSpoolJobStatus]?, Error?) -> Void) 　　
+    - getStarConfiguration(completion: @escaping (String?, Error?) -> Void) 　　
+    - getDefaultStarConfiguration(completion: @escaping (String?, Error?) -> Void) 　　
+    - setStarConfiguration(starConfiguration: String, completion: @escaping (Error?) -> Void) 　　
+    - close(completion: @escaping () -> Void)
+
 ## 2.3.0 (2023/03/31)
 
 * Added mC-Label3 support.

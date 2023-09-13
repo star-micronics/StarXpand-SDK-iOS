@@ -1049,15 +1049,15 @@ SWIFT_CLASS_NAMED("StarPrinter")
 @class STARIO10StarSpoolJobStatus;
 
 @interface STARIO10StarPrinter (SWIFT_EXTENSION(StarIO10))
-- (void)openWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use open() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)closeWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use close() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)printWithRaw:(NSData * _Nonnull)raw completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(raw:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)printWithCommand:(NSString * _Nonnull)command completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(command:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getStatusWithCompletion:(void (^ _Nonnull)(STARIO10StarPrinterStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStatus() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getSpoolJobStatusWithJobId:(NSInteger)jobId completion:(void (^ _Nonnull)(STARIO10StarSpoolJobStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getSpoolJobStatusListWithSize:(NSInteger)size completion:(void (^ _Nonnull)(NSArray<STARIO10StarSpoolJobStatus *> * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getStarConfigurationWithPassword:(NSString * _Nullable)password completion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getDefaultStarConfigurationWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
+- (void)openWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use open() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)closeWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use close() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)printWithRaw:(NSData * _Nonnull)raw completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(raw:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)printWithCommand:(NSString * _Nonnull)command completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(command:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getStatusWithCompletion:(void (^ _Nonnull)(STARIO10StarPrinterStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStatus() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getSpoolJobStatusWithJobId:(NSInteger)jobId completion:(void (^ _Nonnull)(STARIO10StarSpoolJobStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getSpoolJobStatusListWithSize:(NSInteger)size completion:(void (^ _Nonnull)(NSArray<STARIO10StarSpoolJobStatus *> * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getStarConfigurationWithPassword:(NSString * _Nullable)password completion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getDefaultStarConfigurationWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
 @end
 
 @class STARIO10StarSpoolJobSettings;
@@ -1108,18 +1108,19 @@ typedef SWIFT_ENUM_NAMED(NSInteger, STARIO10StarPrinterModel, "StarPrinterModel"
   STARIO10StarPrinterModelTSP100IIILAN SWIFT_COMPILE_NAME("tsp100IIILAN") = 5,
   STARIO10StarPrinterModelTSP100IIIBI SWIFT_COMPILE_NAME("tsp100IIIBI") = 6,
   STARIO10StarPrinterModelTSP100IIIU SWIFT_COMPILE_NAME("tsp100IIIU") = 7,
-  STARIO10StarPrinterModelTSP100IV SWIFT_COMPILE_NAME("tsp100IV") = 8,
-  STARIO10StarPrinterModelmPOP SWIFT_COMPILE_NAME("mPOP") = 9,
-  STARIO10StarPrinterModelmC_Print2 SWIFT_COMPILE_NAME("mC_Print2") = 10,
-  STARIO10StarPrinterModelmC_Print3 SWIFT_COMPILE_NAME("mC_Print3") = 11,
-  STARIO10StarPrinterModelmC_Label3 SWIFT_COMPILE_NAME("mC_Label3") = 12,
-  STARIO10StarPrinterModelSM_S210i SWIFT_COMPILE_NAME("sm_S210i") = 13,
-  STARIO10StarPrinterModelSM_S230i SWIFT_COMPILE_NAME("sm_S230i") = 14,
-  STARIO10StarPrinterModelSM_T300i SWIFT_COMPILE_NAME("sm_T300i") = 15,
-  STARIO10StarPrinterModelSM_T400i SWIFT_COMPILE_NAME("sm_T400i") = 16,
-  STARIO10StarPrinterModelSM_L200 SWIFT_COMPILE_NAME("sm_L200") = 17,
-  STARIO10StarPrinterModelSM_L300 SWIFT_COMPILE_NAME("sm_L300") = 18,
-  STARIO10StarPrinterModelSP700 SWIFT_COMPILE_NAME("sp700") = 19,
+  STARIO10StarPrinterModelTSP100IV_SK SWIFT_COMPILE_NAME("tsp100IV_SK") = 8,
+  STARIO10StarPrinterModelTSP100IV SWIFT_COMPILE_NAME("tsp100IV") = 9,
+  STARIO10StarPrinterModelmPOP SWIFT_COMPILE_NAME("mPOP") = 10,
+  STARIO10StarPrinterModelmC_Print2 SWIFT_COMPILE_NAME("mC_Print2") = 11,
+  STARIO10StarPrinterModelmC_Print3 SWIFT_COMPILE_NAME("mC_Print3") = 12,
+  STARIO10StarPrinterModelmC_Label3 SWIFT_COMPILE_NAME("mC_Label3") = 13,
+  STARIO10StarPrinterModelSM_S210i SWIFT_COMPILE_NAME("sm_S210i") = 14,
+  STARIO10StarPrinterModelSM_S230i SWIFT_COMPILE_NAME("sm_S230i") = 15,
+  STARIO10StarPrinterModelSM_T300i SWIFT_COMPILE_NAME("sm_T300i") = 16,
+  STARIO10StarPrinterModelSM_T400i SWIFT_COMPILE_NAME("sm_T400i") = 17,
+  STARIO10StarPrinterModelSM_L200 SWIFT_COMPILE_NAME("sm_L200") = 18,
+  STARIO10StarPrinterModelSM_L300 SWIFT_COMPILE_NAME("sm_L300") = 19,
+  STARIO10StarPrinterModelSP700 SWIFT_COMPILE_NAME("sp700") = 20,
 };
 
 
@@ -2409,15 +2410,15 @@ SWIFT_CLASS_NAMED("StarPrinter")
 @class STARIO10StarSpoolJobStatus;
 
 @interface STARIO10StarPrinter (SWIFT_EXTENSION(StarIO10))
-- (void)openWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use open() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)closeWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use close() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)printWithRaw:(NSData * _Nonnull)raw completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(raw:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)printWithCommand:(NSString * _Nonnull)command completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(command:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getStatusWithCompletion:(void (^ _Nonnull)(STARIO10StarPrinterStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStatus() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getSpoolJobStatusWithJobId:(NSInteger)jobId completion:(void (^ _Nonnull)(STARIO10StarSpoolJobStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getSpoolJobStatusListWithSize:(NSInteger)size completion:(void (^ _Nonnull)(NSArray<STARIO10StarSpoolJobStatus *> * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getStarConfigurationWithPassword:(NSString * _Nullable)password completion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
-- (void)getDefaultStarConfigurationWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This deprecated warning also appears when the iOS deployment target is set to iOS 12, but this method works properly on iOS 12.");
+- (void)openWithCompletion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use open() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)closeWithCompletion:(void (^ _Nonnull)(void))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use close() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)printWithRaw:(NSData * _Nonnull)raw completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(raw:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)printWithCommand:(NSString * _Nonnull)command completion:(void (^ _Nonnull)(NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use print(command:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getStatusWithCompletion:(void (^ _Nonnull)(STARIO10StarPrinterStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStatus() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getSpoolJobStatusWithJobId:(NSInteger)jobId completion:(void (^ _Nonnull)(STARIO10StarSpoolJobStatus * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getSpoolJobStatusListWithSize:(NSInteger)size completion:(void (^ _Nonnull)(NSArray<STARIO10StarSpoolJobStatus *> * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getSpoolJobStatus(jobID:) async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getStarConfigurationWithPassword:(NSString * _Nullable)password completion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
+- (void)getDefaultStarConfigurationWithCompletion:(void (^ _Nonnull)(NSString * _Nullable, NSError * _Nullable))completion SWIFT_AVAILABILITY(ios,deprecated=12.0,obsoleted=13.0,message="Not available on iOS 13 or later: Please use getDefaultStarConfiguration() async. This method is provided only for compatibility of applications supporting iOS 12 and will be removed in the future.");
 @end
 
 @class STARIO10StarSpoolJobSettings;
@@ -2468,18 +2469,19 @@ typedef SWIFT_ENUM_NAMED(NSInteger, STARIO10StarPrinterModel, "StarPrinterModel"
   STARIO10StarPrinterModelTSP100IIILAN SWIFT_COMPILE_NAME("tsp100IIILAN") = 5,
   STARIO10StarPrinterModelTSP100IIIBI SWIFT_COMPILE_NAME("tsp100IIIBI") = 6,
   STARIO10StarPrinterModelTSP100IIIU SWIFT_COMPILE_NAME("tsp100IIIU") = 7,
-  STARIO10StarPrinterModelTSP100IV SWIFT_COMPILE_NAME("tsp100IV") = 8,
-  STARIO10StarPrinterModelmPOP SWIFT_COMPILE_NAME("mPOP") = 9,
-  STARIO10StarPrinterModelmC_Print2 SWIFT_COMPILE_NAME("mC_Print2") = 10,
-  STARIO10StarPrinterModelmC_Print3 SWIFT_COMPILE_NAME("mC_Print3") = 11,
-  STARIO10StarPrinterModelmC_Label3 SWIFT_COMPILE_NAME("mC_Label3") = 12,
-  STARIO10StarPrinterModelSM_S210i SWIFT_COMPILE_NAME("sm_S210i") = 13,
-  STARIO10StarPrinterModelSM_S230i SWIFT_COMPILE_NAME("sm_S230i") = 14,
-  STARIO10StarPrinterModelSM_T300i SWIFT_COMPILE_NAME("sm_T300i") = 15,
-  STARIO10StarPrinterModelSM_T400i SWIFT_COMPILE_NAME("sm_T400i") = 16,
-  STARIO10StarPrinterModelSM_L200 SWIFT_COMPILE_NAME("sm_L200") = 17,
-  STARIO10StarPrinterModelSM_L300 SWIFT_COMPILE_NAME("sm_L300") = 18,
-  STARIO10StarPrinterModelSP700 SWIFT_COMPILE_NAME("sp700") = 19,
+  STARIO10StarPrinterModelTSP100IV_SK SWIFT_COMPILE_NAME("tsp100IV_SK") = 8,
+  STARIO10StarPrinterModelTSP100IV SWIFT_COMPILE_NAME("tsp100IV") = 9,
+  STARIO10StarPrinterModelmPOP SWIFT_COMPILE_NAME("mPOP") = 10,
+  STARIO10StarPrinterModelmC_Print2 SWIFT_COMPILE_NAME("mC_Print2") = 11,
+  STARIO10StarPrinterModelmC_Print3 SWIFT_COMPILE_NAME("mC_Print3") = 12,
+  STARIO10StarPrinterModelmC_Label3 SWIFT_COMPILE_NAME("mC_Label3") = 13,
+  STARIO10StarPrinterModelSM_S210i SWIFT_COMPILE_NAME("sm_S210i") = 14,
+  STARIO10StarPrinterModelSM_S230i SWIFT_COMPILE_NAME("sm_S230i") = 15,
+  STARIO10StarPrinterModelSM_T300i SWIFT_COMPILE_NAME("sm_T300i") = 16,
+  STARIO10StarPrinterModelSM_T400i SWIFT_COMPILE_NAME("sm_T400i") = 17,
+  STARIO10StarPrinterModelSM_L200 SWIFT_COMPILE_NAME("sm_L200") = 18,
+  STARIO10StarPrinterModelSM_L300 SWIFT_COMPILE_NAME("sm_L300") = 19,
+  STARIO10StarPrinterModelSP700 SWIFT_COMPILE_NAME("sp700") = 20,
 };
 
 

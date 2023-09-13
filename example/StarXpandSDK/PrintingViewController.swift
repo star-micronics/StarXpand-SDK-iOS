@@ -46,114 +46,104 @@ class PrintingViewController: UIViewController {
             return
         }
         
+        // TSP100III series does not support actionPrintText because these products are graphics-only printers.
+        // Please use the actionPrintImage method to create printing data for these products.
+        // For other available methods, please also refer to "Supported Model" of each method.
+        // https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-xpand-command/printer-builder/action-print-image.html
         let builder = StarXpandCommand.StarXpandCommandBuilder()
-        _ = builder.addDocument(StarXpandCommand.DocumentBuilder.init()
-                                    .addPrinter(StarXpandCommand.PrinterBuilder()
-                                                    .actionPrintImage(StarXpandCommand.Printer.ImageParameter(image: logo, width: 406))
-                                                    .styleInternationalCharacter(.usa)
-                                                    .styleCharacterSpace(0)
-                                                    .styleAlignment(.center)
-                                                    .actionPrintText("Star Clothing Boutique\n" +
-                                                                     "123 Star Road\n" +
-                                                                     "City, State 12345\n" +
-                                                                     "\n")
-                                                    .styleAlignment(.left)
-                                                    .actionPrintText("Date:MM/DD/YYYY    Time:HH:MM PM\n" +
-                                                                     "--------------------------------\n" +
-                                                                     "\n")
-                                                    .add(
-                                                        StarXpandCommand.PrinterBuilder()
-                                                            .styleBold(true)
-                                                            .actionPrintText("SALE \n")
-                                                    )
-                                                    .actionPrintText("SKU         Description    Total\n" +
-                                                                     "300678566   PLAIN T-SHIRT  10.99\n" +
-                                                                     "300692003   BLACK DENIM    29.99\n" +
-                                                                     "300651148   BLUE DENIM     29.99\n" +
-                                                                     "300642980   STRIPED DRESS  49.99\n" +
-                                                                     "300638471   BLACK BOOTS    35.99\n" +
-                                                                     "\n" +
-                                                                     "Subtotal                  156.95\n" +
-                                                                     "Tax                         0.00\n" +
-                                                                     "--------------------------------\n")
-                                                    .actionPrintText("Total     ")
-                                                    .add(
-                                                        StarXpandCommand.PrinterBuilder()
-                                                            .styleMagnification(StarXpandCommand.MagnificationParameter(width: 2, height: 2))
-                                                            .actionPrintText("   $156.95\n")
-                                                    )
-                                                    .actionPrintText("--------------------------------\n" +
-                                                                     "\n" +
-                                                                     "Charge\n" +
-                                                                     "156.95\n" +
-                                                                     "Visa XXXX-XXXX-XXXX-0123\n" +
-                                                                     "\n")
-                                                    .add(
-                                                        StarXpandCommand.PrinterBuilder()
-                                                            .styleInvert(true)
-                                                            .actionPrintText("Refunds and Exchanges\n")
-                                                    )
-                                                    .actionPrintText("Within ")
-                                                    .add(
-                                                        StarXpandCommand.PrinterBuilder()
-                                                            .styleUnderLine(true)
-                                                            .actionPrintText("30 days")
-                                                    )
-                                                    .actionPrintText(" with receipt\n" +
-                                                                     "And tags attached\n" +
-                                                                     "\n")
-                                                    .styleAlignment(.center)
-                                                    .actionPrintBarcode(StarXpandCommand.Printer.BarcodeParameter(content: "0123456", symbology: .jan8)
-                                                                            .setBarDots(3)
-                                                                            .setHeight(5)
-                                                                            .setPrintHRI(true))
-                                                    .actionFeedLine(1)
-                                                    .actionPrintQRCode(StarXpandCommand.Printer.QRCodeParameter(content: "Hello World.\n")
-                                                                        .setLevel(.l)
-                                                                        .setCellSize(8))
-                                                    .actionCut(StarXpandCommand.Printer.CutType.partial)))
+        _ = builder.addDocument(StarXpandCommand.DocumentBuilder()
+            // To open a cash drawer, comment out the following code.
+//          .addDrawer(StarXpandCommand.DrawerBuilder()
+//              .actionOpen(StarXpandCommand.Drawer.OpenParameter())
+//          )
+            .addPrinter(StarXpandCommand.PrinterBuilder()
+                .actionPrintImage(StarXpandCommand.Printer.ImageParameter(image: logo, width: 406))
+                .styleInternationalCharacter(.usa)
+                .styleCharacterSpace(0)
+                .styleAlignment(.center)
+                .actionPrintText("Star Clothing Boutique\n" +
+                                 "123 Star Road\n" +
+                                 "City, State 12345\n" +
+                                 "\n")
+                .styleAlignment(.left)
+                .actionPrintText("Date:MM/DD/YYYY    Time:HH:MM PM\n" +
+                                 "--------------------------------\n" +
+                                 "\n")
+                .add(
+                    StarXpandCommand.PrinterBuilder()
+                        .styleBold(true)
+                        .actionPrintText("SALE \n")
+                    )
+                .actionPrintText("SKU         Description    Total\n" +
+                                 "300678566   PLAIN T-SHIRT  10.99\n" +
+                                 "300692003   BLACK DENIM    29.99\n" +
+                                 "300651148   BLUE DENIM     29.99\n" +
+                                 "300642980   STRIPED DRESS  49.99\n" +
+                                 "300638471   BLACK BOOTS    35.99\n" +
+                                 "\n" +
+                                 "Subtotal                  156.95\n" +
+                                 "Tax                         0.00\n" +
+                                 "--------------------------------\n")
+                .actionPrintText("Total     ")
+                .add(
+                    StarXpandCommand.PrinterBuilder()
+                        .styleMagnification(StarXpandCommand.MagnificationParameter(width: 2, height: 2))
+                        .actionPrintText("   $156.95\n")
+                    )
+                .actionPrintText("--------------------------------\n" +
+                                 "\n" +
+                                 "Charge\n" +
+                                 "156.95\n" +
+                                 "Visa XXXX-XXXX-XXXX-0123\n" +
+                                 "\n")
+                .add(
+                    StarXpandCommand.PrinterBuilder()
+                        .styleInvert(true)
+                        .actionPrintText("Refunds and Exchanges\n")
+                    )
+                .actionPrintText("Within ")
+                .add(
+                    StarXpandCommand.PrinterBuilder()
+                        .styleUnderLine(true)
+                        .actionPrintText("30 days")
+                    )
+                .actionPrintText(" with receipt\n" +
+                                 "And tags attached\n" +
+                                 "\n")
+                .styleAlignment(.center)
+                .actionPrintBarcode(
+                    StarXpandCommand.Printer.BarcodeParameter(content: "0123456", symbology: .jan8)
+                        .setBarDots(3)
+                        .setHeight(5)
+                        .setPrintHRI(true)
+                )
+                .actionFeedLine(1)
+                .actionPrintQRCode(
+                    StarXpandCommand.Printer.QRCodeParameter(content: "Hello World.\n")
+                        .setLevel(.l)
+                        .setCellSize(8)
+                )
+                .actionCut(StarXpandCommand.Printer.CutType.partial)
+            )
+        )
         
         let command = builder.getCommands()
         
-        // Use the different methods of StarPrinter class depending on the OS version.
-        // Please refer to the following URL for details.
-        // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html
-        if #available(iOS 13.0, *) {
-            Task {
-                do {
-                    try await printer.open()
-                    defer {
-                        Task {
-                            await printer.close()
-                        }
+        Task {
+            do {
+                try await printer.open()
+                defer {
+                    Task {
+                        await printer.close()
                     }
-                    
-                    try await printer.print(command: command)
-                    
-                    print("Success")
-                } catch let error {
-                    print("Error: \(error)")
-                }
-            }
-        } else {
-            printer.open(completion: { error in
-                if let error = error {
-                    print("Error: \(error)")
-                    printer.close { }
-                    return
                 }
                 
-                printer.print(command: command, completion: {error in
-                    if let error = error {
-                        print("Error: \(error)")
-                        printer.close { }
-                        return
-                    }
-                    
-                    print("Success")
-                    printer.close { }
-                })
-            })
+                try await printer.print(command: command)
+                
+                print("Success")
+            } catch let error {
+                print("Error: \(error)")
+            }
         }
     }
 }

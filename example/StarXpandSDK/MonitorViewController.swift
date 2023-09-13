@@ -90,66 +90,30 @@ class MonitorViewController: UIViewController, PrinterDelegate, DrawerDelegate, 
         printer?.inputDeviceDelegate = self
         printer?.displayDelegate = self
         
-        // Use the different methods of StarPrinter class depending on the OS version.
-        // Please refer to the following URL for details.
-        // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html
-        if #available(iOS 13.0, *) {
-            Task {
-                do {
-                    try await self.printer?.open()
-                    
-                    self.monitorButton.setTitle("Stop Monitoring", for: .normal)
-                    self.isMonitoring = true
-                } catch let error {
-                    print("Error: \(error)")
-                    
-                    DispatchQueue.main.async {
-                        self.statusTextView.text.append("Error: \(error)\n")
-                    }
-                    
-                    await self.printer?.close()
-                }
-            }
-        } else {
-            self.printer?.open(completion: { error in
-                if let error = error {
-                    print("Error: \(error)")
-                    
-                    DispatchQueue.main.async {
-                        self.statusTextView.text.append("Error: \(error)\n")
-                    }
-
-                    self.printer?.close { }
-
-                    return
-                }
+        Task {
+            do {
+                try await self.printer?.open()
+                
+                self.monitorButton.setTitle("Stop Monitoring", for: .normal)
+                self.isMonitoring = true
+            } catch let error {
+                print("Error: \(error)")
                 
                 DispatchQueue.main.async {
-                    self.monitorButton.setTitle("Stop Monitoring", for: .normal)
-                    self.isMonitoring = true
+                    self.statusTextView.text.append("Error: \(error)\n")
                 }
-            })
+                
+                await self.printer?.close()
+            }
         }
     }
     
     private func stopMonitoring() {
-        // Use the different methods of StarPrinter class depending on the OS version.
-        // Please refer to the following URL for details.
-        // https://www.star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift/api-reference/star-printer/index.html
-        if #available(iOS 13.0, *) {
-            Task {
-                await self.printer?.close()
-                
-                self.monitorButton.setTitle("Start Monitoring", for: .normal)
-                self.isMonitoring = false
-            }
-        } else {
-            self.printer?.close {
-                DispatchQueue.main.async {
-                    self.monitorButton.setTitle("Start Monitoring", for: .normal)
-                    self.isMonitoring = false
-                }
-            }
+        Task {
+            await self.printer?.close()
+            
+            self.monitorButton.setTitle("Start Monitoring", for: .normal)
+            self.isMonitoring = false
         }
     }
     
