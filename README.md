@@ -173,7 +173,6 @@ func monitor() async {
         }
     }
 }
-```
 
 // Callback for printer state changed.
 
