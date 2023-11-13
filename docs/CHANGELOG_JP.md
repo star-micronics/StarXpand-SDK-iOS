@@ -2,6 +2,15 @@
 
 # 変更点
 
+## 2.5.0 (2023/10/27)
+
+* MCP31CI/CBI に対応
+* テキストデータからレシート画像を生成するサンプルを追加
+
+* 不具合修正
+  * 異なるセグメントのネットワークのプリンターにIPアドレス指定で印刷できるよう修正 [#14](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/14)
+  * `DocumentBuilder.addPrinter()`で設定した装飾（styleで始まるメソッド）が、メソッド終了時に解除されない問題を修正
+
 ## 2.4.0 (2023/09/08)
 
 * TSP100IV SK に対応

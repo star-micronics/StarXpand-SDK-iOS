@@ -99,7 +99,10 @@ StarXpand SDK includes an [example](example) application that can be used in com
 
 #### 2. [Create printing data](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/basic-step1.html)
 
-Printing samples of labels (sample code and print results) for each type of business that you can use for your print layouts are [also available](example/StarXpandSDK/PrintingSamples/PrintingSamples.md).
+The sample code and printed result images are also [available here](example/StarXpandSDK/PrintingSamples/PrintingSamples.md).
+
+- Sample to create print layouts for labels for each type of business
+- Sample to generate receipt images from text data
 
 > :warning: Some printer models may not be able to print some samples. Please adjust the layout accordingly when using this samples.
 

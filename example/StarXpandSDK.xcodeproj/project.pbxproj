@@ -10,6 +10,7 @@
 		2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C154D292865685800BBC7DE /* SpoolerViewController.swift */; };
 		881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881AAC15275F4D7300D6ED67 /* logo_01.png */; };
 		8882FC91279968E0003AA845 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 8882FC90279968E0003AA845 /* StarIO10 */; };
+		9D33236C2ADD0B6F004B5AE8 /* Sample15_GraphicReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */; };
 		AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE04F272A8CCD00679414 /* AppDelegate.swift */; };
 		AA2AE052272A8CCD00679414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE051272A8CCD00679414 /* SceneDelegate.swift */; };
 		AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE053272A8CCD00679414 /* ViewController.swift */; };
@@ -58,6 +59,7 @@
 		2C154D292865685800BBC7DE /* SpoolerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpoolerViewController.swift; sourceTree = "<group>"; };
 		881AAC15275F4D7300D6ED67 /* logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_01.png; sourceTree = "<group>"; };
 		8882FC8F27996794003AA845 /* starxpand_sdk_ios_swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = starxpand_sdk_ios_swift; path = ..; sourceTree = "<group>"; };
+		9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample15_GraphicReceipt.swift; sourceTree = "<group>"; };
 		AA2AE04C272A8CCD00679414 /* StarXpandSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarXpandSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2AE04F272A8CCD00679414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA2AE051272A8CCD00679414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				DD32E7BE28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift */,
 				DD32E7C028EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift */,
 				DD32E7C228EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift */,
+				9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */,
 				DDDBDD6E2935DE49009FC078 /* images */,
 			);
 			path = PrintingSamples;
@@ -320,6 +323,7 @@
 				AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */,
 				DD32E7A228EA759600372CB9 /* Sample01_TamperProofLabel.swift in Sources */,
 				DD32E7B328EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift in Sources */,
+				9D33236C2ADD0B6F004B5AE8 /* Sample15_GraphicReceipt.swift in Sources */,
 				AA2AE06B272B8D2700679414 /* PrintingViewController.swift in Sources */,
 				DD32E7BD28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift in Sources */,
 				AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */,
@@ -490,7 +494,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -522,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.4.0;
+				MARKETING_VERSION = 2.5.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

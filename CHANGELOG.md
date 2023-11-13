@@ -2,6 +2,15 @@
 
 # Change Log
 
+## 2.5.0 (2023/10/27)
+
+* Added MCP31CI/CBI support.
+* Added a sample to generate receipt images from text data.
+
+* Bug Fix:
+  * Fixed to be able to print to printers on different segment networks by specifying IP address. [#14](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/14)
+  * Fixed an issue where decorations (methods starting with `style`) set with `DocumentBuilder.addPrinter()` were not reset when the method ended.
+
 ## 2.4.0 (2023/09/08)
 
 * Added TSP100IV SK support.
