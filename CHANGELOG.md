@@ -2,18 +2,6 @@
 
 # Change Log
 
-## 2.6.0 (2024/02/09)
-
-* Added POP10CBI support.
-* Added API for template printing function.
-* Added a screen for template printing to the sample app.
-* Added API for specifying number of character function.
-* Added API for setting full/half-width of Unicode ambiguous characters.
-* Changed the Auto Switch Interface function to enabled by default.
-* Improved switching speed of the Auto Switch Interface function.
-* Added several samples of printing patterns using template printing function.
-* Added privacy manifest file according to Apple's guidelines. (StarIO10 does not use Required Reason API.)
-
 ## 2.5.0 (2023/10/27)
 
 * Added MCP31CI/CBI support.

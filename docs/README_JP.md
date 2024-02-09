@@ -14,8 +14,6 @@
 
 本ソフトウェア開発キットでは、スター精密デバイスを制御するためのフレームワークとして、StarIO10フレームワーク(StarIO10.xcframework)を提供しています。
 
-Apple社の指針に従い、StarIO10 V2.6.0以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2024年1月29日現在）
-
 ## ドキュメント
 
 StarXpand SDKのドキュメントは[こちら](https://www.star-m.jp/starxpandsdk-oml.html)を参照ください。
@@ -101,22 +99,20 @@ StarXpand SDKにはプリンターと組み合わせて動作を確認できる[
 
 #### 2. [印刷データの生成](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/basic-step1.html)
 
-[こちら](../example/StarXpandSDK/PrintingSamples/README.md)のサンプルコードと印刷結果画像もご活用ください。
+[こちら](../example/StarXpandSDK/PrintingSamples/PrintingSamples.md)のサンプルコードと印刷結果画像もご活用ください。
 
-- 各業態のレシートやラベル用の印刷レイアウトを作成するサンプル
+- 各業態のラベル用の印刷レイアウトを作成するサンプル
 - テキストデータからレシート画像を生成するサンプル
 
 > :warning: プリンターのモデルによっては印刷できないサンプルがあります。また、ご利用の際は適宜レイアウトを調節してください。
 
-#### 3. [テンプレート印刷機能を利用した印刷データの生成](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/template-step1.html)
+#### 3. [印刷データの送信](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/basic-step2.html)
 
-#### 4. [印刷データの送信](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/basic-step2.html)
+#### 4. [スプーラー機能を利用した印刷データの送信](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/spooler.html)
 
-#### 5. [スプーラー機能を利用した印刷データの送信](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/spooler.html)
+#### 5. [プリンターステータスの取得](#GetPrinterStatus)
 
-#### 6. [プリンターステータスの取得](#GetPrinterStatus)
-
-#### 7. [プリンターステータスの監視](#MonitorPrinter)
+#### 6. [プリンターステータスの監視](#MonitorPrinter)
 
 <a id="GetPrinterStatus"></a>
 ### Get printer status

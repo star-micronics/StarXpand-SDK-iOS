@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9f-iL-C8I">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="b9f-iL-C8I">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhq-OW-EGP">
-                                <rect key="frame" x="20" y="172" width="374" height="30"/>
+                                <rect key="frame" x="20" y="168" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Discovery"/>
                                 <connections>
@@ -26,7 +26,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HKC-a5-hTP">
-                                <rect key="frame" x="20" y="242" width="374" height="30"/>
+                                <rect key="frame" x="20" y="238" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Printing"/>
                                 <connections>
@@ -34,23 +34,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eBa-OX-LHC">
-                                <rect key="frame" x="20" y="312" width="374" height="30"/>
+                                <rect key="frame" x="20" y="308" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Printing -Spooler-"/>
                                 <connections>
                                     <segue destination="pch-XV-xM0" kind="show" id="4FI-g8-edp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fU0-5U-NoG">
-                                <rect key="frame" x="20" y="382" width="374" height="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Template Print"/>
-                                <connections>
-                                    <segue destination="xFS-wm-yfI" kind="show" id="UCL-z9-CTr"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CA9-9J-ffv">
-                                <rect key="frame" x="20" y="452" width="374" height="30"/>
+                                <rect key="frame" x="20" y="378" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Monitor"/>
                                 <connections>
@@ -58,7 +50,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gY-Pm-1rB">
-                                <rect key="frame" x="20" y="522" width="374" height="30"/>
+                                <rect key="frame" x="20" y="448" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Status"/>
                                 <connections>
@@ -70,22 +62,19 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="eBa-OX-LHC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Fm-f4-1aM"/>
-                            <constraint firstItem="fU0-5U-NoG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="5Wb-xM-MLK"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CA9-9J-ffv" secondAttribute="trailing" constant="20" id="9UJ-2u-ZJj"/>
                             <constraint firstItem="CA9-9J-ffv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Uh-cz-8EZ"/>
                             <constraint firstItem="eBa-OX-LHC" firstAttribute="top" secondItem="HKC-a5-hTP" secondAttribute="bottom" constant="40" id="IS9-Qn-reJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7gY-Pm-1rB" secondAttribute="trailing" constant="20" id="Jkm-34-ZKo"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HKC-a5-hTP" secondAttribute="trailing" constant="20" id="Rxp-3d-PEI"/>
                             <constraint firstItem="Vhq-OW-EGP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="X5f-O7-HjX"/>
-                            <constraint firstItem="fU0-5U-NoG" firstAttribute="top" secondItem="eBa-OX-LHC" secondAttribute="bottom" constant="40" id="Yli-sT-PEa"/>
                             <constraint firstItem="Vhq-OW-EGP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="cbJ-2S-zkv"/>
                             <constraint firstItem="7gY-Pm-1rB" firstAttribute="top" secondItem="CA9-9J-ffv" secondAttribute="bottom" constant="40" id="iNL-Lp-Fcz"/>
                             <constraint firstItem="7gY-Pm-1rB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j6l-C7-iwF"/>
                             <constraint firstItem="HKC-a5-hTP" firstAttribute="top" secondItem="Vhq-OW-EGP" secondAttribute="bottom" constant="40" id="oyc-E5-utC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vhq-OW-EGP" secondAttribute="trailing" constant="20" id="ptR-gu-qzR"/>
                             <constraint firstItem="HKC-a5-hTP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="q9V-pM-gGa"/>
-                            <constraint firstItem="CA9-9J-ffv" firstAttribute="top" secondItem="fU0-5U-NoG" secondAttribute="bottom" constant="40" id="tpS-NY-iRE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fU0-5U-NoG" secondAttribute="trailing" constant="20" id="uW6-CQ-pyr"/>
+                            <constraint firstItem="CA9-9J-ffv" firstAttribute="top" secondItem="eBa-OX-LHC" secondAttribute="bottom" constant="40" id="tpS-NY-iRE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eBa-OX-LHC" secondAttribute="trailing" constant="20" id="wOh-Rq-UNz"/>
                         </constraints>
                     </view>
@@ -104,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUd-IX-b43">
-                                <rect key="frame" x="20" y="102" width="374" height="31"/>
+                                <rect key="frame" x="20" y="98" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAN " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aWx-mk-kI8">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
@@ -118,7 +107,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ex1-Ek-jqF">
-                                <rect key="frame" x="20" y="143" width="374" height="31"/>
+                                <rect key="frame" x="20" y="139" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGi-9Z-5oJ">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
@@ -132,7 +121,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iv1-2h-5l1">
-                                <rect key="frame" x="20" y="225" width="374" height="31"/>
+                                <rect key="frame" x="20" y="221" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USB " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZuU-p6-Dw6">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
@@ -146,7 +135,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bf5-hd-EUe">
-                                <rect key="frame" x="20" y="276" width="374" height="30"/>
+                                <rect key="frame" x="20" y="272" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Discovery"/>
                                 <connections>
@@ -154,14 +143,14 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Yuk-as-Yor">
-                                <rect key="frame" x="20" y="326" width="374" height="516"/>
+                                <rect key="frame" x="20" y="322" width="374" height="520"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4jK-D0-0kJ">
-                                <rect key="frame" x="20" y="184" width="374" height="31"/>
+                                <rect key="frame" x="20" y="180" width="374" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bluetooth LE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3V-8U-NWR">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="31"/>
@@ -222,7 +211,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="5p7-zX-rad">
-                                <rect key="frame" x="8" y="102" width="398" height="32"/>
+                                <rect key="frame" x="8" y="98" width="398" height="32"/>
                                 <segments>
                                     <segment title="LAN"/>
                                     <segment title="Bluetooth"/>
@@ -231,12 +220,12 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g0o-b7-ccx">
-                                <rect key="frame" x="8" y="153" width="398" height="34"/>
+                                <rect key="frame" x="8" y="149" width="398" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pob-rw-5LG">
-                                <rect key="frame" x="20" y="207" width="374" height="30"/>
+                                <rect key="frame" x="20" y="203" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Print"/>
                                 <connections>
@@ -278,7 +267,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="c9F-6f-yuY">
-                                <rect key="frame" x="8" y="102" width="398" height="32"/>
+                                <rect key="frame" x="8" y="98" width="398" height="32"/>
                                 <segments>
                                     <segment title="LAN"/>
                                     <segment title="Bluetooth"/>
@@ -287,12 +276,12 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="INX-sA-Jmd">
-                                <rect key="frame" x="8" y="153" width="398" height="34"/>
+                                <rect key="frame" x="8" y="149" width="398" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3gu-T4-Y16">
-                                <rect key="frame" x="20" y="207" width="374" height="30"/>
+                                <rect key="frame" x="20" y="203" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Start Monitoring"/>
                                 <connections>
@@ -300,7 +289,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xTF-D1-ZoD">
-                                <rect key="frame" x="20" y="257" width="374" height="585"/>
+                                <rect key="frame" x="20" y="253" width="374" height="589"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -346,7 +335,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Oy4-8g-dSH">
-                                <rect key="frame" x="8" y="102" width="398" height="32"/>
+                                <rect key="frame" x="8" y="98" width="398" height="32"/>
                                 <segments>
                                     <segment title="LAN"/>
                                     <segment title="Bluetooth"/>
@@ -355,12 +344,12 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j2I-qz-0kl">
-                                <rect key="frame" x="8" y="153" width="398" height="34"/>
+                                <rect key="frame" x="8" y="149" width="398" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Rb-IW-jO2">
-                                <rect key="frame" x="20" y="207" width="374" height="30"/>
+                                <rect key="frame" x="20" y="203" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Get Status"/>
                                 <connections>
@@ -368,7 +357,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TW4-pa-aeM">
-                                <rect key="frame" x="20" y="257" width="374" height="585"/>
+                                <rect key="frame" x="20" y="253" width="374" height="589"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -411,7 +400,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="b9f-iL-C8I" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="9pZ-Kc-DfP">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -432,7 +421,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="F37-ON-sy1">
-                                <rect key="frame" x="8" y="102" width="398" height="32"/>
+                                <rect key="frame" x="8" y="98" width="398" height="32"/>
                                 <segments>
                                     <segment title="LAN"/>
                                     <segment title="Bluetooth"/>
@@ -441,12 +430,12 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lkn-7f-6Ll">
-                                <rect key="frame" x="8" y="153" width="398" height="34"/>
+                                <rect key="frame" x="8" y="149" width="398" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1ud-HX-Uum">
-                                <rect key="frame" x="20" y="207" width="374" height="30"/>
+                                <rect key="frame" x="20" y="203" width="374" height="30"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Spool Print"/>
                                 <connections>
@@ -454,12 +443,12 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="JobID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ubu-gd-soM">
-                                <rect key="frame" x="8" y="257" width="195" height="34"/>
+                                <rect key="frame" x="8" y="253" width="195" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YpX-Pt-62g">
-                                <rect key="frame" x="211" y="257" width="195" height="34"/>
+                                <rect key="frame" x="211" y="253" width="195" height="34"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Get Job Status"/>
                                 <connections>
@@ -467,7 +456,7 @@
                                 </connections>
                             </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="W1q-dR-y3p">
-                                <rect key="frame" x="8" y="299" width="398" height="555"/>
+                                <rect key="frame" x="8" y="295" width="398" height="559"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -512,113 +501,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vYZ-BQ-Hci" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3908.6956521739135" y="194.86607142857142"/>
-        </scene>
-        <!--Template Print View Controller-->
-        <scene sceneID="dm3-Kd-Tsh">
-            <objects>
-                <viewController id="xFS-wm-yfI" customClass="TemplatePrintViewController" customModule="StarXpandSDK" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="s4x-z4-lJI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="oOv-P2-Mt1">
-                                <rect key="frame" x="8" y="102" width="398" height="32"/>
-                                <segments>
-                                    <segment title="LAN"/>
-                                    <segment title="Bluetooth"/>
-                                    <segment title="Bluetooth LE"/>
-                                    <segment title="USB"/>
-                                </segments>
-                            </segmentedControl>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="00:11:62:00:00:00" borderStyle="roundedRect" placeholder="identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HF0-cR-8NS">
-                                <rect key="frame" x="8" y="153" width="398" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="usz-Dj-nMd">
-                                <rect key="frame" x="8" y="207" width="398" height="164.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Template" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FjK-hC-b47">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcA-DN-2nI">
-                                        <rect key="frame" x="0.0" y="20.5" width="398" height="144"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="144" id="LLL-zx-akP"/>
-                                        </constraints>
-                                    </pickerView>
-                                </subviews>
-                            </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Btw-1w-zxv">
-                                <rect key="frame" x="8" y="391.5" width="398" height="59.5"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Field Data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AC0-Ah-5Tb">
-                                        <rect key="frame" x="0.0" y="0.0" width="398" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7i-Bb-BHQ">
-                                        <rect key="frame" x="0.0" y="20.5" width="398" height="8"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="8" id="ia8-Lr-I5o"/>
-                                        </constraints>
-                                    </view>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gSf-Nd-Z9R" userLabel="Field Data Selector">
-                                        <rect key="frame" x="0.0" y="28.5" width="398" height="32"/>
-                                        <segments>
-                                            <segment title="Receipt1"/>
-                                            <segment title="Receipt2"/>
-                                        </segments>
-                                    </segmentedControl>
-                                </subviews>
-                            </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OAn-Pa-FJn">
-                                <rect key="frame" x="20" y="471" width="374" height="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Print"/>
-                                <connections>
-                                    <action selector="touchUpPrintButton:" destination="xFS-wm-yfI" eventType="touchUpInside" id="CLm-kn-mE8"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="ZyT-13-M4g"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="oOv-P2-Mt1" firstAttribute="top" secondItem="ZyT-13-M4g" secondAttribute="top" constant="10" id="3bk-Bu-SEt"/>
-                            <constraint firstItem="Btw-1w-zxv" firstAttribute="leading" secondItem="ZyT-13-M4g" secondAttribute="leading" constant="8" id="3yI-M4-5ey"/>
-                            <constraint firstAttribute="trailing" secondItem="usz-Dj-nMd" secondAttribute="trailing" constant="8" id="4cs-QI-WoY"/>
-                            <constraint firstItem="HF0-cR-8NS" firstAttribute="leading" secondItem="ZyT-13-M4g" secondAttribute="leading" constant="8" id="9oy-Pv-ttP"/>
-                            <constraint firstItem="ZyT-13-M4g" firstAttribute="trailing" secondItem="OAn-Pa-FJn" secondAttribute="trailing" constant="20" id="IYm-HI-Rr4"/>
-                            <constraint firstItem="oOv-P2-Mt1" firstAttribute="leading" secondItem="ZyT-13-M4g" secondAttribute="leading" constant="8" id="QGq-MJ-Irh"/>
-                            <constraint firstItem="OAn-Pa-FJn" firstAttribute="leading" secondItem="ZyT-13-M4g" secondAttribute="leading" constant="20" id="VWr-JM-seR"/>
-                            <constraint firstItem="Btw-1w-zxv" firstAttribute="top" secondItem="usz-Dj-nMd" secondAttribute="bottom" constant="20" id="agv-Fs-gF8"/>
-                            <constraint firstItem="usz-Dj-nMd" firstAttribute="leading" secondItem="ZyT-13-M4g" secondAttribute="leading" constant="8" id="gMy-5S-DUK"/>
-                            <constraint firstItem="HF0-cR-8NS" firstAttribute="top" secondItem="oOv-P2-Mt1" secondAttribute="bottom" constant="20" id="j7y-gJ-8wo"/>
-                            <constraint firstItem="usz-Dj-nMd" firstAttribute="top" secondItem="HF0-cR-8NS" secondAttribute="bottom" constant="20" id="lk9-sM-zJO"/>
-                            <constraint firstItem="OAn-Pa-FJn" firstAttribute="top" secondItem="Btw-1w-zxv" secondAttribute="bottom" constant="20" id="pfg-dr-bse"/>
-                            <constraint firstItem="ZyT-13-M4g" firstAttribute="trailing" secondItem="oOv-P2-Mt1" secondAttribute="trailing" constant="8" id="pwt-n9-ZOI"/>
-                            <constraint firstItem="Btw-1w-zxv" firstAttribute="trailing" secondItem="ZyT-13-M4g" secondAttribute="trailing" constant="-8" id="s4V-ja-eM8"/>
-                            <constraint firstItem="HF0-cR-8NS" firstAttribute="top" secondItem="oOv-P2-Mt1" secondAttribute="bottom" constant="20" id="td0-if-GdX"/>
-                            <constraint firstItem="ZyT-13-M4g" firstAttribute="trailing" secondItem="HF0-cR-8NS" secondAttribute="trailing" constant="8" id="x1q-Em-Liw"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="G4Y-Tr-f5R"/>
-                    <connections>
-                        <outlet property="fieldDataSelector" destination="gSf-Nd-Z9R" id="FNi-m1-9kp"/>
-                        <outlet property="identifierTextField" destination="HF0-cR-8NS" id="ijH-Oh-evg"/>
-                        <outlet property="interfaceSelector" destination="oOv-P2-Mt1" id="lq8-jh-59l"/>
-                        <outlet property="printButton" destination="OAn-Pa-FJn" id="1kb-va-GqL"/>
-                        <outlet property="templatePicker" destination="vcA-DN-2nI" id="Gtj-mk-JnU"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s5V-2e-hbJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3096" y="2352"/>
         </scene>
     </scenes>
     <resources>
