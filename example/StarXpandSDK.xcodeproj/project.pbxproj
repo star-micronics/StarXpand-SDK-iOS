@@ -10,7 +10,9 @@
 		2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C154D292865685800BBC7DE /* SpoolerViewController.swift */; };
 		881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881AAC15275F4D7300D6ED67 /* logo_01.png */; };
 		8882FC91279968E0003AA845 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 8882FC90279968E0003AA845 /* StarIO10 */; };
-		9D33236C2ADD0B6F004B5AE8 /* Sample15_GraphicReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */; };
+		9F38F3602B15B72800BEED40 /* receipt2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */; };
+		9F38F3612B15B72800BEED40 /* receipt1_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */; };
+		9F7656E22B35259B00DBBEB6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */; };
 		AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE04F272A8CCD00679414 /* AppDelegate.swift */; };
 		AA2AE052272A8CCD00679414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE051272A8CCD00679414 /* SceneDelegate.swift */; };
 		AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE053272A8CCD00679414 /* ViewController.swift */; };
@@ -21,45 +23,189 @@
 		AA2AE06B272B8D2700679414 /* PrintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06A272B8D2700679414 /* PrintingViewController.swift */; };
 		AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */; };
 		AA2AE06F272BB9AB00679414 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06E272BB9AB00679414 /* StatusViewController.swift */; };
-		DD32E7A228EA759600372CB9 /* Sample01_TamperProofLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E79F28EA759600372CB9 /* Sample01_TamperProofLabel.swift */; };
-		DD32E7A928EEB01800372CB9 /* sample01_tamper_proof_label_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = DD32E7A828EEB01800372CB9 /* sample01_tamper_proof_label_checked.png */; };
-		DD32E7AB28EEB01E00372CB9 /* sample12_japanese_food_label_lunch_box_plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = DD32E7AA28EEB01E00372CB9 /* sample12_japanese_food_label_lunch_box_plastic.png */; };
-		DD32E7AD28EEB02400372CB9 /* sample13_japanese_food_label_lunch_cake_plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = DD32E7AC28EEB02400372CB9 /* sample13_japanese_food_label_lunch_cake_plastic.png */; };
-		DD32E7AF28EEB05900372CB9 /* Sample08_FoodProductLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7AE28EEB05900372CB9 /* Sample08_FoodProductLabel.swift */; };
-		DD32E7B128EEB06700372CB9 /* Sample02_DrinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7B028EEB06700372CB9 /* Sample02_DrinkLabel.swift */; };
-		DD32E7B328EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7B228EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift */; };
-		DD32E7B528EEB07D00372CB9 /* Sample04_FoodPrepLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7B428EEB07D00372CB9 /* Sample04_FoodPrepLabel.swift */; };
-		DD32E7B728EEB08700372CB9 /* Sample06_ShippingAddressLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7B628EEB08700372CB9 /* Sample06_ShippingAddressLabel.swift */; };
-		DD32E7B928EEB09100372CB9 /* Sample10_FoodDeliveryThai.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7B828EEB09100372CB9 /* Sample10_FoodDeliveryThai.swift */; };
-		DD32E7BB28EEB09C00372CB9 /* Sample07_InventoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7BA28EEB09C00372CB9 /* Sample07_InventoryLabel.swift */; };
-		DD32E7BD28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7BC28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift */; };
-		DD32E7BF28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7BE28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift */; };
-		DD32E7C128EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7C028EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift */; };
-		DD32E7C328EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7C228EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift */; };
-		DD32E7C528EEB0CF00372CB9 /* Sample11_DeliLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD32E7C428EEB0CF00372CB9 /* Sample11_DeliLabel.swift */; };
-		DD32E7C728F4E50A00372CB9 /* PrintingSamples.md in Resources */ = {isa = PBXBuildFile; fileRef = DD32E7C628F4E50A00372CB9 /* PrintingSamples.md */; };
-		DD87A8A3296E138F00FAC6CC /* Sample01_TamperProofLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8A2296E138F00FAC6CC /* Sample01_TamperProofLabel.png */; };
-		DD87A8A5296E139700FAC6CC /* Sample02_DrinkLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8A4296E139700FAC6CC /* Sample02_DrinkLabel.png */; };
-		DD87A8A7296E139E00FAC6CC /* Sample03_NutritionFactsLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8A6296E139E00FAC6CC /* Sample03_NutritionFactsLabel.png */; };
-		DD87A8A9296E13B700FAC6CC /* Sample04_FoodPrepLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8A8296E13B700FAC6CC /* Sample04_FoodPrepLabel.png */; };
-		DD87A8AB296E13C100FAC6CC /* Sample05_FoodDelivery.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8AA296E13C100FAC6CC /* Sample05_FoodDelivery.png */; };
-		DD87A8AD296E13CA00FAC6CC /* Sample06_ShippingAddressLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8AC296E13CA00FAC6CC /* Sample06_ShippingAddressLabel.png */; };
-		DD87A8AF296E13D200FAC6CC /* Sample07_InventoryLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8AE296E13D200FAC6CC /* Sample07_InventoryLabel.png */; };
-		DD87A8B1296E13D800FAC6CC /* Sample08_FoodProductLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8B0296E13D800FAC6CC /* Sample08_FoodProductLabel.png */; };
-		DD87A8B3296E13E200FAC6CC /* Sample09_ExpirationLabelJP.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8B2296E13E200FAC6CC /* Sample09_ExpirationLabelJP.png */; };
-		DD87A8B5296E13E800FAC6CC /* Sample10_FoodDeliveryThai.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8B4296E13E800FAC6CC /* Sample10_FoodDeliveryThai.png */; };
-		DD87A8B7296E13F100FAC6CC /* Sample11_DeliLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8B6296E13F100FAC6CC /* Sample11_DeliLabel.png */; };
-		DD87A8B9296E13FA00FAC6CC /* Sample12_JapaneseFoodLabelLunchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8B8296E13FA00FAC6CC /* Sample12_JapaneseFoodLabelLunchBox.png */; };
-		DD87A8BB296E140100FAC6CC /* Sample13_JapaneseFoodLabelCake.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8BA296E140100FAC6CC /* Sample13_JapaneseFoodLabelCake.png */; };
-		DD87A8BD296E140800FAC6CC /* Sample14_ShelfLabelForInventory.png in Resources */ = {isa = PBXBuildFile; fileRef = DD87A8BC296E140800FAC6CC /* Sample14_ShelfLabelForInventory.png */; };
-		DD87A8C3296E740800FAC6CC /* Sample05_FoodDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87A8C2296E740800FAC6CC /* Sample05_FoodDelivery.swift */; };
+		DD7A90042B316F8100B3FB2F /* receipt3_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */; };
+		DD8B9A252AC313F70039B5C9 /* TemplatePrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */; };
+		DD8B9A2B2AC314AD0039B5C9 /* label2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */; };
+		DD8B9A332AC3AD5C0039B5C9 /* label1_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */; };
+		DDAEF9862B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9682B6CD2FC0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift */; };
+		DDAEF9872B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9692B6CD2FC0001F082 /* ReceiptSample05_PharmacyStore1_Template.swift */; };
+		DDAEF9882B6CD2FD0001F082 /* ReceiptSample11_Cafe_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF96A2B6CD2FC0001F082 /* ReceiptSample11_Cafe_FieldData.json */; };
+		DDAEF9892B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF96B2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json */; };
+		DDAEF98A2B6CD2FD0001F082 /* ReceiptSample02_Retail_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF96C2B6CD2FC0001F082 /* ReceiptSample02_Retail_Template.swift */; };
+		DDAEF98B2B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF96D2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_Template.swift */; };
+		DDAEF98E2B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9702B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_Template.swift */; };
+		DDAEF98F2B6CD2FD0001F082 /* ReceiptSample10_Order2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9712B6CD2FD0001F082 /* ReceiptSample10_Order2_FieldData.json */; };
+		DDAEF9922B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9742B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_FieldData.json */; };
+		DDAEF9932B6CD2FD0001F082 /* ReceiptSample02_Retail_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9752B6CD2FD0001F082 /* ReceiptSample02_Retail_FieldData.json */; };
+		DDAEF9972B6CD2FD0001F082 /* ReceiptSample09_Order1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9792B6CD2FD0001F082 /* ReceiptSample09_Order1_FieldData.json */; };
+		DDAEF99A2B6CD2FD0001F082 /* ReceiptSample12_Lottery_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF97C2B6CD2FD0001F082 /* ReceiptSample12_Lottery_FieldData.json */; };
+		DDAEF99B2B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF97D2B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_FieldData.json */; };
+		DDAEF99C2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF97E2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json */; };
+		DDAEF99E2B6CD2FD0001F082 /* ReceiptSample07_Lunch1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9802B6CD2FD0001F082 /* ReceiptSample07_Lunch1_FieldData.json */; };
+		DDAEF99F2B6CD2FD0001F082 /* ReceiptSample08_Lunch2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9812B6CD2FD0001F082 /* ReceiptSample08_Lunch2_FieldData.json */; };
+		DDAEF9A12B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9832B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_FieldData.json */; };
+		DDAEF9A22B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9842B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift */; };
+		DDAEF9B32B6CD3350001F082 /* ReceiptSample10_Order2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A42B6CD3340001F082 /* ReceiptSample10_Order2.png */; };
+		DDAEF9B42B6CD3350001F082 /* ReceiptSample11_Cafe.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A52B6CD3340001F082 /* ReceiptSample11_Cafe.png */; };
+		DDAEF9B52B6CD3350001F082 /* ReceiptSample02_Retail.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A62B6CD3340001F082 /* ReceiptSample02_Retail.png */; };
+		DDAEF9B62B6CD3350001F082 /* ReceiptSample07_Lunch1_Template.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A72B6CD3340001F082 /* ReceiptSample07_Lunch1_Template.png */; };
+		DDAEF9B72B6CD3350001F082 /* ReceiptSample04_FoodDelivery2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A82B6CD3340001F082 /* ReceiptSample04_FoodDelivery2.png */; };
+		DDAEF9B82B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9A92B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png */; };
+		DDAEF9BA2B6CD3350001F082 /* ReceiptSample08_Lunch2_Template.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9AB2B6CD3350001F082 /* ReceiptSample08_Lunch2_Template.png */; };
+		DDAEF9BC2B6CD3350001F082 /* ReceiptSample06_PharmacyStore2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9AD2B6CD3350001F082 /* ReceiptSample06_PharmacyStore2.png */; };
+		DDAEF9BD2B6CD3350001F082 /* ReceiptSample01_OnlineOrder.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9AE2B6CD3350001F082 /* ReceiptSample01_OnlineOrder.png */; };
+		DDAEF9BE2B6CD3350001F082 /* ReceiptSample12_Lottery.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9AF2B6CD3350001F082 /* ReceiptSample12_Lottery.png */; };
+		DDAEF9BF2B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9B02B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png */; };
+		DDAEF9C02B6CD3350001F082 /* ReceiptSample09_Order1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9B12B6CD3350001F082 /* ReceiptSample09_Order1.png */; };
+		DDAEF9C22B6CD33E0001F082 /* receipt_sample16_cafe_template_coffee_cup.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9C12B6CD33E0001F082 /* receipt_sample16_cafe_template_coffee_cup.png */; };
+		DDAEF9C42B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9C32B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift */; };
+		DDAEF9C62B6CD3640001F082 /* GraphicSample01_GraphicReceipt.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9C52B6CD3640001F082 /* GraphicSample01_GraphicReceipt.png */; };
+		DDAEF9D52B6CD3800001F082 /* LabelSample11_ShippingAddressLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9C72B6CD3800001F082 /* LabelSample11_ShippingAddressLabel.swift */; };
+		DDAEF9D62B6CD3800001F082 /* LabelSample12_InventoryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9C82B6CD3800001F082 /* LabelSample12_InventoryLabel.swift */; };
+		DDAEF9D72B6CD3800001F082 /* LabelSample14_ExpirationLabelJP.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9C92B6CD3800001F082 /* LabelSample14_ExpirationLabelJP.swift */; };
+		DDAEF9D82B6CD3800001F082 /* LabelSample17_JapaneseFoodLabelCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CA2B6CD3800001F082 /* LabelSample17_JapaneseFoodLabelCake.swift */; };
+		DDAEF9D92B6CD3800001F082 /* LabelSample09_FoodPrepLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CB2B6CD3800001F082 /* LabelSample09_FoodPrepLabel.swift */; };
+		DDAEF9DA2B6CD3800001F082 /* LabelSample18_ShelfLabelForInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CC2B6CD3800001F082 /* LabelSample18_ShelfLabelForInventory.swift */; };
+		DDAEF9DB2B6CD3800001F082 /* LabelSample10_FoodDeliveryLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CD2B6CD3800001F082 /* LabelSample10_FoodDeliveryLabel.swift */; };
+		DDAEF9DC2B6CD3800001F082 /* LabelSample13_FoodProductLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CE2B6CD3800001F082 /* LabelSample13_FoodProductLabel.swift */; };
+		DDAEF9DD2B6CD3800001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9CF2B6CD3800001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.swift */; };
+		DDAEF9DE2B6CD3800001F082 /* LabelSample01_TamperProofLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9D02B6CD3800001F082 /* LabelSample01_TamperProofLabel.swift */; };
+		DDAEF9DF2B6CD3800001F082 /* LabelSample02_DrinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9D12B6CD3800001F082 /* LabelSample02_DrinkLabel.swift */; };
+		DDAEF9E12B6CD3800001F082 /* LabelSample08_NutritionFactsLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9D32B6CD3800001F082 /* LabelSample08_NutritionFactsLabel.swift */; };
+		DDAEF9E22B6CD3800001F082 /* LabelSample15_FoodDeliveryLabelThai.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9D42B6CD3800001F082 /* LabelSample15_FoodDeliveryLabelThai.swift */; };
+		DDAEF9EF2B6CD38A0001F082 /* label_sample28_cleanedsanitised_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E32B6CD3890001F082 /* label_sample28_cleanedsanitised_hand.png */; };
+		DDAEF9F02B6CD38A0001F082 /* label_sample21_shipping_label_house.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E42B6CD3890001F082 /* label_sample21_shipping_label_house.png */; };
+		DDAEF9F22B6CD38A0001F082 /* label_sample33_visitor_label_user_profile_picture.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E62B6CD3890001F082 /* label_sample33_visitor_label_user_profile_picture.png */; };
+		DDAEF9F32B6CD38A0001F082 /* label_sample19_pharmacy_medication1_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E72B6CD3890001F082 /* label_sample19_pharmacy_medication1_logo.png */; };
+		DDAEF9F42B6CD38A0001F082 /* label_sample01_tamper_proof_label_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E82B6CD38A0001F082 /* label_sample01_tamper_proof_label_checked.png */; };
+		DDAEF9F52B6CD38A0001F082 /* label_sample16_japanese_food_label_lunch_box_plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9E92B6CD38A0001F082 /* label_sample16_japanese_food_label_lunch_box_plastic.png */; };
+		DDAEF9F62B6CD38A0001F082 /* label_sample17_japanese_food_label_lunch_cake_plastic.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9EA2B6CD38A0001F082 /* label_sample17_japanese_food_label_lunch_cake_plastic.png */; };
+		DDAEF9F72B6CD38A0001F082 /* label_sample21_shipping_label_phones_old.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9EB2B6CD38A0001F082 /* label_sample21_shipping_label_phones_old.png */; };
+		DDAEF9F92B6CD38A0001F082 /* label_sample32_sale_50off_background.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9ED2B6CD38A0001F082 /* label_sample32_sale_50off_background.png */; };
+		DDAEFA4E2B6CD39A0001F082 /* LabelSample10_FoodDeliveryLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9FB2B6CD3960001F082 /* LabelSample10_FoodDeliveryLabel_FieldData.json */; };
+		DDAEFA4F2B6CD39A0001F082 /* LabelSample35_BarbellLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9FC2B6CD3960001F082 /* LabelSample35_BarbellLabel_Template.swift */; };
+		DDAEFA502B6CD39A0001F082 /* LabelSample12_InventoryLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEF9FD2B6CD3960001F082 /* LabelSample12_InventoryLabel_FieldData.json */; };
+		DDAEFA512B6CD39A0001F082 /* LabelSample05_DrinkLabel4_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9FE2B6CD3960001F082 /* LabelSample05_DrinkLabel4_Template.swift */; };
+		DDAEFA522B6CD39A0001F082 /* LabelSample17_JapaneseFoodLabelCake_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9FF2B6CD3960001F082 /* LabelSample17_JapaneseFoodLabelCake_Template.swift */; };
+		DDAEFA532B6CD39A0001F082 /* LabelSample19_PharmacyMedication1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA002B6CD3960001F082 /* LabelSample19_PharmacyMedication1_Template.swift */; };
+		DDAEFA542B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA012B6CD3960001F082 /* LabelSample11_ShippingAddressLabel_FieldData.json */; };
+		DDAEFA562B6CD39A0001F082 /* LabelSample01_TamperProofLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA032B6CD3960001F082 /* LabelSample01_TamperProofLabel_FieldData.json */; };
+		DDAEFA572B6CD39A0001F082 /* LabelSample26_PrescriptionLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA042B6CD3960001F082 /* LabelSample26_PrescriptionLabel_FieldData.json */; };
+		DDAEFA5B2B6CD39A0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA082B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_Template.swift */; };
+		DDAEFA5C2B6CD39A0001F082 /* LabelSample25_OrderLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA092B6CD3970001F082 /* LabelSample25_OrderLabel_Template.swift */; };
+		DDAEFA5D2B6CD39A0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA0A2B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json */; };
+		DDAEFA602B6CD39A0001F082 /* LabelSample27_AllergenWarning_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA0D2B6CD3970001F082 /* LabelSample27_AllergenWarning_Template.swift */; };
+		DDAEFA612B6CD39A0001F082 /* LabelSample20_PharmacyMedication2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA0E2B6CD3970001F082 /* LabelSample20_PharmacyMedication2_FieldData.json */; };
+		DDAEFA622B6CD39A0001F082 /* LabelSample35_BarbellLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA0F2B6CD3970001F082 /* LabelSample35_BarbellLabel_FieldData.json */; };
+		DDAEFA632B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA102B6CD3970001F082 /* LabelSample08_NutritionFactsLabel_Template.swift */; };
+		DDAEFA642B6CD39A0001F082 /* LabelSample21_ShippingLabel1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA112B6CD3970001F082 /* LabelSample21_ShippingLabel1_FieldData.json */; };
+		DDAEFA652B6CD39A0001F082 /* LabelSample14_ExpirationLabelJP_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA122B6CD3970001F082 /* LabelSample14_ExpirationLabelJP_FieldData.json */; };
+		DDAEFA662B6CD39A0001F082 /* LabelSample33_VisitorLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA132B6CD3970001F082 /* LabelSample33_VisitorLabel_FieldData.json */; };
+		DDAEFA672B6CD39A0001F082 /* LabelSample18_ShelfLabelForInventory_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA142B6CD3970001F082 /* LabelSample18_ShelfLabelForInventory_FieldData.json */; };
+		DDAEFA682B6CD39A0001F082 /* LabelSample29_CoffeeOrder_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA152B6CD3970001F082 /* LabelSample29_CoffeeOrder_FieldData.json */; };
+		DDAEFA692B6CD39A0001F082 /* LabelSample03_DrinkLabel2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA162B6CD3970001F082 /* LabelSample03_DrinkLabel2_Template.swift */; };
+		DDAEFA6A2B6CD39A0001F082 /* LabelSample06_DrinkLabel5_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA172B6CD3970001F082 /* LabelSample06_DrinkLabel5_Template.swift */; };
+		DDAEFA6C2B6CD39A0001F082 /* LabelSample15_FoodDeliveryLabelThai_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA192B6CD3970001F082 /* LabelSample15_FoodDeliveryLabelThai_FieldData.json */; };
+		DDAEFA6D2B6CD39A0001F082 /* LabelSample19_PharmacyMedication1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA1A2B6CD3970001F082 /* LabelSample19_PharmacyMedication1_FieldData.json */; };
+		DDAEFA6E2B6CD39A0001F082 /* LabelSample01_TamperProofLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA1B2B6CD3970001F082 /* LabelSample01_TamperProofLabel_Template.swift */; };
+		DDAEFA6F2B6CD39A0001F082 /* LabelSample09_FoodPrepLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA1C2B6CD3980001F082 /* LabelSample09_FoodPrepLabel_Template.swift */; };
+		DDAEFA702B6CD39A0001F082 /* LabelSample17_JapaneseFoodLabelCake_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA1D2B6CD3980001F082 /* LabelSample17_JapaneseFoodLabelCake_FieldData.json */; };
+		DDAEFA712B6CD39A0001F082 /* LabelSample22_ShippingLabel2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA1E2B6CD3980001F082 /* LabelSample22_ShippingLabel2_Template.swift */; };
+		DDAEFA722B6CD39A0001F082 /* LabelSample23_BarcodeLabel1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA1F2B6CD3980001F082 /* LabelSample23_BarcodeLabel1_Template.swift */; };
+		DDAEFA732B6CD39A0001F082 /* LabelSample28_CleanedAndSanitised_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA202B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_FieldData.json */; };
+		DDAEFA742B6CD39A0001F082 /* LabelSample21_ShippingLabel1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA212B6CD3980001F082 /* LabelSample21_ShippingLabel1_Template.swift */; };
+		DDAEFA762B6CD39A0001F082 /* LabelSample22_ShippingLabel2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA232B6CD3980001F082 /* LabelSample22_ShippingLabel2_FieldData.json */; };
+		DDAEFA772B6CD39A0001F082 /* LabelSample02_DrinkLabel1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA242B6CD3980001F082 /* LabelSample02_DrinkLabel1_FieldData.json */; };
+		DDAEFA782B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA252B6CD3980001F082 /* LabelSample24_BarcodeLabel2_FieldData.json */; };
+		DDAEFA7A2B6CD39A0001F082 /* LabelSample30_ExpirationDate_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA272B6CD3980001F082 /* LabelSample30_ExpirationDate_FieldData.json */; };
+		DDAEFA7B2B6CD39A0001F082 /* LabelSample18_ShelfLabelForInventory_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA282B6CD3980001F082 /* LabelSample18_ShelfLabelForInventory_Template.swift */; };
+		DDAEFA7C2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA292B6CD3980001F082 /* LabelSample04_DrinkLabel3_FieldData.json */; };
+		DDAEFA7D2B6CD39A0001F082 /* LabelSample03_DrinkLabel2_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA2A2B6CD3980001F082 /* LabelSample03_DrinkLabel2_FieldData.json */; };
+		DDAEFA7E2B6CD39A0001F082 /* LabelSample30_ExpirationDate_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA2B2B6CD3980001F082 /* LabelSample30_ExpirationDate_Template.swift */; };
+		DDAEFA812B6CD39A0001F082 /* LabelSample28_CleanedAndSanitised_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA2E2B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_Template.swift */; };
+		DDAEFA822B6CD39A0001F082 /* LabelSample31_FoodSafetyInfo_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA2F2B6CD3980001F082 /* LabelSample31_FoodSafetyInfo_Template.swift */; };
+		DDAEFA832B6CD39A0001F082 /* LabelSample32_Sale50PercentOff_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA302B6CD3980001F082 /* LabelSample32_Sale50PercentOff_FieldData.json */; };
+		DDAEFA842B6CD39A0001F082 /* LabelSample27_AllergenWarning_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA312B6CD3980001F082 /* LabelSample27_AllergenWarning_FieldData.json */; };
+		DDAEFA862B6CD39A0001F082 /* LabelSample29_CoffeeOrder_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA332B6CD3990001F082 /* LabelSample29_CoffeeOrder_Template.swift */; };
+		DDAEFA872B6CD39A0001F082 /* LabelSample09_FoodPrepLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA342B6CD3990001F082 /* LabelSample09_FoodPrepLabel_FieldData.json */; };
+		DDAEFA882B6CD39A0001F082 /* LabelSample12_InventoryLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA352B6CD3990001F082 /* LabelSample12_InventoryLabel_Template.swift */; };
+		DDAEFA892B6CD39A0001F082 /* LabelSample06_DrinkLabel5_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA362B6CD3990001F082 /* LabelSample06_DrinkLabel5_FieldData.json */; };
+		DDAEFA8A2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA372B6CD3990001F082 /* LabelSample13_FoodProductLabel_FieldData.json */; };
+		DDAEFA8B2B6CD39A0001F082 /* LabelSample31_FoodSafetyInfo_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA382B6CD3990001F082 /* LabelSample31_FoodSafetyInfo_FieldData.json */; };
+		DDAEFA8C2B6CD39A0001F082 /* LabelSample14_ExpirationLabelJP_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA392B6CD3990001F082 /* LabelSample14_ExpirationLabelJP_Template.swift */; };
+		DDAEFA8D2B6CD39A0001F082 /* LabelSample25_OrderLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA3A2B6CD3990001F082 /* LabelSample25_OrderLabel_FieldData.json */; };
+		DDAEFA8E2B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_3inch_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA3B2B6CD3990001F082 /* LabelSample24_BarcodeLabel2_3inch_Template.swift */; };
+		DDAEFA902B6CD39A0001F082 /* LabelSample32_Sale50PercentOff_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA3D2B6CD3990001F082 /* LabelSample32_Sale50PercentOff_Template.swift */; };
+		DDAEFA912B6CD39A0001F082 /* LabelSample02_DrinkLabel1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA3E2B6CD3990001F082 /* LabelSample02_DrinkLabel1_Template.swift */; };
+		DDAEFA922B6CD39A0001F082 /* LabelSample15_FoodDeliveryLabelThai_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA3F2B6CD3990001F082 /* LabelSample15_FoodDeliveryLabelThai_Template.swift */; };
+		DDAEFA942B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_2inch_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA412B6CD3990001F082 /* LabelSample24_BarcodeLabel2_2inch_Template.swift */; };
+		DDAEFA952B6CD39A0001F082 /* LabelSample05_DrinkLabel4_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA422B6CD3990001F082 /* LabelSample05_DrinkLabel4_FieldData.json */; };
+		DDAEFA962B6CD39A0001F082 /* LabelSample07_DrinkLabel6_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA432B6CD3990001F082 /* LabelSample07_DrinkLabel6_Template.swift */; };
+		DDAEFA972B6CD39A0001F082 /* LabelSample23_BarcodeLabel1_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA442B6CD3990001F082 /* LabelSample23_BarcodeLabel1_FieldData.json */; };
+		DDAEFA982B6CD39A0001F082 /* LabelSample26_PrescriptionLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA452B6CD3990001F082 /* LabelSample26_PrescriptionLabel_Template.swift */; };
+		DDAEFA992B6CD39A0001F082 /* LabelSample07_DrinkLabel6_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA462B6CD3990001F082 /* LabelSample07_DrinkLabel6_FieldData.json */; };
+		DDAEFA9B2B6CD39A0001F082 /* LabelSample10_FoodDeliveryLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA482B6CD3990001F082 /* LabelSample10_FoodDeliveryLabel_Template.swift */; };
+		DDAEFA9C2B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA492B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_Template.swift */; };
+		DDAEFA9D2B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA4A2B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_FieldData.json */; };
+		DDAEFA9E2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA4B2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_Template.swift */; };
+		DDAEFA9F2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFA4C2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_Template.swift */; };
+		DDAEFAA02B6CD39A0001F082 /* LabelSample34_ProductLabel_FieldData.json in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFA4D2B6CD39A0001F082 /* LabelSample34_ProductLabel_FieldData.json */; };
+		DDAEFAD92B6CD3AF0001F082 /* LabelSample18_ShelfLabelForInvestory.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA12B6CD3AD0001F082 /* LabelSample18_ShelfLabelForInvestory.png */; };
+		DDAEFADA2B6CD3AF0001F082 /* LabelSample12_InventoryLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA22B6CD3AD0001F082 /* LabelSample12_InventoryLabel.png */; };
+		DDAEFADB2B6CD3AF0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA32B6CD3AD0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.png */; };
+		DDAEFADC2B6CD3AF0001F082 /* LabelSample20_PharmacyMedication2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA42B6CD3AD0001F082 /* LabelSample20_PharmacyMedication2.png */; };
+		DDAEFADD2B6CD3AF0001F082 /* LabelSample27_AllergenWarning.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA52B6CD3AD0001F082 /* LabelSample27_AllergenWarning.png */; };
+		DDAEFADE2B6CD3AF0001F082 /* LabelSample08_NutritionFactsLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA62B6CD3AD0001F082 /* LabelSample08_NutritionFactsLabel.png */; };
+		DDAEFADF2B6CD3AF0001F082 /* LabelSample13_FoodProductLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA72B6CD3AD0001F082 /* LabelSample13_FoodProductLabel.png */; };
+		DDAEFAE12B6CD3AF0001F082 /* LabelSample15_FoodDeliveryLabelThai.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAA92B6CD3AD0001F082 /* LabelSample15_FoodDeliveryLabelThai.png */; };
+		DDAEFAE22B6CD3AF0001F082 /* LabelSample03_DrinkLabel2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAAA2B6CD3AD0001F082 /* LabelSample03_DrinkLabel2.png */; };
+		DDAEFAE32B6CD3AF0001F082 /* LabelSample19_PharmacyMedication1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAAB2B6CD3AD0001F082 /* LabelSample19_PharmacyMedication1.png */; };
+		DDAEFAE62B6CD3AF0001F082 /* LabelSample26_PrescriptionLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAAE2B6CD3AD0001F082 /* LabelSample26_PrescriptionLabel.png */; };
+		DDAEFAE72B6CD3AF0001F082 /* LabelSample17_JapaneseFoodLabelCake.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAAF2B6CD3AE0001F082 /* LabelSample17_JapaneseFoodLabelCake.png */; };
+		DDAEFAE82B6CD3AF0001F082 /* LabelSample04_DrinkLabel3.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAB02B6CD3AE0001F082 /* LabelSample04_DrinkLabel3.png */; };
+		DDAEFAED2B6CD3AF0001F082 /* LabelSample23_BarcodeLabel1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAB52B6CD3AE0001F082 /* LabelSample23_BarcodeLabel1.png */; };
+		DDAEFAF02B6CD3AF0001F082 /* LabelSample22_ShippingLabel2.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAB82B6CD3AE0001F082 /* LabelSample22_ShippingLabel2.png */; };
+		DDAEFAF12B6CD3AF0001F082 /* LabelSample06_DrinkLabel5.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAB92B6CD3AE0001F082 /* LabelSample06_DrinkLabel5.png */; };
+		DDAEFAF42B6CD3AF0001F082 /* LabelSample21_ShippingLabel1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFABC2B6CD3AE0001F082 /* LabelSample21_ShippingLabel1.png */; };
+		DDAEFAF52B6CD3AF0001F082 /* LabelSample02_DrinkLabel1.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFABD2B6CD3AE0001F082 /* LabelSample02_DrinkLabel1.png */; };
+		DDAEFAF72B6CD3AF0001F082 /* LabelSample31_FoodSafetyInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFABF2B6CD3AE0001F082 /* LabelSample31_FoodSafetyInfo.png */; };
+		DDAEFAF92B6CD3AF0001F082 /* LabelSample28_CleanedAndSanitised.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC12B6CD3AE0001F082 /* LabelSample28_CleanedAndSanitised.png */; };
+		DDAEFAFA2B6CD3AF0001F082 /* LabelSample33_VisitorLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC22B6CD3AE0001F082 /* LabelSample33_VisitorLabel.png */; };
+		DDAEFAFB2B6CD3AF0001F082 /* LabelSample35_BarbellLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC32B6CD3AE0001F082 /* LabelSample35_BarbellLabel.png */; };
+		DDAEFAFC2B6CD3AF0001F082 /* LabelSample14_ExpirationLabelJP.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC42B6CD3AF0001F082 /* LabelSample14_ExpirationLabelJP.png */; };
+		DDAEFAFD2B6CD3AF0001F082 /* LabelSample10_FoodDeliveryLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC52B6CD3AF0001F082 /* LabelSample10_FoodDeliveryLabel.png */; };
+		DDAEFAFF2B6CD3AF0001F082 /* LabelSample01_TamperProofLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC72B6CD3AF0001F082 /* LabelSample01_TamperProofLabel.png */; };
+		DDAEFB012B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_3inch.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAC92B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_3inch.png */; };
+		DDAEFB022B6CD3AF0001F082 /* LabelSample30_ExpirationDate.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFACA2B6CD3AF0001F082 /* LabelSample30_ExpirationDate.png */; };
+		DDAEFB032B6CD3AF0001F082 /* LabelSample05_DrinkLabel4.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFACB2B6CD3AF0001F082 /* LabelSample05_DrinkLabel4.png */; };
+		DDAEFB042B6CD3AF0001F082 /* LabelSample25_OrderLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFACC2B6CD3AF0001F082 /* LabelSample25_OrderLabel.png */; };
+		DDAEFB072B6CD3AF0001F082 /* LabelSample34_ProductLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFACF2B6CD3AF0001F082 /* LabelSample34_ProductLabel.png */; };
+		DDAEFB082B6CD3AF0001F082 /* LabelSample29_CoffeeOrder.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD02B6CD3AF0001F082 /* LabelSample29_CoffeeOrder.png */; };
+		DDAEFB0B2B6CD3AF0001F082 /* LabelSample32_Sale50PercentOff.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD32B6CD3AF0001F082 /* LabelSample32_Sale50PercentOff.png */; };
+		DDAEFB0D2B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_2inch.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD52B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_2inch.png */; };
+		DDAEFB0E2B6CD3AF0001F082 /* LabelSample07_DrinkLabel6.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD62B6CD3AF0001F082 /* LabelSample07_DrinkLabel6.png */; };
+		DDAEFB0F2B6CD3AF0001F082 /* LabelSample09_FoodPrepLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD72B6CD3AF0001F082 /* LabelSample09_FoodPrepLabel.png */; };
+		DDAEFB102B6CD3AF0001F082 /* LabelSample11_ShippingAddressLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = DDAEFAD82B6CD3AF0001F082 /* LabelSample11_ShippingAddressLabel.png */; };
+		DDAEFB182B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB172B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift */; };
+		DDAEFB1A2B6CE2350001F082 /* ReceiptSample08_Lunch2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB192B6CE2350001F082 /* ReceiptSample08_Lunch2_Template.swift */; };
+		DDAEFB1C2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB1B2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift */; };
+		DDAEFB1E2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB1D2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift */; };
+		DDAEFB202B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB1F2B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift */; };
+		DDAEFB222B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB212B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift */; };
+		DDAEFB242B6CE2DB0001F082 /* LabelSample20_PharmacyMedication2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB232B6CE2DB0001F082 /* LabelSample20_PharmacyMedication2_Template.swift */; };
+		DDAEFB262B6CE2FE0001F082 /* LabelSample33_VisitorLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB252B6CE2FE0001F082 /* LabelSample33_VisitorLabel_Template.swift */; };
+		DDAEFB282B6CE31C0001F082 /* LabelSample34_ProductLabel_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEFB272B6CE31C0001F082 /* LabelSample34_ProductLabel_Template.swift */; };
+		DDBE0AA32B70615C00A127A6 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DDBE0AA22B70615C00A127A6 /* README.md */; };
+		DDE2B34C2B2FD8AE00D1D0A5 /* signature.png in Resources */ = {isa = PBXBuildFile; fileRef = DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C154D292865685800BBC7DE /* SpoolerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpoolerViewController.swift; sourceTree = "<group>"; };
 		881AAC15275F4D7300D6ED67 /* logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_01.png; sourceTree = "<group>"; };
 		8882FC8F27996794003AA845 /* starxpand_sdk_ios_swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = starxpand_sdk_ios_swift; path = ..; sourceTree = "<group>"; };
-		9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample15_GraphicReceipt.swift; sourceTree = "<group>"; };
+		9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt2_field_data.json; sourceTree = "<group>"; };
+		9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt1_field_data.json; sourceTree = "<group>"; };
+		9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = StarXpandSDK/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA2AE04C272A8CCD00679414 /* StarXpandSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarXpandSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA2AE04F272A8CCD00679414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AA2AE051272A8CCD00679414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,38 +218,180 @@
 		AA2AE06A272B8D2700679414 /* PrintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingViewController.swift; sourceTree = "<group>"; };
 		AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
 		AA2AE06E272BB9AB00679414 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
-		DD32E79F28EA759600372CB9 /* Sample01_TamperProofLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample01_TamperProofLabel.swift; sourceTree = "<group>"; };
-		DD32E7A828EEB01800372CB9 /* sample01_tamper_proof_label_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample01_tamper_proof_label_checked.png; sourceTree = "<group>"; };
-		DD32E7AA28EEB01E00372CB9 /* sample12_japanese_food_label_lunch_box_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample12_japanese_food_label_lunch_box_plastic.png; sourceTree = "<group>"; };
-		DD32E7AC28EEB02400372CB9 /* sample13_japanese_food_label_lunch_cake_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample13_japanese_food_label_lunch_cake_plastic.png; sourceTree = "<group>"; };
-		DD32E7AE28EEB05900372CB9 /* Sample08_FoodProductLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample08_FoodProductLabel.swift; sourceTree = "<group>"; };
-		DD32E7B028EEB06700372CB9 /* Sample02_DrinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample02_DrinkLabel.swift; sourceTree = "<group>"; };
-		DD32E7B228EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample03_NutritionFactsLabel.swift; sourceTree = "<group>"; };
-		DD32E7B428EEB07D00372CB9 /* Sample04_FoodPrepLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample04_FoodPrepLabel.swift; sourceTree = "<group>"; };
-		DD32E7B628EEB08700372CB9 /* Sample06_ShippingAddressLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample06_ShippingAddressLabel.swift; sourceTree = "<group>"; };
-		DD32E7B828EEB09100372CB9 /* Sample10_FoodDeliveryThai.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample10_FoodDeliveryThai.swift; sourceTree = "<group>"; };
-		DD32E7BA28EEB09C00372CB9 /* Sample07_InventoryLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample07_InventoryLabel.swift; sourceTree = "<group>"; };
-		DD32E7BC28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample09_ExpirationLabelJP.swift; sourceTree = "<group>"; };
-		DD32E7BE28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample12_JapaneseFoodLabelLunchBox.swift; sourceTree = "<group>"; };
-		DD32E7C028EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample13_JapaneseFoodLabelCake.swift; sourceTree = "<group>"; };
-		DD32E7C228EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample14_ShelfLabelForInventory.swift; sourceTree = "<group>"; };
-		DD32E7C428EEB0CF00372CB9 /* Sample11_DeliLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sample11_DeliLabel.swift; sourceTree = "<group>"; };
-		DD32E7C628F4E50A00372CB9 /* PrintingSamples.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = PrintingSamples.md; sourceTree = "<group>"; };
-		DD87A8A2296E138F00FAC6CC /* Sample01_TamperProofLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample01_TamperProofLabel.png; sourceTree = "<group>"; };
-		DD87A8A4296E139700FAC6CC /* Sample02_DrinkLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample02_DrinkLabel.png; sourceTree = "<group>"; };
-		DD87A8A6296E139E00FAC6CC /* Sample03_NutritionFactsLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample03_NutritionFactsLabel.png; sourceTree = "<group>"; };
-		DD87A8A8296E13B700FAC6CC /* Sample04_FoodPrepLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample04_FoodPrepLabel.png; sourceTree = "<group>"; };
-		DD87A8AA296E13C100FAC6CC /* Sample05_FoodDelivery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample05_FoodDelivery.png; sourceTree = "<group>"; };
-		DD87A8AC296E13CA00FAC6CC /* Sample06_ShippingAddressLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample06_ShippingAddressLabel.png; sourceTree = "<group>"; };
-		DD87A8AE296E13D200FAC6CC /* Sample07_InventoryLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample07_InventoryLabel.png; sourceTree = "<group>"; };
-		DD87A8B0296E13D800FAC6CC /* Sample08_FoodProductLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample08_FoodProductLabel.png; sourceTree = "<group>"; };
-		DD87A8B2296E13E200FAC6CC /* Sample09_ExpirationLabelJP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample09_ExpirationLabelJP.png; sourceTree = "<group>"; };
-		DD87A8B4296E13E800FAC6CC /* Sample10_FoodDeliveryThai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample10_FoodDeliveryThai.png; sourceTree = "<group>"; };
-		DD87A8B6296E13F100FAC6CC /* Sample11_DeliLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample11_DeliLabel.png; sourceTree = "<group>"; };
-		DD87A8B8296E13FA00FAC6CC /* Sample12_JapaneseFoodLabelLunchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample12_JapaneseFoodLabelLunchBox.png; sourceTree = "<group>"; };
-		DD87A8BA296E140100FAC6CC /* Sample13_JapaneseFoodLabelCake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample13_JapaneseFoodLabelCake.png; sourceTree = "<group>"; };
-		DD87A8BC296E140800FAC6CC /* Sample14_ShelfLabelForInventory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Sample14_ShelfLabelForInventory.png; sourceTree = "<group>"; };
-		DD87A8C2296E740800FAC6CC /* Sample05_FoodDelivery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sample05_FoodDelivery.swift; sourceTree = "<group>"; };
+		DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt3_field_data.json; sourceTree = "<group>"; };
+		DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePrintViewController.swift; sourceTree = "<group>"; };
+		DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = label2_field_data.json; sourceTree = "<group>"; };
+		DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = label1_field_data.json; sourceTree = "<group>"; };
+		DDAEF9682B6CD2FC0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample04_FoodDelivery2_Template.swift; sourceTree = "<group>"; };
+		DDAEF9692B6CD2FC0001F082 /* ReceiptSample05_PharmacyStore1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample05_PharmacyStore1_Template.swift; sourceTree = "<group>"; };
+		DDAEF96A2B6CD2FC0001F082 /* ReceiptSample11_Cafe_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample11_Cafe_FieldData.json; sourceTree = "<group>"; };
+		DDAEF96B2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample01_OnlineOrder_FieldData.json; sourceTree = "<group>"; };
+		DDAEF96C2B6CD2FC0001F082 /* ReceiptSample02_Retail_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample02_Retail_Template.swift; sourceTree = "<group>"; };
+		DDAEF96D2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample01_OnlineOrder_Template.swift; sourceTree = "<group>"; };
+		DDAEF9702B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample06_PharmacyStore2_Template.swift; sourceTree = "<group>"; };
+		DDAEF9712B6CD2FD0001F082 /* ReceiptSample10_Order2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample10_Order2_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9742B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample06_PharmacyStore2_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9752B6CD2FD0001F082 /* ReceiptSample02_Retail_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample02_Retail_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9792B6CD2FD0001F082 /* ReceiptSample09_Order1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample09_Order1_FieldData.json; sourceTree = "<group>"; };
+		DDAEF97C2B6CD2FD0001F082 /* ReceiptSample12_Lottery_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample12_Lottery_FieldData.json; sourceTree = "<group>"; };
+		DDAEF97D2B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample03_FoodDelivery1_FieldData.json; sourceTree = "<group>"; };
+		DDAEF97E2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample05_PharmacyStore1_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9802B6CD2FD0001F082 /* ReceiptSample07_Lunch1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample07_Lunch1_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9812B6CD2FD0001F082 /* ReceiptSample08_Lunch2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample08_Lunch2_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9832B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ReceiptSample04_FoodDelivery2_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9842B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample03_FoodDelivery1_Template.swift; sourceTree = "<group>"; };
+		DDAEF9A42B6CD3340001F082 /* ReceiptSample10_Order2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample10_Order2.png; sourceTree = "<group>"; };
+		DDAEF9A52B6CD3340001F082 /* ReceiptSample11_Cafe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample11_Cafe.png; sourceTree = "<group>"; };
+		DDAEF9A62B6CD3340001F082 /* ReceiptSample02_Retail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample02_Retail.png; sourceTree = "<group>"; };
+		DDAEF9A72B6CD3340001F082 /* ReceiptSample07_Lunch1_Template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample07_Lunch1_Template.png; sourceTree = "<group>"; };
+		DDAEF9A82B6CD3340001F082 /* ReceiptSample04_FoodDelivery2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample04_FoodDelivery2.png; sourceTree = "<group>"; };
+		DDAEF9A92B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample05_PharmacyStore1.png; sourceTree = "<group>"; };
+		DDAEF9AB2B6CD3350001F082 /* ReceiptSample08_Lunch2_Template.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample08_Lunch2_Template.png; sourceTree = "<group>"; };
+		DDAEF9AD2B6CD3350001F082 /* ReceiptSample06_PharmacyStore2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample06_PharmacyStore2.png; sourceTree = "<group>"; };
+		DDAEF9AE2B6CD3350001F082 /* ReceiptSample01_OnlineOrder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample01_OnlineOrder.png; sourceTree = "<group>"; };
+		DDAEF9AF2B6CD3350001F082 /* ReceiptSample12_Lottery.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample12_Lottery.png; sourceTree = "<group>"; };
+		DDAEF9B02B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample03_FoodDelivery1.png; sourceTree = "<group>"; };
+		DDAEF9B12B6CD3350001F082 /* ReceiptSample09_Order1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ReceiptSample09_Order1.png; sourceTree = "<group>"; };
+		DDAEF9C12B6CD33E0001F082 /* receipt_sample16_cafe_template_coffee_cup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receipt_sample16_cafe_template_coffee_cup.png; sourceTree = "<group>"; };
+		DDAEF9C32B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphicSample01_GraphicReceipt.swift; sourceTree = "<group>"; };
+		DDAEF9C52B6CD3640001F082 /* GraphicSample01_GraphicReceipt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GraphicSample01_GraphicReceipt.png; sourceTree = "<group>"; };
+		DDAEF9C72B6CD3800001F082 /* LabelSample11_ShippingAddressLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample11_ShippingAddressLabel.swift; sourceTree = "<group>"; };
+		DDAEF9C82B6CD3800001F082 /* LabelSample12_InventoryLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample12_InventoryLabel.swift; sourceTree = "<group>"; };
+		DDAEF9C92B6CD3800001F082 /* LabelSample14_ExpirationLabelJP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample14_ExpirationLabelJP.swift; sourceTree = "<group>"; };
+		DDAEF9CA2B6CD3800001F082 /* LabelSample17_JapaneseFoodLabelCake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample17_JapaneseFoodLabelCake.swift; sourceTree = "<group>"; };
+		DDAEF9CB2B6CD3800001F082 /* LabelSample09_FoodPrepLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample09_FoodPrepLabel.swift; sourceTree = "<group>"; };
+		DDAEF9CC2B6CD3800001F082 /* LabelSample18_ShelfLabelForInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample18_ShelfLabelForInventory.swift; sourceTree = "<group>"; };
+		DDAEF9CD2B6CD3800001F082 /* LabelSample10_FoodDeliveryLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample10_FoodDeliveryLabel.swift; sourceTree = "<group>"; };
+		DDAEF9CE2B6CD3800001F082 /* LabelSample13_FoodProductLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample13_FoodProductLabel.swift; sourceTree = "<group>"; };
+		DDAEF9CF2B6CD3800001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample16_JapaneseFoodLabelLunchBox.swift; sourceTree = "<group>"; };
+		DDAEF9D02B6CD3800001F082 /* LabelSample01_TamperProofLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample01_TamperProofLabel.swift; sourceTree = "<group>"; };
+		DDAEF9D12B6CD3800001F082 /* LabelSample02_DrinkLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample02_DrinkLabel.swift; sourceTree = "<group>"; };
+		DDAEF9D32B6CD3800001F082 /* LabelSample08_NutritionFactsLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample08_NutritionFactsLabel.swift; sourceTree = "<group>"; };
+		DDAEF9D42B6CD3800001F082 /* LabelSample15_FoodDeliveryLabelThai.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample15_FoodDeliveryLabelThai.swift; sourceTree = "<group>"; };
+		DDAEF9E32B6CD3890001F082 /* label_sample28_cleanedsanitised_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample28_cleanedsanitised_hand.png; sourceTree = "<group>"; };
+		DDAEF9E42B6CD3890001F082 /* label_sample21_shipping_label_house.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample21_shipping_label_house.png; sourceTree = "<group>"; };
+		DDAEF9E62B6CD3890001F082 /* label_sample33_visitor_label_user_profile_picture.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample33_visitor_label_user_profile_picture.png; sourceTree = "<group>"; };
+		DDAEF9E72B6CD3890001F082 /* label_sample19_pharmacy_medication1_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample19_pharmacy_medication1_logo.png; sourceTree = "<group>"; };
+		DDAEF9E82B6CD38A0001F082 /* label_sample01_tamper_proof_label_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample01_tamper_proof_label_checked.png; sourceTree = "<group>"; };
+		DDAEF9E92B6CD38A0001F082 /* label_sample16_japanese_food_label_lunch_box_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample16_japanese_food_label_lunch_box_plastic.png; sourceTree = "<group>"; };
+		DDAEF9EA2B6CD38A0001F082 /* label_sample17_japanese_food_label_lunch_cake_plastic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample17_japanese_food_label_lunch_cake_plastic.png; sourceTree = "<group>"; };
+		DDAEF9EB2B6CD38A0001F082 /* label_sample21_shipping_label_phones_old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample21_shipping_label_phones_old.png; sourceTree = "<group>"; };
+		DDAEF9ED2B6CD38A0001F082 /* label_sample32_sale_50off_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_sample32_sale_50off_background.png; sourceTree = "<group>"; };
+		DDAEF9FB2B6CD3960001F082 /* LabelSample10_FoodDeliveryLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample10_FoodDeliveryLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9FC2B6CD3960001F082 /* LabelSample35_BarbellLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample35_BarbellLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEF9FD2B6CD3960001F082 /* LabelSample12_InventoryLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample12_InventoryLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEF9FE2B6CD3960001F082 /* LabelSample05_DrinkLabel4_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample05_DrinkLabel4_Template.swift; sourceTree = "<group>"; };
+		DDAEF9FF2B6CD3960001F082 /* LabelSample17_JapaneseFoodLabelCake_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample17_JapaneseFoodLabelCake_Template.swift; sourceTree = "<group>"; };
+		DDAEFA002B6CD3960001F082 /* LabelSample19_PharmacyMedication1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample19_PharmacyMedication1_Template.swift; sourceTree = "<group>"; };
+		DDAEFA012B6CD3960001F082 /* LabelSample11_ShippingAddressLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample11_ShippingAddressLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA032B6CD3960001F082 /* LabelSample01_TamperProofLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample01_TamperProofLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA042B6CD3960001F082 /* LabelSample26_PrescriptionLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample26_PrescriptionLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA082B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample16_JapaneseFoodLabelLunchBox_Template.swift; sourceTree = "<group>"; };
+		DDAEFA092B6CD3970001F082 /* LabelSample25_OrderLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample25_OrderLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA0A2B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA0D2B6CD3970001F082 /* LabelSample27_AllergenWarning_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample27_AllergenWarning_Template.swift; sourceTree = "<group>"; };
+		DDAEFA0E2B6CD3970001F082 /* LabelSample20_PharmacyMedication2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample20_PharmacyMedication2_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA0F2B6CD3970001F082 /* LabelSample35_BarbellLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample35_BarbellLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA102B6CD3970001F082 /* LabelSample08_NutritionFactsLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample08_NutritionFactsLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA112B6CD3970001F082 /* LabelSample21_ShippingLabel1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample21_ShippingLabel1_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA122B6CD3970001F082 /* LabelSample14_ExpirationLabelJP_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample14_ExpirationLabelJP_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA132B6CD3970001F082 /* LabelSample33_VisitorLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample33_VisitorLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA142B6CD3970001F082 /* LabelSample18_ShelfLabelForInventory_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample18_ShelfLabelForInventory_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA152B6CD3970001F082 /* LabelSample29_CoffeeOrder_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample29_CoffeeOrder_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA162B6CD3970001F082 /* LabelSample03_DrinkLabel2_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample03_DrinkLabel2_Template.swift; sourceTree = "<group>"; };
+		DDAEFA172B6CD3970001F082 /* LabelSample06_DrinkLabel5_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample06_DrinkLabel5_Template.swift; sourceTree = "<group>"; };
+		DDAEFA192B6CD3970001F082 /* LabelSample15_FoodDeliveryLabelThai_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample15_FoodDeliveryLabelThai_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA1A2B6CD3970001F082 /* LabelSample19_PharmacyMedication1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample19_PharmacyMedication1_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA1B2B6CD3970001F082 /* LabelSample01_TamperProofLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample01_TamperProofLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA1C2B6CD3980001F082 /* LabelSample09_FoodPrepLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample09_FoodPrepLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA1D2B6CD3980001F082 /* LabelSample17_JapaneseFoodLabelCake_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample17_JapaneseFoodLabelCake_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA1E2B6CD3980001F082 /* LabelSample22_ShippingLabel2_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample22_ShippingLabel2_Template.swift; sourceTree = "<group>"; };
+		DDAEFA1F2B6CD3980001F082 /* LabelSample23_BarcodeLabel1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample23_BarcodeLabel1_Template.swift; sourceTree = "<group>"; };
+		DDAEFA202B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample28_CleanedAndSanitised_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA212B6CD3980001F082 /* LabelSample21_ShippingLabel1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample21_ShippingLabel1_Template.swift; sourceTree = "<group>"; };
+		DDAEFA232B6CD3980001F082 /* LabelSample22_ShippingLabel2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample22_ShippingLabel2_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA242B6CD3980001F082 /* LabelSample02_DrinkLabel1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample02_DrinkLabel1_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA252B6CD3980001F082 /* LabelSample24_BarcodeLabel2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample24_BarcodeLabel2_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA272B6CD3980001F082 /* LabelSample30_ExpirationDate_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample30_ExpirationDate_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA282B6CD3980001F082 /* LabelSample18_ShelfLabelForInventory_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample18_ShelfLabelForInventory_Template.swift; sourceTree = "<group>"; };
+		DDAEFA292B6CD3980001F082 /* LabelSample04_DrinkLabel3_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample04_DrinkLabel3_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA2A2B6CD3980001F082 /* LabelSample03_DrinkLabel2_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample03_DrinkLabel2_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA2B2B6CD3980001F082 /* LabelSample30_ExpirationDate_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample30_ExpirationDate_Template.swift; sourceTree = "<group>"; };
+		DDAEFA2E2B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample28_CleanedAndSanitised_Template.swift; sourceTree = "<group>"; };
+		DDAEFA2F2B6CD3980001F082 /* LabelSample31_FoodSafetyInfo_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample31_FoodSafetyInfo_Template.swift; sourceTree = "<group>"; };
+		DDAEFA302B6CD3980001F082 /* LabelSample32_Sale50PercentOff_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample32_Sale50PercentOff_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA312B6CD3980001F082 /* LabelSample27_AllergenWarning_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample27_AllergenWarning_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA332B6CD3990001F082 /* LabelSample29_CoffeeOrder_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample29_CoffeeOrder_Template.swift; sourceTree = "<group>"; };
+		DDAEFA342B6CD3990001F082 /* LabelSample09_FoodPrepLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample09_FoodPrepLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA352B6CD3990001F082 /* LabelSample12_InventoryLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample12_InventoryLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA362B6CD3990001F082 /* LabelSample06_DrinkLabel5_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample06_DrinkLabel5_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA372B6CD3990001F082 /* LabelSample13_FoodProductLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample13_FoodProductLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA382B6CD3990001F082 /* LabelSample31_FoodSafetyInfo_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample31_FoodSafetyInfo_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA392B6CD3990001F082 /* LabelSample14_ExpirationLabelJP_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample14_ExpirationLabelJP_Template.swift; sourceTree = "<group>"; };
+		DDAEFA3A2B6CD3990001F082 /* LabelSample25_OrderLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample25_OrderLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA3B2B6CD3990001F082 /* LabelSample24_BarcodeLabel2_3inch_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample24_BarcodeLabel2_3inch_Template.swift; sourceTree = "<group>"; };
+		DDAEFA3D2B6CD3990001F082 /* LabelSample32_Sale50PercentOff_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample32_Sale50PercentOff_Template.swift; sourceTree = "<group>"; };
+		DDAEFA3E2B6CD3990001F082 /* LabelSample02_DrinkLabel1_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample02_DrinkLabel1_Template.swift; sourceTree = "<group>"; };
+		DDAEFA3F2B6CD3990001F082 /* LabelSample15_FoodDeliveryLabelThai_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample15_FoodDeliveryLabelThai_Template.swift; sourceTree = "<group>"; };
+		DDAEFA412B6CD3990001F082 /* LabelSample24_BarcodeLabel2_2inch_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample24_BarcodeLabel2_2inch_Template.swift; sourceTree = "<group>"; };
+		DDAEFA422B6CD3990001F082 /* LabelSample05_DrinkLabel4_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample05_DrinkLabel4_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA432B6CD3990001F082 /* LabelSample07_DrinkLabel6_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample07_DrinkLabel6_Template.swift; sourceTree = "<group>"; };
+		DDAEFA442B6CD3990001F082 /* LabelSample23_BarcodeLabel1_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample23_BarcodeLabel1_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA452B6CD3990001F082 /* LabelSample26_PrescriptionLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample26_PrescriptionLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA462B6CD3990001F082 /* LabelSample07_DrinkLabel6_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample07_DrinkLabel6_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA482B6CD3990001F082 /* LabelSample10_FoodDeliveryLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample10_FoodDeliveryLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA492B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample11_ShippingAddressLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA4A2B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample08_NutritionFactsLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFA4B2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample04_DrinkLabel3_Template.swift; sourceTree = "<group>"; };
+		DDAEFA4C2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelSample13_FoodProductLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFA4D2B6CD39A0001F082 /* LabelSample34_ProductLabel_FieldData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LabelSample34_ProductLabel_FieldData.json; sourceTree = "<group>"; };
+		DDAEFAA12B6CD3AD0001F082 /* LabelSample18_ShelfLabelForInvestory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample18_ShelfLabelForInvestory.png; sourceTree = "<group>"; };
+		DDAEFAA22B6CD3AD0001F082 /* LabelSample12_InventoryLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample12_InventoryLabel.png; sourceTree = "<group>"; };
+		DDAEFAA32B6CD3AD0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample16_JapaneseFoodLabelLunchBox.png; sourceTree = "<group>"; };
+		DDAEFAA42B6CD3AD0001F082 /* LabelSample20_PharmacyMedication2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample20_PharmacyMedication2.png; sourceTree = "<group>"; };
+		DDAEFAA52B6CD3AD0001F082 /* LabelSample27_AllergenWarning.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample27_AllergenWarning.png; sourceTree = "<group>"; };
+		DDAEFAA62B6CD3AD0001F082 /* LabelSample08_NutritionFactsLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample08_NutritionFactsLabel.png; sourceTree = "<group>"; };
+		DDAEFAA72B6CD3AD0001F082 /* LabelSample13_FoodProductLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample13_FoodProductLabel.png; sourceTree = "<group>"; };
+		DDAEFAA92B6CD3AD0001F082 /* LabelSample15_FoodDeliveryLabelThai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample15_FoodDeliveryLabelThai.png; sourceTree = "<group>"; };
+		DDAEFAAA2B6CD3AD0001F082 /* LabelSample03_DrinkLabel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample03_DrinkLabel2.png; sourceTree = "<group>"; };
+		DDAEFAAB2B6CD3AD0001F082 /* LabelSample19_PharmacyMedication1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample19_PharmacyMedication1.png; sourceTree = "<group>"; };
+		DDAEFAAE2B6CD3AD0001F082 /* LabelSample26_PrescriptionLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample26_PrescriptionLabel.png; sourceTree = "<group>"; };
+		DDAEFAAF2B6CD3AE0001F082 /* LabelSample17_JapaneseFoodLabelCake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample17_JapaneseFoodLabelCake.png; sourceTree = "<group>"; };
+		DDAEFAB02B6CD3AE0001F082 /* LabelSample04_DrinkLabel3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample04_DrinkLabel3.png; sourceTree = "<group>"; };
+		DDAEFAB52B6CD3AE0001F082 /* LabelSample23_BarcodeLabel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample23_BarcodeLabel1.png; sourceTree = "<group>"; };
+		DDAEFAB82B6CD3AE0001F082 /* LabelSample22_ShippingLabel2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample22_ShippingLabel2.png; sourceTree = "<group>"; };
+		DDAEFAB92B6CD3AE0001F082 /* LabelSample06_DrinkLabel5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample06_DrinkLabel5.png; sourceTree = "<group>"; };
+		DDAEFABC2B6CD3AE0001F082 /* LabelSample21_ShippingLabel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample21_ShippingLabel1.png; sourceTree = "<group>"; };
+		DDAEFABD2B6CD3AE0001F082 /* LabelSample02_DrinkLabel1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample02_DrinkLabel1.png; sourceTree = "<group>"; };
+		DDAEFABF2B6CD3AE0001F082 /* LabelSample31_FoodSafetyInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample31_FoodSafetyInfo.png; sourceTree = "<group>"; };
+		DDAEFAC12B6CD3AE0001F082 /* LabelSample28_CleanedAndSanitised.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample28_CleanedAndSanitised.png; sourceTree = "<group>"; };
+		DDAEFAC22B6CD3AE0001F082 /* LabelSample33_VisitorLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample33_VisitorLabel.png; sourceTree = "<group>"; };
+		DDAEFAC32B6CD3AE0001F082 /* LabelSample35_BarbellLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample35_BarbellLabel.png; sourceTree = "<group>"; };
+		DDAEFAC42B6CD3AF0001F082 /* LabelSample14_ExpirationLabelJP.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample14_ExpirationLabelJP.png; sourceTree = "<group>"; };
+		DDAEFAC52B6CD3AF0001F082 /* LabelSample10_FoodDeliveryLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample10_FoodDeliveryLabel.png; sourceTree = "<group>"; };
+		DDAEFAC72B6CD3AF0001F082 /* LabelSample01_TamperProofLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample01_TamperProofLabel.png; sourceTree = "<group>"; };
+		DDAEFAC92B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_3inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample24_BarcodeLabel2_3inch.png; sourceTree = "<group>"; };
+		DDAEFACA2B6CD3AF0001F082 /* LabelSample30_ExpirationDate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample30_ExpirationDate.png; sourceTree = "<group>"; };
+		DDAEFACB2B6CD3AF0001F082 /* LabelSample05_DrinkLabel4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample05_DrinkLabel4.png; sourceTree = "<group>"; };
+		DDAEFACC2B6CD3AF0001F082 /* LabelSample25_OrderLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample25_OrderLabel.png; sourceTree = "<group>"; };
+		DDAEFACF2B6CD3AF0001F082 /* LabelSample34_ProductLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample34_ProductLabel.png; sourceTree = "<group>"; };
+		DDAEFAD02B6CD3AF0001F082 /* LabelSample29_CoffeeOrder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample29_CoffeeOrder.png; sourceTree = "<group>"; };
+		DDAEFAD32B6CD3AF0001F082 /* LabelSample32_Sale50PercentOff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample32_Sale50PercentOff.png; sourceTree = "<group>"; };
+		DDAEFAD52B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_2inch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample24_BarcodeLabel2_2inch.png; sourceTree = "<group>"; };
+		DDAEFAD62B6CD3AF0001F082 /* LabelSample07_DrinkLabel6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample07_DrinkLabel6.png; sourceTree = "<group>"; };
+		DDAEFAD72B6CD3AF0001F082 /* LabelSample09_FoodPrepLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample09_FoodPrepLabel.png; sourceTree = "<group>"; };
+		DDAEFAD82B6CD3AF0001F082 /* LabelSample11_ShippingAddressLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample11_ShippingAddressLabel.png; sourceTree = "<group>"; };
+		DDAEFB172B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample07_Lunch1_Template.swift; sourceTree = "<group>"; };
+		DDAEFB192B6CE2350001F082 /* ReceiptSample08_Lunch2_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample08_Lunch2_Template.swift; sourceTree = "<group>"; };
+		DDAEFB1B2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample09_Order1_Template.swift; sourceTree = "<group>"; };
+		DDAEFB1D2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample10_Order2_Template.swift; sourceTree = "<group>"; };
+		DDAEFB1F2B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample11_Cafe_Template.swift; sourceTree = "<group>"; };
+		DDAEFB212B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceiptSample12_Lottery_Template.swift; sourceTree = "<group>"; };
+		DDAEFB232B6CE2DB0001F082 /* LabelSample20_PharmacyMedication2_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSample20_PharmacyMedication2_Template.swift; sourceTree = "<group>"; };
+		DDAEFB252B6CE2FE0001F082 /* LabelSample33_VisitorLabel_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSample33_VisitorLabel_Template.swift; sourceTree = "<group>"; };
+		DDAEFB272B6CE31C0001F082 /* LabelSample34_ProductLabel_Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelSample34_ProductLabel_Template.swift; sourceTree = "<group>"; };
+		DDBE0AA22B70615C00A127A6 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +409,7 @@
 		AA2AE043272A8CCD00679414 = {
 			isa = PBXGroup;
 			children = (
+				9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */,
 				8882FC8F27996794003AA845 /* starxpand_sdk_ios_swift */,
 				AA2AE04E272A8CCD00679414 /* StarXpandSDK */,
 				AA2AE04D272A8CCD00679414 /* Products */,
@@ -150,9 +439,16 @@
 				AA2AE063272B788D00679414 /* DiscoveryViewController.swift */,
 				AA2AE06A272B8D2700679414 /* PrintingViewController.swift */,
 				2C154D292865685800BBC7DE /* SpoolerViewController.swift */,
+				DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */,
 				AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */,
 				AA2AE06E272BB9AB00679414 /* StatusViewController.swift */,
 				881AAC15275F4D7300D6ED67 /* logo_01.png */,
+				DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */,
+				DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */,
+				DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */,
+				9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */,
+				9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */,
+				DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */,
 			);
 			path = StarXpandSDK;
 			sourceTree = "<group>";
@@ -167,49 +463,241 @@
 		DD32E79A28EA754F00372CB9 /* PrintingSamples */ = {
 			isa = PBXGroup;
 			children = (
-				DD32E7C628F4E50A00372CB9 /* PrintingSamples.md */,
-				DD32E79F28EA759600372CB9 /* Sample01_TamperProofLabel.swift */,
-				DD32E7B028EEB06700372CB9 /* Sample02_DrinkLabel.swift */,
-				DD32E7B228EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift */,
-				DD32E7B428EEB07D00372CB9 /* Sample04_FoodPrepLabel.swift */,
-				DD87A8C2296E740800FAC6CC /* Sample05_FoodDelivery.swift */,
-				DD32E7B628EEB08700372CB9 /* Sample06_ShippingAddressLabel.swift */,
-				DD32E7BA28EEB09C00372CB9 /* Sample07_InventoryLabel.swift */,
-				DD32E7AE28EEB05900372CB9 /* Sample08_FoodProductLabel.swift */,
-				DD32E7BC28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift */,
-				DD32E7B828EEB09100372CB9 /* Sample10_FoodDeliveryThai.swift */,
-				DD32E7C428EEB0CF00372CB9 /* Sample11_DeliLabel.swift */,
-				DD32E7BE28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift */,
-				DD32E7C028EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift */,
-				DD32E7C228EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift */,
-				9D33236B2ADD0B6E004B5AE8 /* Sample15_GraphicReceipt.swift */,
-				DDDBDD6E2935DE49009FC078 /* images */,
+				DDBE0AA22B70615C00A127A6 /* README.md */,
+				DDAEF95F2B6CD2A00001F082 /* GraphicSamples */,
+				DDAEF95E2B6CD2950001F082 /* ReceiptSamples */,
+				DDAEF95D2B6CD2700001F082 /* LabelSamples */,
 			);
 			path = PrintingSamples;
 			sourceTree = "<group>";
 		};
-		DDDBDD6E2935DE49009FC078 /* images */ = {
+		DDAEF95D2B6CD2700001F082 /* LabelSamples */ = {
 			isa = PBXGroup;
 			children = (
-				DD87A8A2296E138F00FAC6CC /* Sample01_TamperProofLabel.png */,
-				DD87A8A4296E139700FAC6CC /* Sample02_DrinkLabel.png */,
-				DD87A8A6296E139E00FAC6CC /* Sample03_NutritionFactsLabel.png */,
-				DD87A8A8296E13B700FAC6CC /* Sample04_FoodPrepLabel.png */,
-				DD87A8AA296E13C100FAC6CC /* Sample05_FoodDelivery.png */,
-				DD87A8AC296E13CA00FAC6CC /* Sample06_ShippingAddressLabel.png */,
-				DD87A8AE296E13D200FAC6CC /* Sample07_InventoryLabel.png */,
-				DD87A8B0296E13D800FAC6CC /* Sample08_FoodProductLabel.png */,
-				DD87A8B2296E13E200FAC6CC /* Sample09_ExpirationLabelJP.png */,
-				DD87A8B4296E13E800FAC6CC /* Sample10_FoodDeliveryThai.png */,
-				DD87A8B6296E13F100FAC6CC /* Sample11_DeliLabel.png */,
-				DD87A8B8296E13FA00FAC6CC /* Sample12_JapaneseFoodLabelLunchBox.png */,
-				DD87A8BA296E140100FAC6CC /* Sample13_JapaneseFoodLabelCake.png */,
-				DD87A8BC296E140800FAC6CC /* Sample14_ShelfLabelForInventory.png */,
-				DD32E7A828EEB01800372CB9 /* sample01_tamper_proof_label_checked.png */,
-				DD32E7AA28EEB01E00372CB9 /* sample12_japanese_food_label_lunch_box_plastic.png */,
-				DD32E7AC28EEB02400372CB9 /* sample13_japanese_food_label_lunch_cake_plastic.png */,
+				DDAEFA032B6CD3960001F082 /* LabelSample01_TamperProofLabel_FieldData.json */,
+				DDAEFA1B2B6CD3970001F082 /* LabelSample01_TamperProofLabel_Template.swift */,
+				DDAEF9D02B6CD3800001F082 /* LabelSample01_TamperProofLabel.swift */,
+				DDAEFA242B6CD3980001F082 /* LabelSample02_DrinkLabel1_FieldData.json */,
+				DDAEFA3E2B6CD3990001F082 /* LabelSample02_DrinkLabel1_Template.swift */,
+				DDAEF9D12B6CD3800001F082 /* LabelSample02_DrinkLabel.swift */,
+				DDAEFA2A2B6CD3980001F082 /* LabelSample03_DrinkLabel2_FieldData.json */,
+				DDAEFA162B6CD3970001F082 /* LabelSample03_DrinkLabel2_Template.swift */,
+				DDAEFA292B6CD3980001F082 /* LabelSample04_DrinkLabel3_FieldData.json */,
+				DDAEFA4B2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_Template.swift */,
+				DDAEFA422B6CD3990001F082 /* LabelSample05_DrinkLabel4_FieldData.json */,
+				DDAEF9FE2B6CD3960001F082 /* LabelSample05_DrinkLabel4_Template.swift */,
+				DDAEFA362B6CD3990001F082 /* LabelSample06_DrinkLabel5_FieldData.json */,
+				DDAEFA172B6CD3970001F082 /* LabelSample06_DrinkLabel5_Template.swift */,
+				DDAEFA462B6CD3990001F082 /* LabelSample07_DrinkLabel6_FieldData.json */,
+				DDAEFA432B6CD3990001F082 /* LabelSample07_DrinkLabel6_Template.swift */,
+				DDAEFA4A2B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_FieldData.json */,
+				DDAEFA102B6CD3970001F082 /* LabelSample08_NutritionFactsLabel_Template.swift */,
+				DDAEF9D32B6CD3800001F082 /* LabelSample08_NutritionFactsLabel.swift */,
+				DDAEFA342B6CD3990001F082 /* LabelSample09_FoodPrepLabel_FieldData.json */,
+				DDAEFA1C2B6CD3980001F082 /* LabelSample09_FoodPrepLabel_Template.swift */,
+				DDAEF9CB2B6CD3800001F082 /* LabelSample09_FoodPrepLabel.swift */,
+				DDAEF9FB2B6CD3960001F082 /* LabelSample10_FoodDeliveryLabel_FieldData.json */,
+				DDAEFA482B6CD3990001F082 /* LabelSample10_FoodDeliveryLabel_Template.swift */,
+				DDAEF9CD2B6CD3800001F082 /* LabelSample10_FoodDeliveryLabel.swift */,
+				DDAEFA012B6CD3960001F082 /* LabelSample11_ShippingAddressLabel_FieldData.json */,
+				DDAEFA492B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_Template.swift */,
+				DDAEF9C72B6CD3800001F082 /* LabelSample11_ShippingAddressLabel.swift */,
+				DDAEF9FD2B6CD3960001F082 /* LabelSample12_InventoryLabel_FieldData.json */,
+				DDAEFA352B6CD3990001F082 /* LabelSample12_InventoryLabel_Template.swift */,
+				DDAEF9C82B6CD3800001F082 /* LabelSample12_InventoryLabel.swift */,
+				DDAEFA372B6CD3990001F082 /* LabelSample13_FoodProductLabel_FieldData.json */,
+				DDAEFA4C2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_Template.swift */,
+				DDAEF9CE2B6CD3800001F082 /* LabelSample13_FoodProductLabel.swift */,
+				DDAEFA122B6CD3970001F082 /* LabelSample14_ExpirationLabelJP_FieldData.json */,
+				DDAEFA392B6CD3990001F082 /* LabelSample14_ExpirationLabelJP_Template.swift */,
+				DDAEF9C92B6CD3800001F082 /* LabelSample14_ExpirationLabelJP.swift */,
+				DDAEFA192B6CD3970001F082 /* LabelSample15_FoodDeliveryLabelThai_FieldData.json */,
+				DDAEFA3F2B6CD3990001F082 /* LabelSample15_FoodDeliveryLabelThai_Template.swift */,
+				DDAEF9D42B6CD3800001F082 /* LabelSample15_FoodDeliveryLabelThai.swift */,
+				DDAEFA0A2B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json */,
+				DDAEFA082B6CD3970001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_Template.swift */,
+				DDAEF9CF2B6CD3800001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.swift */,
+				DDAEFA1D2B6CD3980001F082 /* LabelSample17_JapaneseFoodLabelCake_FieldData.json */,
+				DDAEF9FF2B6CD3960001F082 /* LabelSample17_JapaneseFoodLabelCake_Template.swift */,
+				DDAEF9CA2B6CD3800001F082 /* LabelSample17_JapaneseFoodLabelCake.swift */,
+				DDAEFA142B6CD3970001F082 /* LabelSample18_ShelfLabelForInventory_FieldData.json */,
+				DDAEFA282B6CD3980001F082 /* LabelSample18_ShelfLabelForInventory_Template.swift */,
+				DDAEF9CC2B6CD3800001F082 /* LabelSample18_ShelfLabelForInventory.swift */,
+				DDAEFA1A2B6CD3970001F082 /* LabelSample19_PharmacyMedication1_FieldData.json */,
+				DDAEFA002B6CD3960001F082 /* LabelSample19_PharmacyMedication1_Template.swift */,
+				DDAEFA0E2B6CD3970001F082 /* LabelSample20_PharmacyMedication2_FieldData.json */,
+				DDAEFB232B6CE2DB0001F082 /* LabelSample20_PharmacyMedication2_Template.swift */,
+				DDAEFA112B6CD3970001F082 /* LabelSample21_ShippingLabel1_FieldData.json */,
+				DDAEFA212B6CD3980001F082 /* LabelSample21_ShippingLabel1_Template.swift */,
+				DDAEFA232B6CD3980001F082 /* LabelSample22_ShippingLabel2_FieldData.json */,
+				DDAEFA1E2B6CD3980001F082 /* LabelSample22_ShippingLabel2_Template.swift */,
+				DDAEFA442B6CD3990001F082 /* LabelSample23_BarcodeLabel1_FieldData.json */,
+				DDAEFA1F2B6CD3980001F082 /* LabelSample23_BarcodeLabel1_Template.swift */,
+				DDAEFA412B6CD3990001F082 /* LabelSample24_BarcodeLabel2_2inch_Template.swift */,
+				DDAEFA3B2B6CD3990001F082 /* LabelSample24_BarcodeLabel2_3inch_Template.swift */,
+				DDAEFA252B6CD3980001F082 /* LabelSample24_BarcodeLabel2_FieldData.json */,
+				DDAEFA3A2B6CD3990001F082 /* LabelSample25_OrderLabel_FieldData.json */,
+				DDAEFA092B6CD3970001F082 /* LabelSample25_OrderLabel_Template.swift */,
+				DDAEFA042B6CD3960001F082 /* LabelSample26_PrescriptionLabel_FieldData.json */,
+				DDAEFA452B6CD3990001F082 /* LabelSample26_PrescriptionLabel_Template.swift */,
+				DDAEFA312B6CD3980001F082 /* LabelSample27_AllergenWarning_FieldData.json */,
+				DDAEFA0D2B6CD3970001F082 /* LabelSample27_AllergenWarning_Template.swift */,
+				DDAEFA202B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_FieldData.json */,
+				DDAEFA2E2B6CD3980001F082 /* LabelSample28_CleanedAndSanitised_Template.swift */,
+				DDAEFA152B6CD3970001F082 /* LabelSample29_CoffeeOrder_FieldData.json */,
+				DDAEFA332B6CD3990001F082 /* LabelSample29_CoffeeOrder_Template.swift */,
+				DDAEFA272B6CD3980001F082 /* LabelSample30_ExpirationDate_FieldData.json */,
+				DDAEFA2B2B6CD3980001F082 /* LabelSample30_ExpirationDate_Template.swift */,
+				DDAEFA382B6CD3990001F082 /* LabelSample31_FoodSafetyInfo_FieldData.json */,
+				DDAEFA2F2B6CD3980001F082 /* LabelSample31_FoodSafetyInfo_Template.swift */,
+				DDAEFA302B6CD3980001F082 /* LabelSample32_Sale50PercentOff_FieldData.json */,
+				DDAEFA3D2B6CD3990001F082 /* LabelSample32_Sale50PercentOff_Template.swift */,
+				DDAEFA132B6CD3970001F082 /* LabelSample33_VisitorLabel_FieldData.json */,
+				DDAEFB252B6CE2FE0001F082 /* LabelSample33_VisitorLabel_Template.swift */,
+				DDAEFA4D2B6CD39A0001F082 /* LabelSample34_ProductLabel_FieldData.json */,
+				DDAEFB272B6CE31C0001F082 /* LabelSample34_ProductLabel_Template.swift */,
+				DDAEFA0F2B6CD3970001F082 /* LabelSample35_BarbellLabel_FieldData.json */,
+				DDAEF9FC2B6CD3960001F082 /* LabelSample35_BarbellLabel_Template.swift */,
+				DDAEF9662B6CD2D60001F082 /* resources */,
+				DDAEF9652B6CD2D10001F082 /* images */,
+			);
+			path = LabelSamples;
+			sourceTree = "<group>";
+		};
+		DDAEF95E2B6CD2950001F082 /* ReceiptSamples */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF96B2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json */,
+				DDAEF96D2B6CD2FC0001F082 /* ReceiptSample01_OnlineOrder_Template.swift */,
+				DDAEF9752B6CD2FD0001F082 /* ReceiptSample02_Retail_FieldData.json */,
+				DDAEF96C2B6CD2FC0001F082 /* ReceiptSample02_Retail_Template.swift */,
+				DDAEF97D2B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_FieldData.json */,
+				DDAEF9842B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift */,
+				DDAEF9832B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_FieldData.json */,
+				DDAEF9682B6CD2FC0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift */,
+				DDAEF97E2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json */,
+				DDAEF9692B6CD2FC0001F082 /* ReceiptSample05_PharmacyStore1_Template.swift */,
+				DDAEF9742B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_FieldData.json */,
+				DDAEF9702B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_Template.swift */,
+				DDAEF9802B6CD2FD0001F082 /* ReceiptSample07_Lunch1_FieldData.json */,
+				DDAEFB172B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift */,
+				DDAEF9812B6CD2FD0001F082 /* ReceiptSample08_Lunch2_FieldData.json */,
+				DDAEFB192B6CE2350001F082 /* ReceiptSample08_Lunch2_Template.swift */,
+				DDAEF9792B6CD2FD0001F082 /* ReceiptSample09_Order1_FieldData.json */,
+				DDAEFB1B2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift */,
+				DDAEF9712B6CD2FD0001F082 /* ReceiptSample10_Order2_FieldData.json */,
+				DDAEFB1D2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift */,
+				DDAEF96A2B6CD2FC0001F082 /* ReceiptSample11_Cafe_FieldData.json */,
+				DDAEFB1F2B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift */,
+				DDAEF97C2B6CD2FD0001F082 /* ReceiptSample12_Lottery_FieldData.json */,
+				DDAEFB212B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift */,
+				DDAEF9642B6CD2C60001F082 /* resources */,
+				DDAEF9632B6CD2C10001F082 /* images */,
+			);
+			path = ReceiptSamples;
+			sourceTree = "<group>";
+		};
+		DDAEF95F2B6CD2A00001F082 /* GraphicSamples */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF9C32B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift */,
+				DDAEF9602B6CD2AA0001F082 /* images */,
+			);
+			path = GraphicSamples;
+			sourceTree = "<group>";
+		};
+		DDAEF9602B6CD2AA0001F082 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF9C52B6CD3640001F082 /* GraphicSample01_GraphicReceipt.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		DDAEF9632B6CD2C10001F082 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF9AE2B6CD3350001F082 /* ReceiptSample01_OnlineOrder.png */,
+				DDAEF9A62B6CD3340001F082 /* ReceiptSample02_Retail.png */,
+				DDAEF9B02B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png */,
+				DDAEF9A82B6CD3340001F082 /* ReceiptSample04_FoodDelivery2.png */,
+				DDAEF9A92B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png */,
+				DDAEF9AD2B6CD3350001F082 /* ReceiptSample06_PharmacyStore2.png */,
+				DDAEF9A72B6CD3340001F082 /* ReceiptSample07_Lunch1_Template.png */,
+				DDAEF9AB2B6CD3350001F082 /* ReceiptSample08_Lunch2_Template.png */,
+				DDAEF9B12B6CD3350001F082 /* ReceiptSample09_Order1.png */,
+				DDAEF9A42B6CD3340001F082 /* ReceiptSample10_Order2.png */,
+				DDAEF9A52B6CD3340001F082 /* ReceiptSample11_Cafe.png */,
+				DDAEF9AF2B6CD3350001F082 /* ReceiptSample12_Lottery.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DDAEF9642B6CD2C60001F082 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF9C12B6CD33E0001F082 /* receipt_sample16_cafe_template_coffee_cup.png */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		DDAEF9652B6CD2D10001F082 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEFAC72B6CD3AF0001F082 /* LabelSample01_TamperProofLabel.png */,
+				DDAEFABD2B6CD3AE0001F082 /* LabelSample02_DrinkLabel1.png */,
+				DDAEFAAA2B6CD3AD0001F082 /* LabelSample03_DrinkLabel2.png */,
+				DDAEFAB02B6CD3AE0001F082 /* LabelSample04_DrinkLabel3.png */,
+				DDAEFACB2B6CD3AF0001F082 /* LabelSample05_DrinkLabel4.png */,
+				DDAEFAB92B6CD3AE0001F082 /* LabelSample06_DrinkLabel5.png */,
+				DDAEFAD62B6CD3AF0001F082 /* LabelSample07_DrinkLabel6.png */,
+				DDAEFAA62B6CD3AD0001F082 /* LabelSample08_NutritionFactsLabel.png */,
+				DDAEFAD72B6CD3AF0001F082 /* LabelSample09_FoodPrepLabel.png */,
+				DDAEFAC52B6CD3AF0001F082 /* LabelSample10_FoodDeliveryLabel.png */,
+				DDAEFAD82B6CD3AF0001F082 /* LabelSample11_ShippingAddressLabel.png */,
+				DDAEFAA22B6CD3AD0001F082 /* LabelSample12_InventoryLabel.png */,
+				DDAEFAA72B6CD3AD0001F082 /* LabelSample13_FoodProductLabel.png */,
+				DDAEFAC42B6CD3AF0001F082 /* LabelSample14_ExpirationLabelJP.png */,
+				DDAEFAA92B6CD3AD0001F082 /* LabelSample15_FoodDeliveryLabelThai.png */,
+				DDAEFAA32B6CD3AD0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.png */,
+				DDAEFAAF2B6CD3AE0001F082 /* LabelSample17_JapaneseFoodLabelCake.png */,
+				DDAEFAA12B6CD3AD0001F082 /* LabelSample18_ShelfLabelForInvestory.png */,
+				DDAEFAAB2B6CD3AD0001F082 /* LabelSample19_PharmacyMedication1.png */,
+				DDAEFAA42B6CD3AD0001F082 /* LabelSample20_PharmacyMedication2.png */,
+				DDAEFABC2B6CD3AE0001F082 /* LabelSample21_ShippingLabel1.png */,
+				DDAEFAB82B6CD3AE0001F082 /* LabelSample22_ShippingLabel2.png */,
+				DDAEFAB52B6CD3AE0001F082 /* LabelSample23_BarcodeLabel1.png */,
+				DDAEFAD52B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_2inch.png */,
+				DDAEFAC92B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_3inch.png */,
+				DDAEFACC2B6CD3AF0001F082 /* LabelSample25_OrderLabel.png */,
+				DDAEFAAE2B6CD3AD0001F082 /* LabelSample26_PrescriptionLabel.png */,
+				DDAEFAA52B6CD3AD0001F082 /* LabelSample27_AllergenWarning.png */,
+				DDAEFAC12B6CD3AE0001F082 /* LabelSample28_CleanedAndSanitised.png */,
+				DDAEFAD02B6CD3AF0001F082 /* LabelSample29_CoffeeOrder.png */,
+				DDAEFACA2B6CD3AF0001F082 /* LabelSample30_ExpirationDate.png */,
+				DDAEFABF2B6CD3AE0001F082 /* LabelSample31_FoodSafetyInfo.png */,
+				DDAEFAD32B6CD3AF0001F082 /* LabelSample32_Sale50PercentOff.png */,
+				DDAEFAC22B6CD3AE0001F082 /* LabelSample33_VisitorLabel.png */,
+				DDAEFACF2B6CD3AF0001F082 /* LabelSample34_ProductLabel.png */,
+				DDAEFAC32B6CD3AE0001F082 /* LabelSample35_BarbellLabel.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		DDAEF9662B6CD2D60001F082 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDAEF9E82B6CD38A0001F082 /* label_sample01_tamper_proof_label_checked.png */,
+				DDAEF9E92B6CD38A0001F082 /* label_sample16_japanese_food_label_lunch_box_plastic.png */,
+				DDAEF9EA2B6CD38A0001F082 /* label_sample17_japanese_food_label_lunch_cake_plastic.png */,
+				DDAEF9E72B6CD3890001F082 /* label_sample19_pharmacy_medication1_logo.png */,
+				DDAEF9E42B6CD3890001F082 /* label_sample21_shipping_label_house.png */,
+				DDAEF9EB2B6CD38A0001F082 /* label_sample21_shipping_label_phones_old.png */,
+				DDAEF9E32B6CD3890001F082 /* label_sample28_cleanedsanitised_hand.png */,
+				DDAEF9ED2B6CD38A0001F082 /* label_sample32_sale_50off_background.png */,
+				DDAEF9E62B6CD3890001F082 /* label_sample33_visitor_label_user_profile_picture.png */,
+			);
+			path = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,28 +763,124 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD32E7AB28EEB01E00372CB9 /* sample12_japanese_food_label_lunch_box_plastic.png in Resources */,
-				DD87A8A9296E13B700FAC6CC /* Sample04_FoodPrepLabel.png in Resources */,
-				DD87A8B1296E13D800FAC6CC /* Sample08_FoodProductLabel.png in Resources */,
+				DDAEFA612B6CD39A0001F082 /* LabelSample20_PharmacyMedication2_FieldData.json in Resources */,
+				DDAEFA572B6CD39A0001F082 /* LabelSample26_PrescriptionLabel_FieldData.json in Resources */,
+				DDAEFA662B6CD39A0001F082 /* LabelSample33_VisitorLabel_FieldData.json in Resources */,
+				DDAEFA6D2B6CD39A0001F082 /* LabelSample19_PharmacyMedication1_FieldData.json in Resources */,
+				DDAEFA7D2B6CD39A0001F082 /* LabelSample03_DrinkLabel2_FieldData.json in Resources */,
+				DDAEFB0B2B6CD3AF0001F082 /* LabelSample32_Sale50PercentOff.png in Resources */,
+				DDAEF9BA2B6CD3350001F082 /* ReceiptSample08_Lunch2_Template.png in Resources */,
+				DDAEF9C62B6CD3640001F082 /* GraphicSample01_GraphicReceipt.png in Resources */,
+				DDAEF9F22B6CD38A0001F082 /* label_sample33_visitor_label_user_profile_picture.png in Resources */,
+				DDAEFAE62B6CD3AF0001F082 /* LabelSample26_PrescriptionLabel.png in Resources */,
+				DDAEFAF02B6CD3AF0001F082 /* LabelSample22_ShippingLabel2.png in Resources */,
+				DDAEFA8D2B6CD39A0001F082 /* LabelSample25_OrderLabel_FieldData.json in Resources */,
+				DDAEFA562B6CD39A0001F082 /* LabelSample01_TamperProofLabel_FieldData.json in Resources */,
+				DDAEFAF42B6CD3AF0001F082 /* LabelSample21_ShippingLabel1.png in Resources */,
+				DDAEFADB2B6CD3AF0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.png in Resources */,
+				DDAEFA642B6CD39A0001F082 /* LabelSample21_ShippingLabel1_FieldData.json in Resources */,
+				DDAEFAFB2B6CD3AF0001F082 /* LabelSample35_BarbellLabel.png in Resources */,
+				DDAEFA672B6CD39A0001F082 /* LabelSample18_ShelfLabelForInventory_FieldData.json in Resources */,
+				DDAEF99E2B6CD2FD0001F082 /* ReceiptSample07_Lunch1_FieldData.json in Resources */,
+				DDAEFA972B6CD39A0001F082 /* LabelSample23_BarcodeLabel1_FieldData.json in Resources */,
+				DDAEFB0E2B6CD3AF0001F082 /* LabelSample07_DrinkLabel6.png in Resources */,
+				DDAEFAD92B6CD3AF0001F082 /* LabelSample18_ShelfLabelForInvestory.png in Resources */,
+				DDAEF9B72B6CD3350001F082 /* ReceiptSample04_FoodDelivery2.png in Resources */,
+				DDAEFA542B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_FieldData.json in Resources */,
+				DDBE0AA32B70615C00A127A6 /* README.md in Resources */,
+				DDAEF9F52B6CD38A0001F082 /* label_sample16_japanese_food_label_lunch_box_plastic.png in Resources */,
+				DDAEF9A12B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_FieldData.json in Resources */,
+				DDAEF9F72B6CD38A0001F082 /* label_sample21_shipping_label_phones_old.png in Resources */,
+				DDAEF9B62B6CD3350001F082 /* ReceiptSample07_Lunch1_Template.png in Resources */,
+				9F38F3602B15B72800BEED40 /* receipt2_field_data.json in Resources */,
+				DDAEFB042B6CD3AF0001F082 /* LabelSample25_OrderLabel.png in Resources */,
+				DDAEF99B2B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_FieldData.json in Resources */,
+				DDAEFA652B6CD39A0001F082 /* LabelSample14_ExpirationLabelJP_FieldData.json in Resources */,
+				DDAEFAF92B6CD3AF0001F082 /* LabelSample28_CleanedAndSanitised.png in Resources */,
+				DDAEFA7C2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_FieldData.json in Resources */,
+				9F38F3612B15B72800BEED40 /* receipt1_field_data.json in Resources */,
+				DDAEFA5D2B6CD39A0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_FieldData.json in Resources */,
+				DDAEFAE12B6CD3AF0001F082 /* LabelSample15_FoodDeliveryLabelThai.png in Resources */,
+				DDAEF9892B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json in Resources */,
+				DDAEFA782B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_FieldData.json in Resources */,
+				DDAEF9B42B6CD3350001F082 /* ReceiptSample11_Cafe.png in Resources */,
+				DDAEFB0F2B6CD3AF0001F082 /* LabelSample09_FoodPrepLabel.png in Resources */,
+				DDAEFA992B6CD39A0001F082 /* LabelSample07_DrinkLabel6_FieldData.json in Resources */,
+				DDAEFA502B6CD39A0001F082 /* LabelSample12_InventoryLabel_FieldData.json in Resources */,
+				DDAEFB0D2B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_2inch.png in Resources */,
+				DDAEFA832B6CD39A0001F082 /* LabelSample32_Sale50PercentOff_FieldData.json in Resources */,
+				DDAEF9B52B6CD3350001F082 /* ReceiptSample02_Retail.png in Resources */,
+				DDAEFA8A2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_FieldData.json in Resources */,
+				DDAEFA7A2B6CD39A0001F082 /* LabelSample30_ExpirationDate_FieldData.json in Resources */,
+				DDAEFADC2B6CD3AF0001F082 /* LabelSample20_PharmacyMedication2.png in Resources */,
 				AA2AE05C272A8CCF00679414 /* LaunchScreen.storyboard in Resources */,
-				DD87A8AD296E13CA00FAC6CC /* Sample06_ShippingAddressLabel.png in Resources */,
+				DDAEFAE72B6CD3AF0001F082 /* LabelSample17_JapaneseFoodLabelCake.png in Resources */,
+				DDAEFA732B6CD39A0001F082 /* LabelSample28_CleanedAndSanitised_FieldData.json in Resources */,
+				DDAEFADD2B6CD3AF0001F082 /* LabelSample27_AllergenWarning.png in Resources */,
+				DDAEFAF52B6CD3AF0001F082 /* LabelSample02_DrinkLabel1.png in Resources */,
+				DDAEF99C2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json in Resources */,
+				DDAEFAA02B6CD39A0001F082 /* LabelSample34_ProductLabel_FieldData.json in Resources */,
+				DDAEFB012B6CD3AF0001F082 /* LabelSample24_BarcodeLabel2_3inch.png in Resources */,
+				DDAEFA762B6CD39A0001F082 /* LabelSample22_ShippingLabel2_FieldData.json in Resources */,
+				DDAEFB102B6CD3AF0001F082 /* LabelSample11_ShippingAddressLabel.png in Resources */,
+				DDAEFA6C2B6CD39A0001F082 /* LabelSample15_FoodDeliveryLabelThai_FieldData.json in Resources */,
+				DDAEFAF72B6CD3AF0001F082 /* LabelSample31_FoodSafetyInfo.png in Resources */,
+				DDAEFA952B6CD39A0001F082 /* LabelSample05_DrinkLabel4_FieldData.json in Resources */,
 				AA2AE059272A8CCF00679414 /* Assets.xcassets in Resources */,
-				DD32E7AD28EEB02400372CB9 /* sample13_japanese_food_label_lunch_cake_plastic.png in Resources */,
-				DD87A8B7296E13F100FAC6CC /* Sample11_DeliLabel.png in Resources */,
+				DDAEFB032B6CD3AF0001F082 /* LabelSample05_DrinkLabel4.png in Resources */,
+				DDAEF9C02B6CD3350001F082 /* ReceiptSample09_Order1.png in Resources */,
+				DDAEF9972B6CD2FD0001F082 /* ReceiptSample09_Order1_FieldData.json in Resources */,
+				DDAEF99F2B6CD2FD0001F082 /* ReceiptSample08_Lunch2_FieldData.json in Resources */,
+				DD8B9A2B2AC314AD0039B5C9 /* label2_field_data.json in Resources */,
+				DDAEF9BE2B6CD3350001F082 /* ReceiptSample12_Lottery.png in Resources */,
+				DDAEF9932B6CD2FD0001F082 /* ReceiptSample02_Retail_FieldData.json in Resources */,
+				DDAEFA892B6CD39A0001F082 /* LabelSample06_DrinkLabel5_FieldData.json in Resources */,
+				DDAEF9BD2B6CD3350001F082 /* ReceiptSample01_OnlineOrder.png in Resources */,
+				DDAEFAE32B6CD3AF0001F082 /* LabelSample19_PharmacyMedication1.png in Resources */,
+				9F7656E22B35259B00DBBEB6 /* PrivacyInfo.xcprivacy in Resources */,
+				DDAEF9B32B6CD3350001F082 /* ReceiptSample10_Order2.png in Resources */,
+				DDAEF99A2B6CD2FD0001F082 /* ReceiptSample12_Lottery_FieldData.json in Resources */,
+				DDAEFA872B6CD39A0001F082 /* LabelSample09_FoodPrepLabel_FieldData.json in Resources */,
+				DDAEF9882B6CD2FD0001F082 /* ReceiptSample11_Cafe_FieldData.json in Resources */,
+				DDAEFB022B6CD3AF0001F082 /* LabelSample30_ExpirationDate.png in Resources */,
+				DDAEFA702B6CD39A0001F082 /* LabelSample17_JapaneseFoodLabelCake_FieldData.json in Resources */,
+				DDAEFA9D2B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_FieldData.json in Resources */,
+				DDAEF9EF2B6CD38A0001F082 /* label_sample28_cleanedsanitised_hand.png in Resources */,
+				DDAEFAED2B6CD3AF0001F082 /* LabelSample23_BarcodeLabel1.png in Resources */,
+				DDAEFB072B6CD3AF0001F082 /* LabelSample34_ProductLabel.png in Resources */,
 				AA2AE057272A8CCD00679414 /* Main.storyboard in Resources */,
-				DD87A8AF296E13D200FAC6CC /* Sample07_InventoryLabel.png in Resources */,
-				DD87A8A5296E139700FAC6CC /* Sample02_DrinkLabel.png in Resources */,
-				DD87A8AB296E13C100FAC6CC /* Sample05_FoodDelivery.png in Resources */,
-				DD32E7A928EEB01800372CB9 /* sample01_tamper_proof_label_checked.png in Resources */,
-				DD87A8B5296E13E800FAC6CC /* Sample10_FoodDeliveryThai.png in Resources */,
-				DD87A8A3296E138F00FAC6CC /* Sample01_TamperProofLabel.png in Resources */,
-				DD87A8B3296E13E200FAC6CC /* Sample09_ExpirationLabelJP.png in Resources */,
-				DD32E7C728F4E50A00372CB9 /* PrintingSamples.md in Resources */,
+				DDAEFAFF2B6CD3AF0001F082 /* LabelSample01_TamperProofLabel.png in Resources */,
+				DDAEFAFD2B6CD3AF0001F082 /* LabelSample10_FoodDeliveryLabel.png in Resources */,
+				DDAEF9BF2B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png in Resources */,
+				DDAEFAE82B6CD3AF0001F082 /* LabelSample04_DrinkLabel3.png in Resources */,
+				DDAEF9F02B6CD38A0001F082 /* label_sample21_shipping_label_house.png in Resources */,
+				DDAEFADF2B6CD3AF0001F082 /* LabelSample13_FoodProductLabel.png in Resources */,
+				DDAEFA8B2B6CD39A0001F082 /* LabelSample31_FoodSafetyInfo_FieldData.json in Resources */,
+				DDAEFADA2B6CD3AF0001F082 /* LabelSample12_InventoryLabel.png in Resources */,
+				DDAEF9B82B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png in Resources */,
+				DDAEFB082B6CD3AF0001F082 /* LabelSample29_CoffeeOrder.png in Resources */,
+				DDAEFA4E2B6CD39A0001F082 /* LabelSample10_FoodDeliveryLabel_FieldData.json in Resources */,
+				DDE2B34C2B2FD8AE00D1D0A5 /* signature.png in Resources */,
+				DDAEF98F2B6CD2FD0001F082 /* ReceiptSample10_Order2_FieldData.json in Resources */,
+				DDAEF9F62B6CD38A0001F082 /* label_sample17_japanese_food_label_lunch_cake_plastic.png in Resources */,
+				DDAEFAFC2B6CD3AF0001F082 /* LabelSample14_ExpirationLabelJP.png in Resources */,
+				DD8B9A332AC3AD5C0039B5C9 /* label1_field_data.json in Resources */,
+				DDAEFA772B6CD39A0001F082 /* LabelSample02_DrinkLabel1_FieldData.json in Resources */,
+				DDAEF9F42B6CD38A0001F082 /* label_sample01_tamper_proof_label_checked.png in Resources */,
+				DDAEF9F92B6CD38A0001F082 /* label_sample32_sale_50off_background.png in Resources */,
+				DDAEF9922B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_FieldData.json in Resources */,
+				DDAEFADE2B6CD3AF0001F082 /* LabelSample08_NutritionFactsLabel.png in Resources */,
+				DDAEF9C22B6CD33E0001F082 /* receipt_sample16_cafe_template_coffee_cup.png in Resources */,
+				DDAEF9F32B6CD38A0001F082 /* label_sample19_pharmacy_medication1_logo.png in Resources */,
 				881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */,
-				DD87A8BB296E140100FAC6CC /* Sample13_JapaneseFoodLabelCake.png in Resources */,
-				DD87A8BD296E140800FAC6CC /* Sample14_ShelfLabelForInventory.png in Resources */,
-				DD87A8A7296E139E00FAC6CC /* Sample03_NutritionFactsLabel.png in Resources */,
-				DD87A8B9296E13FA00FAC6CC /* Sample12_JapaneseFoodLabelLunchBox.png in Resources */,
+				DDAEFA622B6CD39A0001F082 /* LabelSample35_BarbellLabel_FieldData.json in Resources */,
+				DD7A90042B316F8100B3FB2F /* receipt3_field_data.json in Resources */,
+				DDAEFA842B6CD39A0001F082 /* LabelSample27_AllergenWarning_FieldData.json in Resources */,
+				DDAEF9BC2B6CD3350001F082 /* ReceiptSample06_PharmacyStore2.png in Resources */,
+				DDAEFAE22B6CD3AF0001F082 /* LabelSample03_DrinkLabel2.png in Resources */,
+				DDAEFAFA2B6CD3AF0001F082 /* LabelSample33_VisitorLabel.png in Resources */,
+				DDAEFA682B6CD39A0001F082 /* LabelSample29_CoffeeOrder_FieldData.json in Resources */,
+				DDAEFAF12B6CD3AF0001F082 /* LabelSample06_DrinkLabel5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,29 +891,77 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD32E7C128EEB0BE00372CB9 /* Sample13_JapaneseFoodLabelCake.swift in Sources */,
-				DD32E7AF28EEB05900372CB9 /* Sample08_FoodProductLabel.swift in Sources */,
-				DD32E7BB28EEB09C00372CB9 /* Sample07_InventoryLabel.swift in Sources */,
-				DD32E7C528EEB0CF00372CB9 /* Sample11_DeliLabel.swift in Sources */,
-				DD32E7B128EEB06700372CB9 /* Sample02_DrinkLabel.swift in Sources */,
+				DDAEF9D62B6CD3800001F082 /* LabelSample12_InventoryLabel.swift in Sources */,
+				DDAEFA942B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_2inch_Template.swift in Sources */,
+				DDAEF9DB2B6CD3800001F082 /* LabelSample10_FoodDeliveryLabel.swift in Sources */,
+				DDAEFB202B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift in Sources */,
+				DDAEFB1C2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift in Sources */,
+				DDAEF9D72B6CD3800001F082 /* LabelSample14_ExpirationLabelJP.swift in Sources */,
+				DDAEFA5B2B6CD39A0001F082 /* LabelSample16_JapaneseFoodLabelLunchBox_Template.swift in Sources */,
+				DDAEFA9C2B6CD39A0001F082 /* LabelSample11_ShippingAddressLabel_Template.swift in Sources */,
+				DDAEFA812B6CD39A0001F082 /* LabelSample28_CleanedAndSanitised_Template.swift in Sources */,
+				DDAEF9D52B6CD3800001F082 /* LabelSample11_ShippingAddressLabel.swift in Sources */,
 				AA2AE06F272BB9AB00679414 /* StatusViewController.swift in Sources */,
 				2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */,
-				DD32E7BF28EEB0B200372CB9 /* Sample12_JapaneseFoodLabelLunchBox.swift in Sources */,
+				DDAEFB262B6CE2FE0001F082 /* LabelSample33_VisitorLabel_Template.swift in Sources */,
+				DDAEFA7E2B6CD39A0001F082 /* LabelSample30_ExpirationDate_Template.swift in Sources */,
+				DDAEFA912B6CD39A0001F082 /* LabelSample02_DrinkLabel1_Template.swift in Sources */,
+				DDAEFA712B6CD39A0001F082 /* LabelSample22_ShippingLabel2_Template.swift in Sources */,
+				DDAEF98A2B6CD2FD0001F082 /* ReceiptSample02_Retail_Template.swift in Sources */,
+				DDAEF9DE2B6CD3800001F082 /* LabelSample01_TamperProofLabel.swift in Sources */,
+				DDAEFB1E2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift in Sources */,
+				DDAEFA862B6CD39A0001F082 /* LabelSample29_CoffeeOrder_Template.swift in Sources */,
 				AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */,
-				DD87A8C3296E740800FAC6CC /* Sample05_FoodDelivery.swift in Sources */,
-				DD32E7B928EEB09100372CB9 /* Sample10_FoodDeliveryThai.swift in Sources */,
-				DD32E7C328EEB0C600372CB9 /* Sample14_ShelfLabelForInventory.swift in Sources */,
-				DD32E7B528EEB07D00372CB9 /* Sample04_FoodPrepLabel.swift in Sources */,
+				DDAEFA902B6CD39A0001F082 /* LabelSample32_Sale50PercentOff_Template.swift in Sources */,
+				DDAEFA7B2B6CD39A0001F082 /* LabelSample18_ShelfLabelForInventory_Template.swift in Sources */,
+				DDAEF9C42B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift in Sources */,
+				DDAEFA6F2B6CD39A0001F082 /* LabelSample09_FoodPrepLabel_Template.swift in Sources */,
+				DDAEF9DF2B6CD3800001F082 /* LabelSample02_DrinkLabel.swift in Sources */,
+				DDAEF9D92B6CD3800001F082 /* LabelSample09_FoodPrepLabel.swift in Sources */,
 				AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */,
-				DD32E7A228EA759600372CB9 /* Sample01_TamperProofLabel.swift in Sources */,
-				DD32E7B328EEB07300372CB9 /* Sample03_NutritionFactsLabel.swift in Sources */,
-				9D33236C2ADD0B6F004B5AE8 /* Sample15_GraphicReceipt.swift in Sources */,
+				DDAEFA8E2B6CD39A0001F082 /* LabelSample24_BarcodeLabel2_3inch_Template.swift in Sources */,
+				DDAEFB222B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift in Sources */,
+				DDAEFA742B6CD39A0001F082 /* LabelSample21_ShippingLabel1_Template.swift in Sources */,
+				DD8B9A252AC313F70039B5C9 /* TemplatePrintViewController.swift in Sources */,
+				DDAEF9A22B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift in Sources */,
+				DDAEF9862B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift in Sources */,
+				DDAEFA9B2B6CD39A0001F082 /* LabelSample10_FoodDeliveryLabel_Template.swift in Sources */,
 				AA2AE06B272B8D2700679414 /* PrintingViewController.swift in Sources */,
-				DD32E7BD28EEB0A700372CB9 /* Sample09_ExpirationLabelJP.swift in Sources */,
+				DDAEFA522B6CD39A0001F082 /* LabelSample17_JapaneseFoodLabelCake_Template.swift in Sources */,
+				DDAEFA822B6CD39A0001F082 /* LabelSample31_FoodSafetyInfo_Template.swift in Sources */,
+				DDAEFA722B6CD39A0001F082 /* LabelSample23_BarcodeLabel1_Template.swift in Sources */,
+				DDAEFA512B6CD39A0001F082 /* LabelSample05_DrinkLabel4_Template.swift in Sources */,
+				DDAEFA692B6CD39A0001F082 /* LabelSample03_DrinkLabel2_Template.swift in Sources */,
+				DDAEF9DC2B6CD3800001F082 /* LabelSample13_FoodProductLabel.swift in Sources */,
+				DDAEFA532B6CD39A0001F082 /* LabelSample19_PharmacyMedication1_Template.swift in Sources */,
+				DDAEFA5C2B6CD39A0001F082 /* LabelSample25_OrderLabel_Template.swift in Sources */,
+				DDAEFA4F2B6CD39A0001F082 /* LabelSample35_BarbellLabel_Template.swift in Sources */,
+				DDAEF9E12B6CD3800001F082 /* LabelSample08_NutritionFactsLabel.swift in Sources */,
+				DDAEF98B2B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_Template.swift in Sources */,
+				DDAEFB182B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift in Sources */,
+				DDAEF9DA2B6CD3800001F082 /* LabelSample18_ShelfLabelForInventory.swift in Sources */,
+				DDAEF9DD2B6CD3800001F082 /* LabelSample16_JapaneseFoodLabelLunchBox.swift in Sources */,
+				DDAEFA982B6CD39A0001F082 /* LabelSample26_PrescriptionLabel_Template.swift in Sources */,
+				DDAEFA6E2B6CD39A0001F082 /* LabelSample01_TamperProofLabel_Template.swift in Sources */,
+				DDAEFA962B6CD39A0001F082 /* LabelSample07_DrinkLabel6_Template.swift in Sources */,
 				AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */,
 				AA2AE052272A8CCD00679414 /* SceneDelegate.swift in Sources */,
+				DDAEFA9F2B6CD39A0001F082 /* LabelSample13_FoodProductLabel_Template.swift in Sources */,
+				DDAEFA6A2B6CD39A0001F082 /* LabelSample06_DrinkLabel5_Template.swift in Sources */,
+				DDAEFB282B6CE31C0001F082 /* LabelSample34_ProductLabel_Template.swift in Sources */,
+				DDAEF9D82B6CD3800001F082 /* LabelSample17_JapaneseFoodLabelCake.swift in Sources */,
+				DDAEFA602B6CD39A0001F082 /* LabelSample27_AllergenWarning_Template.swift in Sources */,
+				DDAEFB242B6CE2DB0001F082 /* LabelSample20_PharmacyMedication2_Template.swift in Sources */,
+				DDAEF9872B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_Template.swift in Sources */,
+				DDAEFA882B6CD39A0001F082 /* LabelSample12_InventoryLabel_Template.swift in Sources */,
+				DDAEFB1A2B6CE2350001F082 /* ReceiptSample08_Lunch2_Template.swift in Sources */,
+				DDAEFA8C2B6CD39A0001F082 /* LabelSample14_ExpirationLabelJP_Template.swift in Sources */,
 				AA2AE064272B788D00679414 /* DiscoveryViewController.swift in Sources */,
-				DD32E7B728EEB08700372CB9 /* Sample06_ShippingAddressLabel.swift in Sources */,
+				DDAEFA922B6CD39A0001F082 /* LabelSample15_FoodDeliveryLabelThai_Template.swift in Sources */,
+				DDAEF98E2B6CD2FD0001F082 /* ReceiptSample06_PharmacyStore2_Template.swift in Sources */,
+				DDAEF9E22B6CD3800001F082 /* LabelSample15_FoodDeliveryLabelThai.swift in Sources */,
+				DDAEFA9E2B6CD39A0001F082 /* LabelSample04_DrinkLabel3_Template.swift in Sources */,
+				DDAEFA632B6CD39A0001F082 /* LabelSample08_NutritionFactsLabel_Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,7 +1126,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5.0;
+				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -526,7 +1158,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.5.0;
+				MARKETING_VERSION = 2.6.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

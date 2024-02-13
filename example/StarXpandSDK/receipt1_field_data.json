@@ -1,0 +1,30 @@
+{
+    "store_name" : "   Star Cafe   ",
+    "order_number" : "#2-007",
+    "time" : "10/16 11:13PM",
+    "sales_type" : "Walk-in",
+    "server" : "Jane",
+    "transaction_id" : "0123456789",
+    "item_list" : [
+        {
+            "name" : "Vanilla Latte",
+            "unit_price" : 4.99,
+            "quantity" : 1
+        },
+        {
+            "name" : "Chocolate Chip Cookie",
+            "unit_price" : 3.25,
+            "quantity" : 1
+        }
+    ],
+    "subtotal" : 8.24,
+    "tax" : 0.73,
+    "total" : 8.97,
+    "credit_card_number" : "VISA 0123",
+    "approval_code" : "OK2443",
+    "amount" : 8.97,
+    "address" : "123 Star Road, City,\nState 12345",
+    "tel" : "123-456-7890",
+    "mail" : "info@star-m.jp",
+    "url" : "star-m.jp"
+}

@@ -1,0 +1,45 @@
+{
+    "store_name" : "   Star Cafe   ",
+    "order_number" : "#2-009",
+    "time" : "05/23 10:10AM",
+    "sales_type" : "Takeout",
+    "server" : "James",
+    "transaction_id" : "0222222222",
+    "item_list" : [
+        {
+            "name" : "Chai Tea Latte",
+            "unit_price" : 5.49,
+            "quantity" : 1
+        },
+        {
+            "name" : "Americano",
+            "unit_price" : 2.99,
+            "quantity" : 3
+        },
+        {
+            "name" : "Orange Juice",
+            "unit_price" : 3.99,
+            "quantity" : 1
+        },
+        {
+            "name" : "Shortbread Cookies",
+            "unit_price" : 3.49,
+            "quantity" : 2
+        },
+        {
+            "name" : "Chocolate Brownie",
+            "unit_price" : 4.49,
+            "quantity" : 3
+        }
+    ],
+    "subtotal" : 38.9,
+    "tax" : 3.45,
+    "total" : 42.35,
+    "credit_card_number" : "VISA 0789",
+    "approval_code" : "OK7889",
+    "amount" : 42.35,
+    "address" : "123 Star Road, City,\nState 12345",
+    "tel" : "123-456-7890",
+    "mail" : "info@star-m.jp",
+    "url" : "star-m.jp"
+}

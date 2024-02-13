@@ -1,0 +1,30 @@
+{
+    "store_name" : "   Star Cafe   ",
+    "order_number" : "#2-008",
+    "time" : "02/09 12:40PM",
+    "sales_type" : "Takeout",
+    "server" : "Jessica",
+    "transaction_id" : "0111111111",
+    "item_list" : [
+        {
+            "name" : "Vanilla Latte with caramel sauce",
+            "unit_price" : 5.99,
+            "quantity" : 1
+        },
+        {
+            "name" : "Star's Homemade Chocolate Chip Cookie",
+            "unit_price" : 4.99,
+            "quantity" : 1
+        }
+    ],
+    "subtotal" : 10.98,
+    "tax" : 0.97,
+    "total" : 11.95,
+    "credit_card_number" : "VISA 0456",
+    "approval_code" : "OK5667",
+    "amount" : 11.95,
+    "address" : "123 Star Road, City,\nState 12345",
+    "tel" : "123-456-7890",
+    "mail" : "info@star-m.jp",
+    "url" : "star-m.jp"
+}
