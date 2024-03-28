@@ -14,7 +14,7 @@
 
 This software development kit provides the StarIO10 framework (StarIO10.xcframework) as a framework to control the Star Micronics devices.
 
-In accordance with Apple's guidelines, StarIO10 V2.6.0 or later includes a privacy manifest file. Please see [here](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) for the Manifest file.
+In accordance with Apple's guidelines, StarIO10 V2.6.1 or later includes a privacy manifest file. Please see [here](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) for the Manifest file.
 However, StarIO10 does not use the Required Reason API from the first release. (As of January 29, 2024)
 
 ## Documentation

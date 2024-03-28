@@ -14,7 +14,7 @@
 
 本ソフトウェア開発キットでは、スター精密デバイスを制御するためのフレームワークとして、StarIO10フレームワーク(StarIO10.xcframework)を提供しています。
 
-Apple社の指針に従い、StarIO10 V2.6.0以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2024年1月29日現在）
+Apple社の指針に従い、StarIO10 V2.6.1以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2024年1月29日現在）
 
 ## ドキュメント
 

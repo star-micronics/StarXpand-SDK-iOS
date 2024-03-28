@@ -2,6 +2,11 @@
 
 # Change Log
 
+## 2.6.1 (2023/03/27)
+
+* Bug Fix
+  * Fixed privacy manifest file according to Apple's App Review. (StarIO10 does not use Required Reason API.)
+
 ## 2.6.0 (2024/02/09)
 
 * Added POP10CBI support.
