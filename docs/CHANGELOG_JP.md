@@ -2,6 +2,16 @@
 
 # 変更点
 
+## 2.7.0 (2024/06/24)
+
+* BSC10II に対応
+* CutTypeのenumにtearOff（ティアバーまで用紙送り）を追加
+* Printer.InternationalCharacterTypeのenumにindiaを追加
+* autoSwitchInterfaceがfalseの場合、既に他端末がopen済みのLANプリンターに対してStarPrinter.open()を実行したとき、すぐにStarIO10Error.inUseをスローするよう変更
+* 不具合修正
+  * 複数台のプリンターに対して同時に印刷処理を実行した場合に、まれにクラッシュする問題を修正
+  * 実際にはiOS端末がネットワークに接続されていても、まれにStarIO10Error.illegalDeviceState(message: "Network Unavailable.")がスローされることがある問題を修正
+
 ## 2.6.1 (2024/03/27)
 
 * 不具合修正

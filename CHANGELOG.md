@@ -2,7 +2,17 @@
 
 # Change Log
 
-## 2.6.1 (2023/03/27)
+## 2.7.0 (2024/06/24)
+
+* Added BSC10II support.
+* Added tearOff (feed to tear bar) to the CutType enum.
+* Added india to the Printer.InternationalCharacterType enum.
+* Changed so that StarIO10Error.inUse is thrown immediately when StarPrinter.open() is executed for a LAN printer that has already been opened by another device if autoSwitchInterface is false.
+* Bug Fix:
+  * Fixed an issue where occasionally caused a crash when executing print operations on multiple printers at the same time.
+  * Fixed an issue where StarIO10Error.illegalDeviceState(message: "Network Unavailable.") could occasionally be thrown even though the iOS device is actually connected to the network.
+
+## 2.6.1 (2024/03/27)
 
 * Bug Fix
   * Fixed privacy manifest file according to Apple's App Review. (StarIO10 does not use Required Reason API.)

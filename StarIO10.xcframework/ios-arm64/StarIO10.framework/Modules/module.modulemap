@@ -21,8 +21,3 @@ framework module StarIO10 {
         export *
     }
 }
-
-module StarIO10.Swift {
-  header "StarIO10-Swift.h"
-  requires objc
-}
