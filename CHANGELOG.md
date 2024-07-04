@@ -4,7 +4,7 @@
 
 ## 2.7.0 (2024/06/24)
 
-* Added BSC10II support.
+* Added BSC10II support (Limited region model).
 * Added tearOff (feed to tear bar) to the CutType enum.
 * Added india to the Printer.InternationalCharacterType enum.
 * Changed so that StarIO10Error.inUse is thrown immediately when StarPrinter.open() is executed for a LAN printer that has already been opened by another device if autoSwitchInterface is false.
