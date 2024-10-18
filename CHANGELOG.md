@@ -2,6 +2,15 @@
 
 # Change Log
 
+## 2.8.0 (2024/10/18)
+
+* Added TSP100IV-UEWB and TSP100IV-UEWB SK support.
+* Added API to get detail information of printer.
+* Added API to get detail information of error.
+* Preparing for update to Swift6. (modified the sample app so that it can be built with Swift6)
+* Bug Fix:
+  * Fixed an issue where StarIO10 failed to open and discover printer via LAN with the Xcode16 and iOS 18. [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
+
 ## 2.7.0 (2024/06/24)
 
 * Added BSC10II support (Limited region model).

@@ -6,7 +6,7 @@
 import UIKit
 import StarIO10
 
-class GraphicSample01_GraphicReceipt {
+@MainActor class GraphicSample01_GraphicReceipt {
     static func createGraphicReceipt() -> String {
         guard let logo = UIImage(named: "logo_01") else {
             print("Failed to load \"logo_01.png\".")
@@ -68,7 +68,7 @@ class GraphicSample01_GraphicReceipt {
         
         let size: CGSize = (text.boundingRect(with: CGSize(width: widthCGF, height: 10000), options: stringDrawingOptions, attributes: attributeDic as? [NSAttributedString.Key : Any], context: nil)).size
         
-        if UIScreen.main.responds(to: #selector(NSDecimalNumberBehaviors.scale)) {
+        if UIScreen.main.responds(to: #selector((any NSDecimalNumberBehaviors).scale)) {
             if UIScreen.main.scale == 2.0 {
                 UIGraphicsBeginImageContextWithOptions(size, false, 1.0)
             } else {

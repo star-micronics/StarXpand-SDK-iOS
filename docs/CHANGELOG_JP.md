@@ -2,6 +2,15 @@
 
 # 変更点
 
+## 2.8.0 (2024/10/18)
+
+* TSP100IV-UEWB およびTSP100IV-UEWB SK に対応
+* プリンターの詳細情報を取得するAPIを追加
+* エラーの詳細情報を取得するAPIを追加
+* Swift6へのアップデート準備（サンプルアプリをSwift6でビルド可能となるよう改修）
+* 不具合修正  
+  * Xcode16とiOS18の組み合わせで、LAN経由でプリンターの検索・通信に失敗する問題を修正 [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
+
 ## 2.7.0 (2024/06/24)
 
 * BSC10II に対応

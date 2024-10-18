@@ -99,7 +99,7 @@ class MonitorViewController: UIViewController, PrinterDelegate, DrawerDelegate, 
             } catch let error {
                 print("Error: \(error)")
                 
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append("Error: \(error)\n")
                 }
                 
@@ -117,146 +117,146 @@ class MonitorViewController: UIViewController, PrinterDelegate, DrawerDelegate, 
         }
     }
     
-    func printer(_ printer: StarPrinter, communicationErrorDidOccur error: Error) {
+    nonisolated func printer(_ printer: StarPrinter, communicationErrorDidOccur error: any Error) {
         print("Printer: Communication Error")
         print(error)
         
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Communication Error\n")
             self.statusTextView.text.append("\(error)\n")
         }
     }
     
-    func printerIsReady(_ printer: StarPrinter) {
+    nonisolated func printerIsReady(_ printer: StarPrinter) {
         print("Printer: Ready")
         
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Ready\n")
         }
     }
     
-    func printerDidHaveError(_ printer: StarPrinter) {
+    nonisolated func printerDidHaveError(_ printer: StarPrinter) {
         print("Printer: Error")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Error\n")
         }
     }
     
-    func printerIsPaperReady(_ printer: StarPrinter) {
+    nonisolated func printerIsPaperReady(_ printer: StarPrinter) {
         print("Printer: Paper Ready")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Paper Ready\n")
         }
     }
     
-    func printerIsPaperNearEmpty(_ printer: StarPrinter) {
+    nonisolated func printerIsPaperNearEmpty(_ printer: StarPrinter) {
         print("Printer: Paper Near Empty")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Paper Near Empty\n")
         }
     }
     
-    func printerIsPaperEmpty(_ printer: StarPrinter) {
+    nonisolated func printerIsPaperEmpty(_ printer: StarPrinter) {
         print("Printer: Paper Empty")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Paper Empty\n")
         }
     }
     
-    func printerIsCoverOpen(_ printer: StarPrinter) {
+    nonisolated func printerIsCoverOpen(_ printer: StarPrinter) {
         print("Printer: Cover Opened")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Cover Opened\n")
         }
     }
     
-    func printerIsCoverClose(_ printer: StarPrinter) {
+    nonisolated func printerIsCoverClose(_ printer: StarPrinter) {
         print("Printer: Cover Closed")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Printer: Cover Closed\n")
         }
     }
     
-    func drawer(printer: StarPrinter, communicationErrorDidOccur error: Error) {
+    nonisolated func drawer(printer: StarPrinter, communicationErrorDidOccur error: any Error) {
         print("Drawer: Communication Error")
         print(error);
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Drawer: Communication Error\n")
             self.statusTextView.text.append("\(error)\n")
         }
     }
     
-    func drawer(printer: StarPrinter, didSwitch openCloseSignal: Bool) {
+    nonisolated func drawer(printer: StarPrinter, didSwitch openCloseSignal: Bool) {
         print("Drawer: Open Close Signal Switched: \(openCloseSignal)")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Drawer: Open Close Signal Switched: \(openCloseSignal)\n")
         }
     }
     
-    func inputDevice(printer: StarPrinter, communicationErrorDidOccur error: Error) {
+    nonisolated func inputDevice(printer: StarPrinter, communicationErrorDidOccur error: any Error) {
         print("Input Device: Communication Error")
         print(error)
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Input Device: Communication Error\n")
             self.statusTextView.text.append("\(error)\n")
         }
     }
     
-    func inputDeviceDidConnect(printer: StarPrinter) {
+    nonisolated func inputDeviceDidConnect(printer: StarPrinter) {
         print("Input Device: Connected")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Input Device: Connected\n")
         }
     }
     
-    func inputDeviceDidDisconnect(printer: StarPrinter) {
+    nonisolated func inputDeviceDidDisconnect(printer: StarPrinter) {
         print("Input Device: Disconnected")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Input Device: Disconnected\n")
         }
     }
 
-    func inputDevice(printer: StarPrinter, didReceive data: Data) {
+    nonisolated func inputDevice(printer: StarPrinter, didReceive data: Data) {
         print("Input Device: DataReceived \(NSData(data: data))")
         
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Input Device: DataReceived \(NSData(data: data))\n")
         }
     }
     
-    func display(printer: StarPrinter, communicationErrorDidOccur error: Error) {
+    nonisolated func display(printer: StarPrinter, communicationErrorDidOccur error: any Error) {
         print("Display: Communication Error")
         print(error)
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Display: Communication Error\n")
             self.statusTextView.text.append("\(error)\n")
         }
     }
     
-    func displayDidConnect(printer: StarPrinter) {
+    nonisolated func displayDidConnect(printer: StarPrinter) {
         print("Display: Connected")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Display: Connected\n")
         }
     }
     
-    func displayDidDisconnect(printer: StarPrinter) {
+    nonisolated func displayDidDisconnect(printer: StarPrinter) {
         print("Display: Disconnected")
 
-        DispatchQueue.main.async {
+        Task { @MainActor in
             self.statusTextView.text.append("Display: Disconnected\n")
         }
     }

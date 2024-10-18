@@ -145,7 +145,7 @@ class SpoolerViewController: UIViewController {
             } catch let error {
                 print("Error: \(error)")
                 
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append("Error: \(error)\n")
                 }
             }
@@ -169,13 +169,13 @@ class SpoolerViewController: UIViewController {
                 let jobStatus = try await printer.getSpoolJobStatus(jobId: jobId)
                 print(jobStatus)
                 
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append(jobStatus.description + "\n")
                 }
                 
                 print("Success")
             } catch let error {
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append("Error: \(error)\n\n")
                 }
                 

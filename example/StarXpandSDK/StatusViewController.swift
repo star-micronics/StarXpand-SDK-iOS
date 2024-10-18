@@ -59,7 +59,7 @@ class StatusViewController: UIViewController {
                     Drawer Open Close Signal: \(status.drawerOpenCloseSignal)
                     """)
                 
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append("""
                         Has Error: \(status.hasError)
                         Paper Empty: \(status.paperEmpty)
@@ -72,7 +72,7 @@ class StatusViewController: UIViewController {
             } catch let error {
                 print("Error: \(error)")
                 
-                DispatchQueue.main.async {
+                Task { @MainActor in
                     self.statusTextView.text.append("Error: \(error)\n\n")
                 }
             }

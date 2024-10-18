@@ -1,10 +1,11 @@
-<p align="center">
+
+<div style="text-align: center;">
   <img
     src="logo.png"
     width="600"
     style="margin-top: 20px; margin-bottom: 20px;"
   />
-</p>
+</div>
 
 - [English](../README.md)
 
@@ -24,9 +25,9 @@ StarXpand SDKのドキュメントは[こちら](https://www.star-m.jp/starxpand
 
 ## 動作環境
 
-| Platform | OS Version | Arch |
-| --- | --- | --- |
-| iOS | iOS 13.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 |
+| Language | Language Version | Platform | OS Version | Arch |
+| --- | --- | --- | --- | --- |
+| Swift | 5 |iOS | iOS 13.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 |
 
 ## 導入
 
@@ -67,8 +68,8 @@ https://developer.apple.com/documentation/swift_packages/adding_package_dependen
 #### 2.2. `Bluetooth Always Usage Description` 項目および `Bluetooth Peripheral Usage Description` 項目の設定
 
 1. Information Property List（デフォルトでは"Info.plist"）を選択します。
-2. Keyに `Privacy – Bluetooth Always Usage Description` を追加します。
-3. `Deployment Target` をiOS12に設定する場合、Keyに `Privacy – Bluetooth Peripheral Usage Description` を追加します。
+2. Keyに `Privacy - Bluetooth Always Usage Description` を追加します。
+3. `Deployment Target` をiOS12に設定する場合、Keyに `Privacy - Bluetooth Peripheral Usage Description` を追加します。
 3. それぞれのValue に Bluetoothの利用目的（例: `Use Bluetooth for communication with the printer.`）を設定します。
 4. Bluetoothにてプリンターと通信するとき、Bluetoothへのアクセス許可を求めるダイアログが表示されます。その際、Valueに設定した文字列がBluetoothを利用する理由として表示されます。
 

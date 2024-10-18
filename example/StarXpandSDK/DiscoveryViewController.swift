@@ -19,7 +19,7 @@ class DiscoveryViewController: UIViewController, StarDeviceDiscoveryManagerDeleg
     
     @IBOutlet weak var resultTextView: UITextView!
     
-    private var manager: StarDeviceDiscoveryManager? = nil
+    private var manager: (any StarDeviceDiscoveryManager)? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -62,24 +62,27 @@ class DiscoveryViewController: UIViewController, StarDeviceDiscoveryManagerDeleg
         }
     }
     
-    func manager(_ manager: StarDeviceDiscoveryManager, didFind printer: StarPrinter) {
-        DispatchQueue.main.async {
+    nonisolated func manager(_ manager: any StarDeviceDiscoveryManager, didFind printer: StarPrinter) {
+        let interfaceType = printer.connectionSettings.interfaceType
+        let identifier = printer.connectionSettings.identifier
+        
+        Task { @MainActor in
             
-            switch printer.connectionSettings.interfaceType {
+            switch interfaceType {
             case .lan:
-                let findPrinter = "LAN: " + printer.connectionSettings.identifier
+                let findPrinter = "LAN: " + identifier
                 self.resultTextView.text = self.resultTextView.text + "\n" + findPrinter
                 
             case .bluetooth:
-                let findPrinter = "Bluetooth: " + printer.connectionSettings.identifier
+                let findPrinter = "Bluetooth: " + identifier
                 self.resultTextView.text = self.resultTextView.text + "\n" + findPrinter
                 
             case .bluetoothLE:
-                let findPrinter = "BluetoothLE: " + printer.connectionSettings.identifier
+                let findPrinter = "BluetoothLE: " + identifier
                 self.resultTextView.text = self.resultTextView.text + "\n" + findPrinter
                 
             case .usb:
-                let findPrinter = "USB: " + printer.connectionSettings.identifier
+                let findPrinter = "USB: " + identifier
                 self.resultTextView.text = self.resultTextView.text + "\n" + findPrinter
                 
             default:
@@ -87,10 +90,10 @@ class DiscoveryViewController: UIViewController, StarDeviceDiscoveryManagerDeleg
             }
         }
         
-        print("Found printer: \(printer.connectionSettings.identifier).")
+        print("Found printer: \(identifier).")
     }
     
-    func managerDidFinishDiscovery(_ manager: StarDeviceDiscoveryManager) {
+    nonisolated func managerDidFinishDiscovery(_ manager: any StarDeviceDiscoveryManager) {
         print("Discovery finished.")
     }
 }

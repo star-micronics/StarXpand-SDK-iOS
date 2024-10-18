@@ -29,8 +29,6 @@
 		</dict>
 	</array>
 	<key>NSPrivacyAccessedAPITypes</key>
-	<array>
-		<dict/>
-	</array>
+	<array/>
 </dict>
 </plist>
