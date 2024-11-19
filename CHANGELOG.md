@@ -6,7 +6,15 @@
 
 * Added TSP100IV-UEWB and TSP100IV-UEWB SK support.
 * Added API to get detail information of printer.
+  * detail property of StarPrinterInformation
+  * StarPrinterInformationDetail
+  * StarPrinterInformationLan
+  * StarPrinterInformationBluetooth
+  * StarPrinterInformationBluetoothLE
+  * StarPrinterInformationUSB
 * Added API to get detail information of error.
+  * errorDetail property of StarPrinter
+  * StarIO10ErrorDetail
 * Preparing for update to Swift6. (modified the sample app so that it can be built with Swift6)
 * Bug Fix:
   * Fixed an issue where StarIO10 failed to open and discover printer via LAN with the Xcode16 and iOS 18. [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)

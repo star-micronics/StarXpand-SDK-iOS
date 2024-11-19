@@ -6,7 +6,15 @@
 
 * TSP100IV-UEWB およびTSP100IV-UEWB SK に対応
 * プリンターの詳細情報を取得するAPIを追加
+  * StarPrinterInformationのdetailプロパティ
+  * StarPrinterInformationDetail
+  * StarPrinterInformationLan
+  * StarPrinterInformationBluetooth
+  * StarPrinterInformationBluetoothLE
+  * StarPrinterInformationUSB
 * エラーの詳細情報を取得するAPIを追加
+  * StarPrinterのerrorDetailプロパティ
+  * StarIO10ErrorDetail
 * Swift6へのアップデート準備（サンプルアプリをSwift6でビルド可能となるよう改修）
 * 不具合修正  
   * Xcode16とiOS18の組み合わせで、LAN経由でプリンターの検索・通信に失敗する問題を修正 [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
