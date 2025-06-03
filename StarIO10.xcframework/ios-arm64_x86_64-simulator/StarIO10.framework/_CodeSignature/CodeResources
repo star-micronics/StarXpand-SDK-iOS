@@ -18,47 +18,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		XbIMxBQlAsshbHS0qIHT/u0Szdw=
+		/m9BPf88Ppj7f/h7HEzwtVjixgw=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		WC97niJ0e3qGnjNUYZOiEEU8oGs=
+		3BpLepi/XSWDTJL4B51sP3fNCRc=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		RP9OMdNPY75unce8xm8qc3qzTi4=
+		IAiJTmS9dw1VHSBtQzoWAWM5B0E=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		Pv3r02+pYq3gH9ed8kD75DtU4UY=
+		o2ESqSQtwM8bNTiyKHkDObCQryQ=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		RP9OMdNPY75unce8xm8qc3qzTi4=
+		IAiJTmS9dw1VHSBtQzoWAWM5B0E=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		2n1yH2T7PVkR3dc9R1U/i8da8Os=
+		Oi4osAlf0/N3jfVHq9zWnjpTlQw=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		WC97niJ0e3qGnjNUYZOiEEU8oGs=
+		3BpLepi/XSWDTJL4B51sP3fNCRc=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ibLRaJq/kiEeF9mw61kGja6We40=
+		FyIGYZS97ty0RbqVfvaCWnnDIhY=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		NQnK/JFFPXQABMwo3gdhDWBlh5k=
+		qL2PB1lmqkiUkLRSNjw1TtLnPtQ=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ibLRaJq/kiEeF9mw61kGja6We40=
+		FyIGYZS97ty0RbqVfvaCWnnDIhY=
 		</data>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		rkOZbV9eExVysSGIcC1cvFMyMEo=
+		hIAcUpp6J2QcJa2BhVwZKskRSnw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -104,70 +104,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vZ/Shr1kXapckOurHbd4yWu+1RVcqyHuywk5BnsCDo8=
+			jT4dcLgSbSwsZLtmRv2fEraMQv9l8AG2k8CHwYYVekY=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYVcaenF2H2Fr6nRvF83FVKsw3oAE76b6DU0Dc/xT/s=
+			+E9Xju15QGJLTTxMgETY1o2IUdr4R252dqrGs0yNsRY=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hvnsPrX0j+rG2by1BhT4VIxKbqSQrKPY0bw1UinaInQ=
+			jvkdN2Md5joySPtuc5FJd2/elU88/pmbfG2x2o/NGJA=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YYVcaenF2H2Fr6nRvF83FVKsw3oAE76b6DU0Dc/xT/s=
+			+E9Xju15QGJLTTxMgETY1o2IUdr4R252dqrGs0yNsRY=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Zd3uCoRgvzE/aLwAbcRLT8u9kVVoHN4aVB1pAUQOi+Y=
+			mGJNQxGLvmuHJOTTwWRb/yAQN3EJWjh4nrtJGHHJpE0=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vZ/Shr1kXapckOurHbd4yWu+1RVcqyHuywk5BnsCDo8=
+			jT4dcLgSbSwsZLtmRv2fEraMQv9l8AG2k8CHwYYVekY=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kUIUCA98hARUVlRRuGkFReSx1FvCKEbEmNJ5ZRzkOTI=
+			SmfvcJ68JIjmblPW4+cE4L/HZ4pv/MBZyR+vzJRCdiE=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			5+wPmM1+o6nsYaLV3uzqBPVFOyrSAbzv5w1++pH3JJU=
+			Gq1qSVsOjuW2TpslTztA10PIcl5wFAzIRHiQNKGlYVs=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kUIUCA98hARUVlRRuGkFReSx1FvCKEbEmNJ5ZRzkOTI=
+			SmfvcJ68JIjmblPW4+cE4L/HZ4pv/MBZyR+vzJRCdiE=
 			</data>
 		</dict>
 		<key>Modules/StarIO10.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ND4KDvgB0GShlzQZ1qnR8nsZbdY9FwthWTHVV1IvJTQ=
+			Fs22lutRb6Og0C/AmeCX7g0QSiKsJjTxR9Hk17BC/yQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

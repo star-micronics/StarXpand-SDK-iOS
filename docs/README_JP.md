@@ -25,9 +25,11 @@ StarXpand SDKのドキュメントは[こちら](https://www.star-m.jp/starxpand
 
 ## 動作環境
 
-| Language | Language Version | Platform | OS Version | Arch |
-| --- | --- | --- | --- | --- |
-| Swift | 5 |iOS | iOS 13.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 |
+| Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
+| --- | --- | --- | --- | --- | --- |
+| Swift | 5 |iOS | iOS 14.0 以降 | 実機: arm64<br> シミュレータ: arm64, x86_64 | Xcode 16.3 |
+
+<a id="TestEnvironment"></a>*SDK同梱のサンプルアプリをビルドして動作することを確認しています。
 
 ## 導入
 
@@ -52,7 +54,7 @@ https://developer.apple.com/documentation/swift_packages/adding_package_dependen
 |--------------------------|-----------------------------------------------------------------------------------------|
 | Bluetooth                | [2.1.](#SupportedEAProtocols) & [2.2.](#BluetoothAlwaysUsageDescription) & [2.4.](#MFi) |
 | Bluetooth Low Energy     | [2.2.](#BluetoothAlwaysUsageDescription)                                                |
-| Ethernet (iOS14以上)      | [2.3.](#LocalNetworkUsageDescription)                                                   |
+| Ethernet                 | [2.3.](#LocalNetworkUsageDescription)                                                   |
 | Lightning USB           | [2.1.](#SupportedEAProtocols) & [2.4.](#MFi)                                            |
 
 <a id="SupportedEAProtocols"></a>
@@ -65,12 +67,11 @@ https://developer.apple.com/documentation/swift_packages/adding_package_dependen
 > :warning: 該当するプリンターを使用しない場合は、この設定を行わないでください。
 
 <a id="BluetoothAlwaysUsageDescription"></a>
-#### 2.2. `Bluetooth Always Usage Description` 項目および `Bluetooth Peripheral Usage Description` 項目の設定
+#### 2.2. `Bluetooth Always Usage Description` 項目の設定
 
 1. Information Property List（デフォルトでは"Info.plist"）を選択します。
 2. Keyに `Privacy - Bluetooth Always Usage Description` を追加します。
-3. `Deployment Target` をiOS12に設定する場合、Keyに `Privacy - Bluetooth Peripheral Usage Description` を追加します。
-3. それぞれのValue に Bluetoothの利用目的（例: `Use Bluetooth for communication with the printer.`）を設定します。
+3. Value に Bluetoothの利用目的（例: `Use Bluetooth for communication with the printer.`）を設定します。
 4. Bluetoothにてプリンターと通信するとき、Bluetoothへのアクセス許可を求めるダイアログが表示されます。その際、Valueに設定した文字列がBluetoothを利用する理由として表示されます。
 
 より詳しくは、下記URLを参照してください。
@@ -83,7 +84,7 @@ https://developer.apple.com/documentation/bundleresources/information_property_l
 1. Information Property List（デフォルトでは"Info.plist"）を選択します。
 2. Keyに `Privacy - Local Network Usage Description` を追加します。
 3. Value に Local Networkの利用目的（例: `Use Local Network for communication with the printer or discovery the printers.`）を設定します。
-4. iOS14以上でEthernetプリンターと通信するとき、Local Networkへのアクセス許可を求めるダイアログが表示されます。その際、Valueに設定した文字列がLocal Networkを利用する理由として表示されます。
+4. Ethernetプリンターと通信するとき、Local Networkへのアクセス許可を求めるダイアログが表示されます。その際、Valueに設定した文字列がLocal Networkを利用する理由として表示されます。
 
 <a id="MFi"></a>
 #### 2.4. MFi対応プリンター向けアプリ認証を取得

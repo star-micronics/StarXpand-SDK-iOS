@@ -2,26 +2,28 @@
 
 # Change Log
 
+## 2.9.0 (2025/05/19)
+
+* Added mC-Label2 support.
+* Added the actionSeparatorFeed method to execute paper feeding per black mark and gap for die-cut label paper, etc.
+* Added the styleBaseMagnification method to set the base print size.
+* Added [Printing Samples](example/StarXpandSDK/PrintingSamples/README.md) for mC-Label2 (300dpi model).
+* Changed minimum supported OS version from 13 to 14.
+* Bug Fix:
+  * Fixed an issue where the execution of StarPrinter.print() occasionally failed immediately after the printer came back online (when PrinterDelegate onReady() was called) with the LAN interface of TSP650II, TSP700II, TSP800II, and SP700. 
+
 ## 2.8.0 (2024/10/18)
 
 * Added TSP100IV-UEWB and TSP100IV-UEWB SK support.
 * Added API to get detail information of printer.
-  * detail property of StarPrinterInformation
-  * StarPrinterInformationDetail
-  * StarPrinterInformationLan
-  * StarPrinterInformationBluetooth
-  * StarPrinterInformationBluetoothLE
-  * StarPrinterInformationUSB
 * Added API to get detail information of error.
-  * errorDetail property of StarPrinter
-  * StarIO10ErrorDetail
 * Preparing for update to Swift6. (modified the sample app so that it can be built with Swift6)
 * Bug Fix:
   * Fixed an issue where StarIO10 failed to open and discover printer via LAN with the Xcode16 and iOS 18. [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
 
 ## 2.7.0 (2024/06/24)
 
-* Added BSC10II support (Limited region model).
+* Added BSC10II support.
 * Added tearOff (feed to tear bar) to the CutType enum.
 * Added india to the Printer.InternationalCharacterType enum.
 * Changed so that StarIO10Error.inUse is thrown immediately when StarPrinter.open() is executed for a LAN printer that has already been opened by another device if autoSwitchInterface is false.

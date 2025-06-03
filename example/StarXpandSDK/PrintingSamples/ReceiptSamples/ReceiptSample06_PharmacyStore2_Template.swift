@@ -1,5 +1,4 @@
 //
-//  ReceiptSample06_PharmacyStore2_Template.swift
 //  StarXpandSDK
 //
 

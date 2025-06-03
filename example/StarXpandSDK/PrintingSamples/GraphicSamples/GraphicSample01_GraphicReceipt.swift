@@ -1,5 +1,4 @@
 //
-//  Sample15_GraphicReceipt.swift
 //  StarXpandSDK
 //
 

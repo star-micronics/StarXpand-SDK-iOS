@@ -1,5 +1,4 @@
 //
-//  ReceiptSample01_OnlineOrder_Template.swift
 //  StarXpandSDK
 //
 

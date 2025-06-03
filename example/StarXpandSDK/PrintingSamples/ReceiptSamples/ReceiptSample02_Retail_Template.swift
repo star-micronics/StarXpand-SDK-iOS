@@ -1,5 +1,4 @@
 //
-//  ReceiptSample02_Retail_Template.swift
 //  StarXpandSDK
 //
 

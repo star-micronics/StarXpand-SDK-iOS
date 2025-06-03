@@ -5,7 +5,6 @@
     style="margin-top: 20px; margin-bottom: 20px;"
   />
 </div>
-
 - [日本語はこちら](docs/README_JP.md)
 
 # StarXpand SDK for iOS
@@ -25,9 +24,11 @@ Documentation includes an overview of the SDK, how to build a sample application
 
 ## Requirements
 
-| Language | Language Version | Platform | OS Version | Arch |
-| --- | --- | --- | --- | --- |
-| Swift | 5 | iOS | iOS 13.0 or later | Device: arm64<br> Simulator: arm64, x86_64 |
+| Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
+| --- | --- | --- | --- | --- | --- |
+| Swift | 5 | iOS | iOS 14.0 or later | Device: arm64<br> Simulator: arm64, x86_64 | Xcode 16.3 |
+
+<a id="TestEnvironment"></a>*The sample app included with this SDK is being built, and its operation is being confirmed.
 
 ## Installation
 
@@ -52,7 +53,7 @@ Please check the table below and take action.
 |---------------------------|-----------------------------------------------------------------------------------------|
 | Bluetooth                 | [2.1.](#SupportedEAProtocols) & [2.2.](#BluetoothAlwaysUsageDescription) & [2.4.](#MFi) |
 | Bluetooth Low Energy      | [2.2.](#BluetoothAlwaysUsageDescription)                                                |
-| Ethernet (iOS14 or later) | [2.3.](#LocalNetworkUsageDescription)                                                   |
+| Ethernet                  | [2.3.](#LocalNetworkUsageDescription)                                                   |
 | Lightning USB             | [2.1.](#SupportedEAProtocols) & [2.4.](#MFi)                                            |
 
 <a id="SupportedEAProtocols"></a>
@@ -65,13 +66,12 @@ Please check the table below and take action.
 > :warning: If you do not use the printer concerned, do not configure this setting.
 
 <a id="BluetoothAlwaysUsageDescription"></a>
-#### 2.2. Set `Bluetooth Always Usage Description` and `Bluetooth Peripheral Usage Description`
+#### 2.2. Set `Bluetooth Always Usage Description`
 
 1. Click on the information property list file (default : “Info.plist").
 2. Add the `Privacy - Bluetooth Always Usage Description` Key.
-3. If you set `Deployment Target` to iOS12, add the `Privacy - Bluetooth Peripheral Usage Description` Key.
-4. Set the reason for using Bluetooth in Value (e.g. `Use Bluetooth for communication with the printer.`)
-5. When communicating with the Bluetooth printer on iOS 13 or later, an alert requesting permission to access Bluetooth is displayed. The string set in Value is displayed in the alert as the reason for using Bluetooth.
+3. Set the reason for using Bluetooth in Value (e.g. `Use Bluetooth for communication with the printer.`)
+4. When communicating with the Bluetooth printer, an alert requesting permission to access Bluetooth is displayed. The string set in Value is displayed in the alert as the reason for using Bluetooth.
 
 For more information, please refer to the following URL.
 
@@ -83,7 +83,7 @@ https://developer.apple.com/documentation/bundleresources/information_property_l
 1. Click on the information property list file (default : “Info.plist").
 2. Add the `Privacy - Local Network Usage Description` Key.
 3. Set the reason for using Local Network in Value (e.g. `Use Local Network for communication with the printer or discovery the printers.`)
-4. When communicating with the Ethernet printer on iOS 14 or later, an alert requesting permission to access Local Network is displayed. The string set in Value is displayed in the alert as the reason for using Local Network.
+4. When communicating with the Ethernet printer, an alert requesting permission to access Local Network is displayed. The string set in Value is displayed in the alert as the reason for using Local Network.
 
 <a id="MFi"></a>
 #### 2.4. Apple Approval Process for STAR MFi Applications

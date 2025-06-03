@@ -2,22 +2,24 @@
 
 # 変更点
 
+## 2.9.0 (2025/05/19)
+
+* mC-Label2 に対応
+* ブラックマークやダイカットラベル紙等のギャップ単位で用紙送りを実行するactionSeparatorFeedメソッドを追加
+* 基本印字サイズを設定するstyleBaseMagnificationメソッドを追加
+* mC-Label2（300dpiモデル）用の[Printing Samples](../example/StarXpandSDK/PrintingSamples/README.md)を追加
+* 最低サポートOSバージョンを13から14に変更
+* 不具合修正
+  * TSP650II、TSP700II、TSP800II、SP700のLAN I/Fでオンライン復帰直後（PrinterDelegateのonReady()が呼ばれた時）のStarPrinter.print()の実行がまれに失敗する問題を修正
+
 ## 2.8.0 (2024/10/18)
 
 * TSP100IV-UEWB およびTSP100IV-UEWB SK に対応
 * プリンターの詳細情報を取得するAPIを追加
-  * StarPrinterInformationのdetailプロパティ
-  * StarPrinterInformationDetail
-  * StarPrinterInformationLan
-  * StarPrinterInformationBluetooth
-  * StarPrinterInformationBluetoothLE
-  * StarPrinterInformationUSB
 * エラーの詳細情報を取得するAPIを追加
-  * StarPrinterのerrorDetailプロパティ
-  * StarIO10ErrorDetail
 * Swift6へのアップデート準備（サンプルアプリをSwift6でビルド可能となるよう改修）
 * 不具合修正  
-  * Xcode16とiOS18の組み合わせで、LAN経由でプリンターの検索・通信に失敗する問題を修正 [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
+  * xCode16とiOS18の組み合わせで、LAN経由でプリンターの検索・通信に失敗する問題を修正 [#31](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/31)
 
 ## 2.7.0 (2024/06/24)
 

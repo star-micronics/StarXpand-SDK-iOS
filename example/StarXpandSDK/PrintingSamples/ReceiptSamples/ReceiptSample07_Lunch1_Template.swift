@@ -1,5 +1,4 @@
 //
-//  ReceiptSample07_Lunch1_Template.swift
 //  StarXpandSDK
 //
 

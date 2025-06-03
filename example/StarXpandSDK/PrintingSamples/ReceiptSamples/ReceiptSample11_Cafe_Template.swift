@@ -1,5 +1,4 @@
 //
-//  ReceiptSample11_Cafe_Template.swift
 //  StarXpandSDK
 //
 

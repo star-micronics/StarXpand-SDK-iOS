@@ -1,5 +1,4 @@
 //
-//  ReceiptSample04_FoodDelivery2_Template.swift
 //  StarXpandSDK
 //
 

@@ -1,5 +1,4 @@
 //
-//  ReceiptSample12_Lottery_Template.swift
 //  StarXpandSDK
 //
 
