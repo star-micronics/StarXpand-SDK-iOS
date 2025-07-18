@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C154D292865685800BBC7DE /* SpoolerViewController.swift */; };
+		2CA679A92DCD79F900E005F3 /* FirmwareUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */; };
 		881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881AAC15275F4D7300D6ED67 /* logo_01.png */; };
 		8882FC91279968E0003AA845 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 8882FC90279968E0003AA845 /* StarIO10 */; };
 		9F38F3602B15B72800BEED40 /* receipt2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */; };
@@ -216,6 +217,7 @@
 
 /* Begin PBXFileReference section */
 		2C154D292865685800BBC7DE /* SpoolerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpoolerViewController.swift; sourceTree = "<group>"; };
+		2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirmwareUpdateViewController.swift; sourceTree = "<group>"; };
 		881AAC15275F4D7300D6ED67 /* logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_01.png; sourceTree = "<group>"; };
 		8882FC8F27996794003AA845 /* starxpand_sdk_ios_swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = starxpand_sdk_ios_swift; path = ..; sourceTree = "<group>"; };
 		9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt2_field_data.json; sourceTree = "<group>"; };
@@ -472,6 +474,7 @@
 				DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */,
 				AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */,
 				AA2AE06E272BB9AB00679414 /* StatusViewController.swift */,
+				2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */,
 				881AAC15275F4D7300D6ED67 /* logo_01.png */,
 				DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */,
 				DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */,
@@ -993,6 +996,7 @@
 				DDAEF98A2B6CD2FD0001F082 /* ReceiptSample02_Retail_Template.swift in Sources */,
 				DDAEFB1E2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift in Sources */,
 				AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */,
+				2CA679A92DCD79F900E005F3 /* FirmwareUpdateViewController.swift in Sources */,
 				DDAEF9C42B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift in Sources */,
 				AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */,
 				DDAEFB222B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift in Sources */,
@@ -1226,7 +1230,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.9.0;
+				MARKETING_VERSION = 2.10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1258,7 +1262,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.9.0;
+				MARKETING_VERSION = 2.10.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

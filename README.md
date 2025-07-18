@@ -22,6 +22,11 @@ Please refer [here](https://www.star-m.jp/starxpandsdk-oml.html) for StarXpand S
 
 Documentation includes an overview of the SDK, how to build a sample application, how to use the API, and a API reference.
 
+## About collection and transmission of diagnostic information By StarIO10 framework
+
+Some of the APIs provided by the StarIO10 framework collect information about the user device and connected printer during execution and send it to the server managed by Star Micronics Co., Ltd. as diagnostic information.
+Please refer [here](DIAG_INFO.md) for details.
+
 ## Requirements
 
 | Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
@@ -118,6 +123,8 @@ The sample code and printed result images are also [available here](example/Star
 #### 6. [Get printer status](#GetPrinterStatus)
 
 #### 7. [Monitor printer](#MonitorPrinter)
+
+#### 8. [Update printer firmware](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/fw-update.html)
 
 <a id="GetPrinterStatus"></a>
 ### Get printer status

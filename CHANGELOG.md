@@ -2,6 +2,19 @@
 
 # Change Log
 
+## 2.10.0 (2025/7/14)
+
+* Added API to update printer firmware.
+* Added the following printers support (Maintenance support)
+  * TSP100LAN
+  * TSP650II (LAN : IFBD-HE05)
+  * SP700 (LAN : IFBD-HE06)
+* Added some properties for printer detail status API (StarPrinterStatusDetail).
+* Added supported models for PrinterBuilder actionSeparatorFeed() method.
+* Bug Fix:
+  * StarPrinter.print() method may crashes depending on StarXpandCommandBuilder API parameters specified.
+  * Fixed an issue related to Bluetooth and USB interface communication.
+
 ## 2.9.0 (2025/05/19)
 
 * Added mC-Label2 support.

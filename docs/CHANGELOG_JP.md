@@ -2,6 +2,19 @@
 
 # 変更点
 
+## 2.10.0 (2025/7/14)
+
+* プリンターファームウェアの更新を行うAPIを追加
+* 以下のプリンター機種をメンテナンスサポートとして対応
+  * TSP100LAN
+  * TSP650II (LAN : IFBD-HE05)
+  * SP700 (LAN : IFBD-HE06)
+* 詳細ステータス取得API (StarPrinterStatusDetail)にプロパティを追加
+* PrinterBuilder actionSeparatorFeed()メソッドの対応機種を追加
+* 不具合修正
+  * StarXpandCommandBuilder APIのパラメータの指定によっては、StarPrinter.print()メソッドでクラッシュする
+  * Bluetooth, USBインターフェース通信に関する不具合を修正
+
 ## 2.9.0 (2025/05/19)
 
 * mC-Label2 に対応

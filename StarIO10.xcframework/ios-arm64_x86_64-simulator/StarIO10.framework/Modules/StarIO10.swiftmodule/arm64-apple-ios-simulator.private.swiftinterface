@@ -308,6 +308,11 @@ public protocol StarPrinterStatusDetail : Swift.Sendable {
   var partsReplacementNotification: Swift.Bool? { get }
   var cleaningNotification: Swift.Bool? { get }
   var detectedPaperWidth: Swift.Int? { get }
+  var printHeadOverTemperature: Swift.Bool? { get }
+  var unrecoverableError: Swift.Bool? { get }
+  var printHeadThermistorError: Swift.Bool? { get }
+  var receiveBufferOverflow: Swift.Bool? { get }
+  var voltageError: Swift.Bool? { get }
 }
 extension StarIO10.StarXpandCommand.Printer {
   @_inheritsConvenienceInitializers @objcMembers @objc(STARIO10StarXpandCommandPrinterTextWidthParameter) public class TextWidthParameter : ObjectiveC.NSObject {
@@ -470,6 +475,11 @@ extension StarIO10.StarIO10ErrorDetail {
   @objc override dynamic public init()
   @objc deinit
 }
+@objc(STARIO10FirmwareUpdateDelegate) public protocol FirmwareUpdateDelegate : Swift.Sendable {
+  @objc func firmwareUpdateProgress(_ firmware: StarIO10.StarPrinterSettingFirmware, step: StarIO10.FirmwareUpdateStep)
+  @objc func firmwareUpdateTransmitComplete(_ firmware: StarIO10.StarPrinterSettingFirmware)
+  @objc func firmwareUpdate(_ firmware: StarIO10.StarPrinterSettingFirmware, errorDidOccur error: any Swift.Error)
+}
 extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10StarXpandCommandPrinterFontType) public enum FontType : Swift.Int, Swift.Sendable {
     case a
@@ -612,6 +622,9 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc public var errorDetail: StarIO10.StarIO10ErrorDetail {
     get
   }
+  @objc public var setting: StarIO10.StarPrinterSetting? {
+    @objc get
+  }
   @objc(initWithConnectionSettings:) convenience public init(_ connectionSettings: StarIO10.StarConnectionSettings)
   @objc deinit
 }
@@ -673,6 +686,7 @@ public enum StarIO10Error : Swift.Error, Swift.Sendable {
   case authentication(message: Swift.String, errorCode: StarIO10.StarIO10ErrorCode = StarIO10ErrorCode.none)
   case unsupportedModel(message: Swift.String, errorCode: StarIO10.StarIO10ErrorCode = StarIO10ErrorCode.none)
   case unsupportedOSVersion(message: Swift.String, errorCode: StarIO10.StarIO10ErrorCode = StarIO10ErrorCode.none)
+  case serverCommunication(message: Swift.String, errorCode: StarIO10.StarIO10ErrorCode = StarIO10ErrorCode.none)
 }
 extension StarIO10.StarIO10Error : Swift.CustomStringConvertible {
   public var description: Swift.String {
@@ -801,6 +815,7 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10StarPrinterModelTSP650II) case tsp650II
   @objc(STARIO10StarPrinterModelTSP700II) case tsp700II
   @objc(STARIO10StarPrinterModelTSP800II) case tsp800II
+  @objc(STARIO10StarPrinterModelTSP100LAN) case tsp100LAN
   @objc(STARIO10StarPrinterModelTSP100IIIW) case tsp100IIIW
   @objc(STARIO10StarPrinterModelTSP100IIILAN) case tsp100IIILAN
   @objc(STARIO10StarPrinterModelTSP100IIIBI) case tsp100IIIBI
@@ -828,6 +843,21 @@ extension StarIO10.StarXpandCommand.Printer {
   public var rawValue: Swift.Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers @objc(STARIO10StarPrinterSetting) public class StarPrinterSetting : ObjectiveC.NSObject {
+  @objc final public let firmware: StarIO10.StarPrinterSettingFirmware?
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc(STARIO10StarPrinterSettingFirmware) public class StarPrinterSettingFirmware : ObjectiveC.NSObject {
+  @objc public var currentVersion: Swift.String {
+    get
+  }
+  @objc public var latestVersion: Swift.String? {
+    get
+  }
+  @objc final public let isUpdatable: Swift.Bool
+  @objc weak public var updateDelegate: (any StarIO10.FirmwareUpdateDelegate)?
+  @objc deinit
 }
 extension StarIO10.StarXpandCommand.Printer {
   @objcMembers @objc(STARIO10StarXpandCommandPrinterPageModeRuledLineParameter) public class PageModeRuledLineParameter : ObjectiveC.NSObject {
@@ -1115,6 +1145,12 @@ extension StarIO10.StarXpandCommand.Buzzer {
     @objc deinit
   }
 }
+@available(iOS 13.0, *)
+extension StarIO10.StarPrinterSettingFirmware {
+  public func getCurrentVersion() async throws -> Swift.String
+  public func checkVersions() async throws
+  public func update() async throws
+}
 extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10StarXpandCommandPrinterInternationalCharacterType) public enum InternationalCharacterType : Swift.Int, Swift.Sendable {
     case usa
@@ -1194,6 +1230,15 @@ extension StarIO10.StarXpandCommand.Printer {
     }
   }
 }
+@_inheritsConvenienceInitializers @objc(STARIO10DiagInfoUpload) @objcMembers final public class StarIO10DiagInfoUpload : ObjectiveC.NSObject {
+  @objc(sharedObject) public static let shared: StarIO10.StarIO10DiagInfoUpload
+  @objc final public var isEnabled: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc(STARIO10ErrorCode) public enum StarIO10ErrorCode : Swift.Int, Swift.CaseIterable, Swift.Sendable {
   @objc(STARIO10ErrorCodeNone) case none = 0
   @objc(STARIO10ErrorCodeDeviceHasError) case deviceHasError = 1000
@@ -1211,6 +1256,10 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10ErrorCodeStarConfigurationParameterError) case starConfigurationParameterError = 6001
   @objc(STARIO10ErrorCodeStarConfigurationSpecifiedFileError) case starConfigurationSpecifiedFileError = 6002
   @objc(STARIO10ErrorCodeInvalidTemplate) case invalidTemplate = 7000
+  @objc(STARIO10ErrorCodeCouldNotConnectToServer) case couldNotConnectToServer = 8000
+  @objc(STARIO10ErrorCodeServerUrlError) case serverUrlError = 8001
+  @objc(STARIO10ErrorCodeServerRequestParameterError) case serverRequestParameterError = 8002
+  @objc(STARIO10ErrorCodeServerAuthenticationError) case serverAuthenticationError = 8003
   public init?(rawValue: Swift.Int)
   public typealias AllCases = [StarIO10.StarIO10ErrorCode]
   public typealias RawValue = Swift.Int
@@ -1424,6 +1473,18 @@ extension StarIO10.StarXpandCommand.Printer {
     }
   }
 }
+@objc(STARIO10FirmwareUpdateStep) public enum FirmwareUpdateStep : Swift.Int, Swift.CustomStringConvertible, Swift.Sendable {
+  @objc(STARIO10FirmwareUpdateStepDownloading) case downloading
+  @objc(STARIO10FirmwareUpdateStepTransmitting) case transmitting
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 extension StarIO10.StarPrinterEmulation : Swift.Equatable {}
 extension StarIO10.StarPrinterEmulation : Swift.Hashable {}
 extension StarIO10.StarPrinterEmulation : Swift.RawRepresentable {}
@@ -1529,3 +1590,6 @@ extension StarIO10.StarXpandCommand.Printer.CutType : Swift.RawRepresentable {}
 extension StarIO10.StarXpandCommand.Printer.CJKCharacterType : Swift.Equatable {}
 extension StarIO10.StarXpandCommand.Printer.CJKCharacterType : Swift.Hashable {}
 extension StarIO10.StarXpandCommand.Printer.CJKCharacterType : Swift.RawRepresentable {}
+extension StarIO10.FirmwareUpdateStep : Swift.Equatable {}
+extension StarIO10.FirmwareUpdateStep : Swift.Hashable {}
+extension StarIO10.FirmwareUpdateStep : Swift.RawRepresentable {}
