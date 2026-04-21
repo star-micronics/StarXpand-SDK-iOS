@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample11_For203dpiAnd300dpi_ShippingAddressLabel_Template {

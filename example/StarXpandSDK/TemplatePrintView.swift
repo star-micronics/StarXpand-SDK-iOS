@@ -1,106 +1,142 @@
-//
-//  TemplatePrintViewController.swift
-//  StarXpandSDK
-//
-//  Copyright © 2023 Star Micronics. All rights reserved.
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
-class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource {
+struct TemplatePrintView: View {
+    @Binding var isProcessing: Bool
+    @State var interfaceType = DefaultConnectionSettings.get().interfaceType
+    @State var identifier = DefaultConnectionSettings.get().identifier
+    @StateObject var templatePrintViewModel = TemplatePrintViewModel()
+
+    @State var selectedTemplate = 0
+    @State var selectedFieldData = 0
     
-    let templateArray = [
-        "Receipt w/ specifying number of characters",
-        "Receipt w/o specifying number of characters",
-        "Label"
-    ]
-    
-    @IBOutlet weak var interfaceSelector: UISegmentedControl!
-    @IBOutlet weak var identifierTextField: UITextField!
-    @IBOutlet weak var templatePicker: UIPickerView!
-    @IBOutlet weak var fieldDataSelector: UISegmentedControl!
-    @IBOutlet weak var printButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        templatePicker.delegate = self
-        templatePicker.dataSource = self
+    var body: some View {
+        VStack {
+            Picker("Select a interfaceType", selection: $interfaceType) {
+                Text("Lan").tag(InterfaceType.lan)
+                Text("Bluetooth").tag(InterfaceType.bluetooth)
+                Text("BluetoothLE").tag(InterfaceType.bluetoothLE)
+                Text("Usb").tag(InterfaceType.usb)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+            
+            TextField("Enter identifier", text: $identifier)
+                .padding(1)
+                .textFieldStyle(.roundedBorder)
+            
+            Text("Template")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+            
+            Picker("Select a Template", selection: $selectedTemplate) {
+                Text("Receipt w/ specifying number of characters").tag(0)
+                Text("Receipt w/o specifying number of characters").tag(1)
+                Text("Label").tag(2)
+            }
+            .minimumScaleFactor(0.5)
+            .pickerStyle(WheelPickerStyle())
+            .frame(height: 150)
+            
+            Text("Field Data")
+                .frame(maxWidth: .infinity, alignment: .leading)
+            Picker("Select a Field Data", selection: $selectedFieldData) {
+                switch selectedTemplate {
+                case 0:
+                    Text("Receipt1").tag(0)
+                    Text("Receipt2").tag(1)
+                case 1:
+                    Text("Receipt1").tag(0)
+                    Text("Receipt3").tag(1)
+                default: 
+                    Text("Label1").tag(0)
+                    Text("Label2").tag(1)
+                }
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            
+            Button("Print") {
+                let starConnectionSettings = StarConnectionSettings(interfaceType: interfaceType, identifier: identifier)
+                Task {
+                    isProcessing = true
+                    await templatePrintViewModel.printing(starConnectionSettings, selectedTemplate: selectedTemplate, selectedFeildData: selectedFieldData)
+                    isProcessing = false
+                }
+            }
+
+            Text(templatePrintViewModel.logText)
+                .padding()
+
+            Spacer()
+        }
+        .navigationTitle(Text("Template Print"))
+        .padding()
     }
+}
+
+@MainActor
+class TemplatePrintViewModel: ObservableObject {
+    @Published var logText = ""
     
-    @IBAction func touchUpPrintButton(_ sender: Any) {
-        let identifier = identifierTextField.text ?? ""
-        
-        var selectedInterface: InterfaceType = InterfaceType.unknown
-        switch interfaceSelector.selectedSegmentIndex {
+    public func printing(_ starConnectionSettings: StarConnectionSettings, selectedTemplate: Int, selectedFeildData: Int) async {
+        var log = ""
+        logText = log
+
+        let template = switch selectedTemplate {
         case 0:
-            selectedInterface = InterfaceType.lan
+            createReceiptWithSpecifyingNumberOfCharactersTemplate()
         case 1:
-            selectedInterface = InterfaceType.bluetooth
-        case 2:
-            selectedInterface = InterfaceType.bluetoothLE
-        case 3:
-            selectedInterface = InterfaceType.usb
-        default:
-            return
+            createReceiptWithoutSpecifyingNumberOfCharactersTemplate()
+        default: 
+            createLabelTemplate()
         }
         
-        let starConnectionSettings = StarConnectionSettings(interfaceType: selectedInterface,
-                                                            identifier: identifier)
+        let fieldData = switch (selectedTemplate, selectedFeildData) {
+        case (0, 0):
+            readJsonFile("receipt1_field_data")
+        case (0, 1):
+            readJsonFile("receipt2_field_data")
+        case (1, 0):
+            readJsonFile("receipt1_field_data")
+        case (1, 1):
+            readJsonFile("receipt3_field_data")
+        case (2, 0):
+            readJsonFile("label1_field_data")
+        default: // case (2, 1):
+            readJsonFile("label2_field_data")
+        }
         
         let printer = StarPrinter(starConnectionSettings)
-
-        let template: String
-        
-        switch templatePicker.selectedRow(inComponent: 0) {
-        case 0:
-            template = createReceiptWithSpecifyingNumberOfCharactersTemplate()
-            
-        case 1:
-            template = createReceiptWithoutSpecifyingNumberOfCharactersTemplate()
-            
-        default: //case 2:
-            template = createLabelTemplate()
-        }
-            
-        let fieldData: String
-        
-        switch (templatePicker.selectedRow(inComponent: 0), fieldDataSelector.selectedSegmentIndex) {
-        case (0, 0):
-            fieldData = readJsonFile("receipt1_field_data")
-        case (0, 1):
-            fieldData = readJsonFile("receipt2_field_data")
-        case (1, 0):
-            fieldData = readJsonFile("receipt1_field_data")
-        case (1, 1):
-            fieldData = readJsonFile("receipt3_field_data")
-        case (2, 0):
-            fieldData = readJsonFile("label1_field_data")
-        default: //case (2, 1):
-            fieldData = readJsonFile("label2_field_data")
-        }
-        
         printer.template = template
         
-        Task {
-            do {
-                try await printer.open()
-                defer {
-                    Task {
-                        await printer.close()
-                    }
+        do {
+            try await printer.open()
+            defer {
+                Task {
+                    await printer.close()
                 }
-                
-                try await printer.print(command: fieldData)
-                
-                print("Success")
-            } catch let error {
-                print("Error: \(error)")
             }
+            
+            try await printer.print(command: fieldData)
+            
+            log = "Success"
+        } catch let error {
+            log = "Error: \(error)"
         }
+        print (log)
+        logText = log
     }
     
+    private func readJsonFile(_ fileName: String) -> String {
+         let filePath = Bundle.main.path(forResource: fileName, ofType: "json")!
+         
+         let filePathUrl = URL(fileURLWithPath: filePath)
+         let fileData = try! Data(contentsOf: filePathUrl, options: [])
+         
+         return String(data: fileData, encoding: .utf8)!
+     }
+    
+    // swiftlint:disable:next function_body_length
     private func createReceiptWithSpecifyingNumberOfCharactersTemplate() -> String {
         guard let logo = UIImage(named: "logo_01") else {
             print("Failed to load \"logo_01.png\".")
@@ -166,7 +202,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "Transaction #${transaction_id}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .add(
                     StarXpandCommand.PrinterBuilder(
@@ -193,7 +229,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "Subtotal",
@@ -242,7 +278,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "${credit_card_number}",
@@ -273,7 +309,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "Amount",
@@ -304,7 +340,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "Signature"
@@ -321,7 +357,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         .setX(8.0)
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText("\n")
                 .styleAlignment(.center)
@@ -339,7 +375,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "${url}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionFeed(2.0)
                 .actionPrintText(
@@ -356,6 +392,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
         return builder.getCommands()
     }
     
+    // swiftlint:disable:next function_body_length
     private func createReceiptWithoutSpecifyingNumberOfCharactersTemplate() -> String {
         guard let logo = UIImage(named: "logo_01") else {
             print("Failed to load \"logo_01.png\".")
@@ -394,7 +431,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "Transaction #${transaction_id}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .add(
                     StarXpandCommand.PrinterBuilder(
@@ -410,7 +447,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .styleHorizontalTabPositions([26])
                 .actionPrintText(
@@ -427,7 +464,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "${credit_card_number}\t${total%6.2lf}\n"
@@ -436,7 +473,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "Approval Code\t${approval_code}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "Amount\t${amount%6.2lf}\n"
@@ -445,7 +482,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "Total\t${total%6.2lf}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText(
                     "Signature\n"
@@ -458,11 +495,11 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                         )
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:32.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 32.0)
                         .setX(8.0)
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionPrintText("\n")
                 .styleAlignment(.center)
@@ -480,7 +517,7 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
                     "${url}\n"
                 )
                 .actionPrintRuledLine(
-                    StarXpandCommand.Printer.RuledLineParameter(width:48.0)
+                    StarXpandCommand.Printer.RuledLineParameter(width: 48.0)
                 )
                 .actionFeed(2.0)
                 .actionPrintText(
@@ -546,57 +583,5 @@ class TemplatePrintViewController: UIViewController, UIPickerViewDelegate, UIPic
         )
         
         return builder.getCommands()
-    }
-    
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return templateArray.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return templateArray[row]
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView
-    {
-        let label = (view as? UILabel) ?? UILabel()
-        label.text = templateArray[row]
-        label.textAlignment = .center
-        label.adjustsFontSizeToFitWidth = true
-        return label
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        switch row {
-        case 0:
-            fieldDataSelector.setTitle("Receipt1", forSegmentAt: 0)
-            fieldDataSelector.setTitle("Receipt2", forSegmentAt: 1)
-            break
-            
-        case 1:
-            fieldDataSelector.setTitle("Receipt1", forSegmentAt: 0)
-            fieldDataSelector.setTitle("Receipt3", forSegmentAt: 1)
-            break
-            
-        case 2:
-            fieldDataSelector.setTitle("Label1", forSegmentAt: 0)
-            fieldDataSelector.setTitle("Label2", forSegmentAt: 1)
-            break
-        default:
-            break
-        }
-    }
-    
-    private func readJsonFile(_ fileName: String) -> String {
-        let filePath = Bundle.main.path(forResource: fileName, ofType: "json")!
-        
-        let filePathUrl = URL(fileURLWithPath: filePath)
-        let fileData = try! Data(contentsOf: filePathUrl, options: [])
-        
-        return String(data: fileData, encoding: .utf8)!
     }
 }

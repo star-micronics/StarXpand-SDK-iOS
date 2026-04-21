@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample13_For203dpiAnd300dpi_FoodProductLabel_Template {

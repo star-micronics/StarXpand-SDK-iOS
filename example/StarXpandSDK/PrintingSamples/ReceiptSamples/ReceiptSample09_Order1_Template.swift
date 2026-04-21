@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class ReceiptSample09_Order1_Template {

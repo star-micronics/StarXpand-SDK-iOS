@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class LabelSample05_For203dpi_ShippingLabel2_Template {

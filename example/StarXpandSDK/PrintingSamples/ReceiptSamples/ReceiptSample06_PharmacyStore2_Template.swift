@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class ReceiptSample06_PharmacyStore2_Template {

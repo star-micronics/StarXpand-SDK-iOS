@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class LabelSample04_For300dpi_Sale50PercentOff_Template {

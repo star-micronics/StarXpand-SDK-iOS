@@ -2,6 +2,32 @@
 
 # Change Log
 
+## 2.12.0 (2026/03/31)
+
+#### Added
+
+* Added MCD10-UEWB (mC-Connect Drawer) support.
+* Added support for Bluetooth Low Energy (Bluetooth LE) interface communication for mC-Label2.
+* Added binary data send/receive API (`write()` / `read()`) to StarPrinter class.
+* Added support for the following APIs for external device 2 port:
+  * Detail status retrieval API (`StarPrinterStatusDetail`)
+  * Cash drawer channel (`stario10.starxpandcommand.drawer.Channel`)
+  * Buzzer channel (`stario10.starxpandcommand.buzzer.Channel`).  
+* Added support for detailed information retrieval such as connection status to the cash drawer status event retrieval API (`DrawerDelegate`).
+* Added `uniqueId` property to LAN communication information retrieval API (`StarPrinterInformationLan`).
+* Added `deviceName` property to Bluetooth Low Energy communication information retrieval API (`StarPrinterInformationBluetoothLE`).
+
+#### Changed
+
+* Changed minimum supported OS version from 14 to 15.
+* Removed methods that take completion as an argument provided for iOS 12. For migration procedures, please refer to [here](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/migration.html).
+* Changed sample code implementation to SwiftUI.
+
+#### Fixed
+
+* Fixed an issue where LAN interface communication rarely failed when interface auto-switching feature was enabled (default).
+* Fixed an issue where communication rarely failed when reconnecting immediately after disconnection with LAN interface communication when interface auto-switching feature was disabled.
+
 ## 2.10.0 (2025/7/14)
 
 * Added API to update printer firmware.

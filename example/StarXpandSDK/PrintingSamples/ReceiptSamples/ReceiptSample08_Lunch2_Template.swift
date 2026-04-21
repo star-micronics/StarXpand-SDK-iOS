@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class ReceiptSample08_Lunch2_Template {

@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class LabelSample03_For203dpi_PharmacyMedication1_Template {

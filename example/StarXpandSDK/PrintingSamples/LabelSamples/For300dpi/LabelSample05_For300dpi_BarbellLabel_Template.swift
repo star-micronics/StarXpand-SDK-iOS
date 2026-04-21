@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample05_For300dpi_BarbellLabel_Template {

@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample18_For203dpiAnd300dpi_BarcodeLabel2_Wide_Template {

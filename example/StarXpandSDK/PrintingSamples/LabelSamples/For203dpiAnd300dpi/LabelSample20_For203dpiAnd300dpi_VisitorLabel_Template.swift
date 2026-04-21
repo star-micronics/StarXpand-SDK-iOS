@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class LabelSample20_For203dpiAnd300dpi_VisitorLabel_Template {

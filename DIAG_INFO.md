@@ -9,10 +9,10 @@ Some of the APIs provided by the StarIO10 framework (StarIO10.xcframework) colle
 
 ## Target APIs
 
-In framework version V2.10.0, the following APIs collect and transmit information:  
+In framework version V2.10.0 or later, the following APIs collect and transmit information:  
 **If you use any of these APIs, please ensure that your privacy policy includes appropriate information on the relevant app distribution platform.**
 
-- [StarPrinterSetting](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer-setting-firmware/index.html)
+- [StarPrinterSettingFirmware](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer-setting-firmware/index.html)
   - [update()](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer-setting-firmware/update-async.html)
 
 

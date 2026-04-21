@@ -1,8 +1,4 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
 class LabelSample02_For203dpi_JapaneseFoodLabelCake_Template {

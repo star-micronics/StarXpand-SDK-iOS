@@ -1,6 +1,32 @@
 - [English](../CHANGELOG.md)
 
-# 変更点
+# 変更履歴
+
+## 2.12.0 (2026/03/31)
+
+#### 追加
+
+* MCD10UEWB(mC-Connect Drawer)に対応
+* mC-Label2のBluetooth Low Energy (BluetoothLE) インターフェイス通信に対応
+* StarPrinterクラスにバイナリデータ送受信API (`write()` / `read()`) を追加
+* 以下APIに2個目の外部機器駆動用ポート対応を追加
+  * 詳細ステータス取得API (`StarPrinterStatusDetail`)
+  * キャッシュドロアーチャネル (`stario10.starxpandcommand.drawer.Channel`)
+  * ブザーチャネル (`stario10.starxpandcommand.buzzer.Channel`)
+* キャッシュドロアーのステータスイベント取得API (`DrawerDelegate`) に、接続状態などの詳細情報取得機能を追加
+* LAN通信用情報取得API (`StarPrinterInformationLan`) に`uniqueId`プロパティを追加
+* Bluetooth Low Energy通信用情報取得API (`StarPrinterInformationBluetoothLE`)に`deviceName`プロパティを追加
+
+#### 変更
+
+* 最低サポートOSバージョンを14から15に変更
+* iOS12向けに提供していた引数にcompletionを取るメソッドを削除、移行方法については [こちら](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/migration.html) をご参照ください
+* サンプルコードの実装をSwiftUIベースに変更
+
+#### 修正
+
+* インターフェイス自動切り替え機能 (デフォルトで有効)が有効の場合、まれにLANインターフェイス通信が失敗する不具合を修正
+* インターフェイス自動切り替え機能が無効の場合、LANインターフェイス通信で切断直後に再接続を行うと、まれに通信が失敗する不具合を修正
 
 ## 2.10.0 (2025/7/14)
 
@@ -13,7 +39,7 @@
 * PrinterBuilder actionSeparatorFeed()メソッドの対応機種を追加
 * 不具合修正
   * StarXpandCommandBuilder APIのパラメータの指定によっては、StarPrinter.print()メソッドでクラッシュする
-  * Bluetooth, USBインターフェース通信に関する不具合を修正
+  * Bluetooth, USBインターフェイス通信に関する不具合を修正
 
 ## 2.9.0 (2025/05/19)
 
@@ -39,7 +65,7 @@
 * BSC10II に対応
 * CutTypeのenumにtearOff（ティアバーまで用紙送り）を追加
 * Printer.InternationalCharacterTypeのenumにindiaを追加
-* autoSwitchInterfaceがfalseの場合、既に他端末がopen済みのLANプリンターに対してStarPrinter.open()を実行したとき、すぐにStarIO10Error.inUseをスローするよう変更
+* インターフェイス自動切り替え機能が無効の場合、既に他端末がopen済みのLANプリンターに対してStarPrinter.open()を実行したとき、すぐにStarIO10Error.inUseをスローするよう変更
 * 不具合修正
   * 複数台のプリンターに対して同時に印刷処理を実行した場合に、まれにクラッシュする問題を修正
   * 実際にはiOS端末がネットワークに接続されていても、まれにStarIO10Error.illegalDeviceState(message: "Network Unavailable.")がスローされることがある問題を修正

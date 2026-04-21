@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample19_For203dpiAnd300dpi_PrescriptionLabel_Template {

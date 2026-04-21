@@ -1,10 +1,3 @@
-//
-//  StarIO10.h
-//  StarIO10
-//
-//  Copyright 2021 Star Micronics Co., Ltd. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for StarIO10.

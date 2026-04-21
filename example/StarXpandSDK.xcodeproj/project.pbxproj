@@ -7,23 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C154D292865685800BBC7DE /* SpoolerViewController.swift */; };
-		2CA679A92DCD79F900E005F3 /* FirmwareUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */; };
+		611333742E45944C009D420B /* DefaultConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336B2E45944C009D420B /* DefaultConnectionSettings.swift */; };
+		611333752E45944C009D420B /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336C2E45944C009D420B /* DiscoveryView.swift */; };
+		611333762E45944C009D420B /* TemplatePrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333732E45944C009D420B /* TemplatePrintView.swift */; };
+		611333772E45944C009D420B /* MonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336E2E45944C009D420B /* MonitorView.swift */; };
+		611333782E45944C009D420B /* PrintingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336F2E45944C009D420B /* PrintingView.swift */; };
+		611333792E45944C009D420B /* FirmwareUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336D2E45944C009D420B /* FirmwareUpdateView.swift */; };
+		6113337A2E45944C009D420B /* SpoolerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333702E45944C009D420B /* SpoolerView.swift */; };
+		6113337B2E45944C009D420B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336A2E45944C009D420B /* ContentView.swift */; };
+		6113337C2E45944C009D420B /* StarXpandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333712E45944C009D420B /* StarXpandApp.swift */; };
+		6113337D2E45944C009D420B /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333722E45944C009D420B /* StatusView.swift */; };
 		881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881AAC15275F4D7300D6ED67 /* logo_01.png */; };
 		8882FC91279968E0003AA845 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 8882FC90279968E0003AA845 /* StarIO10 */; };
 		9F38F3602B15B72800BEED40 /* receipt2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */; };
 		9F38F3612B15B72800BEED40 /* receipt1_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */; };
 		9F7656E22B35259B00DBBEB6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */; };
-		AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE04F272A8CCD00679414 /* AppDelegate.swift */; };
-		AA2AE052272A8CCD00679414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE051272A8CCD00679414 /* SceneDelegate.swift */; };
-		AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE053272A8CCD00679414 /* ViewController.swift */; };
-		AA2AE057272A8CCD00679414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2AE055272A8CCD00679414 /* Main.storyboard */; };
 		AA2AE059272A8CCF00679414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA2AE058272A8CCF00679414 /* Assets.xcassets */; };
-		AA2AE05C272A8CCF00679414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA2AE05A272A8CCF00679414 /* LaunchScreen.storyboard */; };
-		AA2AE064272B788D00679414 /* DiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE063272B788D00679414 /* DiscoveryViewController.swift */; };
-		AA2AE06B272B8D2700679414 /* PrintingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06A272B8D2700679414 /* PrintingViewController.swift */; };
-		AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */; };
-		AA2AE06F272BB9AB00679414 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2AE06E272BB9AB00679414 /* StatusViewController.swift */; };
 		DD1DA9482DB1327A006E83EF /* LabelSample10_For203dpi_CoffeeOrder_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DA93E2DB1327A006E83EF /* LabelSample10_For203dpi_CoffeeOrder_Template.swift */; };
 		DD1DA9492DB1327A006E83EF /* LabelSample02_For203dpi_JapaneseFoodLabelCake.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DA92C2DB1327A006E83EF /* LabelSample02_For203dpi_JapaneseFoodLabelCake.swift */; };
 		DD1DA94A2DB1327A006E83EF /* LabelSample03_For203dpi_PharmacyMedication1_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1DA9302DB1327A006E83EF /* LabelSample03_For203dpi_PharmacyMedication1_Template.swift */; };
@@ -155,7 +154,6 @@
 		DD1DAA222DB13294006E83EF /* LabelSample02_For300dpi_JapaneseFoodLabelCake.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1DAA0F2DB13294006E83EF /* LabelSample02_For300dpi_JapaneseFoodLabelCake.png */; };
 		DD1DAA232DB13294006E83EF /* LabelSample01_For300dpi_JapaneseFoodLabelLunchBox.png in Resources */ = {isa = PBXBuildFile; fileRef = DD1DAA0E2DB13294006E83EF /* LabelSample01_For300dpi_JapaneseFoodLabelLunchBox.png */; };
 		DD7A90042B316F8100B3FB2F /* receipt3_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */; };
-		DD8B9A252AC313F70039B5C9 /* TemplatePrintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */; };
 		DD8B9A2B2AC314AD0039B5C9 /* label2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */; };
 		DD8B9A332AC3AD5C0039B5C9 /* label1_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */; };
 		DDAEF9862B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAEF9682B6CD2FC0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift */; };
@@ -216,25 +214,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C154D292865685800BBC7DE /* SpoolerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpoolerViewController.swift; sourceTree = "<group>"; };
-		2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirmwareUpdateViewController.swift; sourceTree = "<group>"; };
+		6113336A2E45944C009D420B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6113336B2E45944C009D420B /* DefaultConnectionSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultConnectionSettings.swift; sourceTree = "<group>"; };
+		6113336C2E45944C009D420B /* DiscoveryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryView.swift; sourceTree = "<group>"; };
+		6113336D2E45944C009D420B /* FirmwareUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirmwareUpdateView.swift; sourceTree = "<group>"; };
+		6113336E2E45944C009D420B /* MonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorView.swift; sourceTree = "<group>"; };
+		6113336F2E45944C009D420B /* PrintingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingView.swift; sourceTree = "<group>"; };
+		611333702E45944C009D420B /* SpoolerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpoolerView.swift; sourceTree = "<group>"; };
+		611333712E45944C009D420B /* StarXpandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarXpandApp.swift; sourceTree = "<group>"; };
+		611333722E45944C009D420B /* StatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusView.swift; sourceTree = "<group>"; };
+		611333732E45944C009D420B /* TemplatePrintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePrintView.swift; sourceTree = "<group>"; };
 		881AAC15275F4D7300D6ED67 /* logo_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_01.png; sourceTree = "<group>"; };
 		8882FC8F27996794003AA845 /* starxpand_sdk_ios_swift */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = starxpand_sdk_ios_swift; path = ..; sourceTree = "<group>"; };
 		9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt2_field_data.json; sourceTree = "<group>"; };
 		9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt1_field_data.json; sourceTree = "<group>"; };
 		9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = StarXpandSDK/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		AA2AE04C272A8CCD00679414 /* StarXpandSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarXpandSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA2AE04F272A8CCD00679414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA2AE051272A8CCD00679414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AA2AE053272A8CCD00679414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AA2AE056272A8CCD00679414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA2AE058272A8CCF00679414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AA2AE05B272A8CCF00679414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA2AE05D272A8CCF00679414 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA2AE063272B788D00679414 /* DiscoveryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoveryViewController.swift; sourceTree = "<group>"; };
-		AA2AE06A272B8D2700679414 /* PrintingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintingViewController.swift; sourceTree = "<group>"; };
-		AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonitorViewController.swift; sourceTree = "<group>"; };
-		AA2AE06E272BB9AB00679414 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		DD1DA91A2DB1327A006E83EF /* LabelSample01_For203dpi_JapaneseFoodLabelLunchBox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample01_For203dpi_JapaneseFoodLabelLunchBox.png; sourceTree = "<group>"; };
 		DD1DA91B2DB1327A006E83EF /* LabelSample02_For203dpi_JapaneseFoodLabelCake.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample02_For203dpi_JapaneseFoodLabelCake.png; sourceTree = "<group>"; };
 		DD1DA91C2DB1327A006E83EF /* LabelSample03_For203dpi_PharmacyMedication1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LabelSample03_For203dpi_PharmacyMedication1.png; sourceTree = "<group>"; };
@@ -366,7 +363,6 @@
 		DD1DAA172DB13294006E83EF /* LabelSample04_For300dpi_Sale50PercentOff_FieldData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LabelSample04_For300dpi_Sale50PercentOff_FieldData.json; sourceTree = "<group>"; };
 		DD1DAA182DB13294006E83EF /* LabelSample05_For300dpi_BarbellLabel_FieldData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = LabelSample05_For300dpi_BarbellLabel_FieldData.json; sourceTree = "<group>"; };
 		DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = receipt3_field_data.json; sourceTree = "<group>"; };
-		DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplatePrintViewController.swift; sourceTree = "<group>"; };
 		DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = label2_field_data.json; sourceTree = "<group>"; };
 		DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = label1_field_data.json; sourceTree = "<group>"; };
 		DDAEF9682B6CD2FC0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReceiptSample04_FoodDelivery2_Template.swift; sourceTree = "<group>"; };
@@ -438,6 +434,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6113337E2E4594D4009D420B /* TemplateSamples */ = {
+			isa = PBXGroup;
+			children = (
+				DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */,
+				DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */,
+				9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */,
+				9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */,
+				DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */,
+			);
+			path = TemplateSamples;
+			sourceTree = "<group>";
+		};
+		6113337F2E4594ED009D420B /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				881AAC15275F4D7300D6ED67 /* logo_01.png */,
+				DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		AA2AE043272A8CCD00679414 = {
 			isa = PBXGroup;
 			children = (
@@ -460,28 +477,21 @@
 		AA2AE04E272A8CCD00679414 /* StarXpandSDK */ = {
 			isa = PBXGroup;
 			children = (
+				6113337F2E4594ED009D420B /* Image */,
+				6113337E2E4594D4009D420B /* TemplateSamples */,
 				DD32E79A28EA754F00372CB9 /* PrintingSamples */,
-				AA2AE04F272A8CCD00679414 /* AppDelegate.swift */,
-				AA2AE051272A8CCD00679414 /* SceneDelegate.swift */,
-				AA2AE053272A8CCD00679414 /* ViewController.swift */,
-				AA2AE055272A8CCD00679414 /* Main.storyboard */,
 				AA2AE058272A8CCF00679414 /* Assets.xcassets */,
-				AA2AE05A272A8CCF00679414 /* LaunchScreen.storyboard */,
 				AA2AE05D272A8CCF00679414 /* Info.plist */,
-				AA2AE063272B788D00679414 /* DiscoveryViewController.swift */,
-				AA2AE06A272B8D2700679414 /* PrintingViewController.swift */,
-				2C154D292865685800BBC7DE /* SpoolerViewController.swift */,
-				DD8B9A242AC313F70039B5C9 /* TemplatePrintViewController.swift */,
-				AA2AE06C272B9DDF00679414 /* MonitorViewController.swift */,
-				AA2AE06E272BB9AB00679414 /* StatusViewController.swift */,
-				2CA679A82DCD79F900E005F3 /* FirmwareUpdateViewController.swift */,
-				881AAC15275F4D7300D6ED67 /* logo_01.png */,
-				DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */,
-				DD8B9A322AC3AD5C0039B5C9 /* label1_field_data.json */,
-				DD8B9A272AC314AD0039B5C9 /* label2_field_data.json */,
-				9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */,
-				9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */,
-				DD7A90032B316F8100B3FB2F /* receipt3_field_data.json */,
+				6113336A2E45944C009D420B /* ContentView.swift */,
+				6113336B2E45944C009D420B /* DefaultConnectionSettings.swift */,
+				6113336C2E45944C009D420B /* DiscoveryView.swift */,
+				6113336D2E45944C009D420B /* FirmwareUpdateView.swift */,
+				6113336E2E45944C009D420B /* MonitorView.swift */,
+				6113336F2E45944C009D420B /* PrintingView.swift */,
+				611333702E45944C009D420B /* SpoolerView.swift */,
+				611333712E45944C009D420B /* StarXpandApp.swift */,
+				611333722E45944C009D420B /* StatusView.swift */,
+				611333732E45944C009D420B /* TemplatePrintView.swift */,
 			);
 			path = StarXpandSDK;
 			sourceTree = "<group>";
@@ -864,7 +874,6 @@
 				DDAEF9892B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_FieldData.json in Resources */,
 				DDAEF9B42B6CD3350001F082 /* ReceiptSample11_Cafe.png in Resources */,
 				DDAEF9B52B6CD3350001F082 /* ReceiptSample02_Retail.png in Resources */,
-				AA2AE05C272A8CCF00679414 /* LaunchScreen.storyboard in Resources */,
 				DDAEF99C2B6CD2FD0001F082 /* ReceiptSample05_PharmacyStore1_FieldData.json in Resources */,
 				AA2AE059272A8CCF00679414 /* Assets.xcassets in Resources */,
 				DDAEF9C02B6CD3350001F082 /* ReceiptSample09_Order1.png in Resources */,
@@ -925,7 +934,6 @@
 				DD1DA9722DB1327A006E83EF /* LabelSample09_For203dpi_CleanedAndSanitised.png in Resources */,
 				DD1DA9732DB1327A006E83EF /* LabelSample09_For203dpi_CleanedAndSanitised_FieldData.json in Resources */,
 				DDAEF9882B6CD2FD0001F082 /* ReceiptSample11_Cafe_FieldData.json in Resources */,
-				AA2AE057272A8CCD00679414 /* Main.storyboard in Resources */,
 				DDAEF9BF2B6CD3350001F082 /* ReceiptSample03_FoodDelivery1.png in Resources */,
 				DDAEF9B82B6CD3350001F082 /* ReceiptSample05_PharmacyStore1.png in Resources */,
 				DDE2B34C2B2FD8AE00D1D0A5 /* signature.png in Resources */,
@@ -991,23 +999,14 @@
 			files = (
 				DDAEFB202B6CE2980001F082 /* ReceiptSample11_Cafe_Template.swift in Sources */,
 				DDAEFB1C2B6CE25B0001F082 /* ReceiptSample09_Order1_Template.swift in Sources */,
-				AA2AE06F272BB9AB00679414 /* StatusViewController.swift in Sources */,
-				2C154D2A2865685800BBC7DE /* SpoolerViewController.swift in Sources */,
 				DDAEF98A2B6CD2FD0001F082 /* ReceiptSample02_Retail_Template.swift in Sources */,
 				DDAEFB1E2B6CE27B0001F082 /* ReceiptSample10_Order2_Template.swift in Sources */,
-				AA2AE054272A8CCD00679414 /* ViewController.swift in Sources */,
-				2CA679A92DCD79F900E005F3 /* FirmwareUpdateViewController.swift in Sources */,
 				DDAEF9C42B6CD3580001F082 /* GraphicSample01_GraphicReceipt.swift in Sources */,
-				AA2AE06D272B9DDF00679414 /* MonitorViewController.swift in Sources */,
 				DDAEFB222B6CE2B50001F082 /* ReceiptSample12_Lottery_Template.swift in Sources */,
-				DD8B9A252AC313F70039B5C9 /* TemplatePrintViewController.swift in Sources */,
 				DDAEF9A22B6CD2FD0001F082 /* ReceiptSample03_FoodDelivery1_Template.swift in Sources */,
 				DDAEF9862B6CD2FD0001F082 /* ReceiptSample04_FoodDelivery2_Template.swift in Sources */,
-				AA2AE06B272B8D2700679414 /* PrintingViewController.swift in Sources */,
 				DDAEF98B2B6CD2FD0001F082 /* ReceiptSample01_OnlineOrder_Template.swift in Sources */,
 				DDAEFB182B6CE1D40001F082 /* ReceiptSample07_Lunch1_Template.swift in Sources */,
-				AA2AE050272A8CCD00679414 /* AppDelegate.swift in Sources */,
-				AA2AE052272A8CCD00679414 /* SceneDelegate.swift in Sources */,
 				DDC71CC12DB4BDF000685AF6 /* LabelSample03_For300dpi_BarcodeLabel1_Template.swift in Sources */,
 				DDC71CC22DB4BDF000685AF6 /* LabelSample01_For300dpi_JapaneseFoodLabelLunchBox_Template.swift in Sources */,
 				DDC71CC32DB4BDF000685AF6 /* LabelSample02_For300dpi_JapaneseFoodLabelCake_Template.swift in Sources */,
@@ -1027,11 +1026,20 @@
 				DD1DA9512DB1327A006E83EF /* LabelSample02_For203dpi_JapaneseFoodLabelCake_Template.swift in Sources */,
 				DD1DA9522DB1327A006E83EF /* LabelSample08_For203dpi_AllergenWarning_Template.swift in Sources */,
 				DD1DA9532DB1327A006E83EF /* LabelSample01_For203dpi_JapaneseFoodLabelLunchBox.swift in Sources */,
+				611333742E45944C009D420B /* DefaultConnectionSettings.swift in Sources */,
+				611333752E45944C009D420B /* DiscoveryView.swift in Sources */,
+				611333762E45944C009D420B /* TemplatePrintView.swift in Sources */,
+				611333772E45944C009D420B /* MonitorView.swift in Sources */,
+				611333782E45944C009D420B /* PrintingView.swift in Sources */,
+				611333792E45944C009D420B /* FirmwareUpdateView.swift in Sources */,
+				6113337A2E45944C009D420B /* SpoolerView.swift in Sources */,
+				6113337B2E45944C009D420B /* ContentView.swift in Sources */,
+				6113337C2E45944C009D420B /* StarXpandApp.swift in Sources */,
+				6113337D2E45944C009D420B /* StatusView.swift in Sources */,
 				DD1DA9542DB1327A006E83EF /* LabelSample09_For203dpi_CleanedAndSanitised_Template.swift in Sources */,
 				DD1DA9552DB1327A006E83EF /* LabelSample04_For203dpi_ShippingLabel1_Template.swift in Sources */,
 				DD1DA9562DB1327A006E83EF /* LabelSample11_For203dpi_ExpirationDate_Template.swift in Sources */,
 				DD1DA9572DB1327A006E83EF /* LabelSample12_For203dpi_FoodSafetyInfo_Template.swift in Sources */,
-				AA2AE064272B788D00679414 /* DiscoveryViewController.swift in Sources */,
 				DD1DA9C22DB1328E006E83EF /* LabelSample07_For203dpiAnd300dpi_DrinkLabel6_Template.swift in Sources */,
 				DD1DA9C32DB1328E006E83EF /* LabelSample16_For203dpiAnd300dpi_ShelfLabelForInventory_Template.swift in Sources */,
 				DD1DA9C42DB1328E006E83EF /* LabelSample05_For203dpiAnd300dpi_DrinkLabel4_Template.swift in Sources */,
@@ -1070,25 +1078,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		AA2AE055272A8CCD00679414 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA2AE056272A8CCD00679414 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA2AE05A272A8CCF00679414 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA2AE05B272A8CCF00679414 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AA2AE05E272A8CCF00679414 /* Debug */ = {
@@ -1142,7 +1131,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1197,7 +1186,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1218,19 +1207,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarXpandSDK/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use Bluetooth for communication with the printer.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Use Bluetooth for communication with the printer.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Use Local Network for communication with the printer or discovery the printers.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.10.0;
+				MARKETING_VERSION = 2.12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1250,19 +1240,20 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = StarXpandSDK/Info.plist;
 				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Use Bluetooth for communication with the printer.";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Use Bluetooth for communication with the printer.";
 				INFOPLIST_KEY_NSLocalNetworkUsageDescription = "Use Local Network for communication with the printer or discovery the printers.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.10.0;
+				MARKETING_VERSION = 2.12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

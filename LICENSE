@@ -84,15 +84,15 @@ You should be aware that we may change this Agreement at any time. In the event 
 
 
 
-Ⅱ．Terms and Conditions for Developers (Addendum to the General Terms and Conditions)
+Ⅱ.Terms and Conditions for Developers (Addendum to the General Terms and Conditions)
 
 If you are Star Development partner and the Software contains STAR’s software developer’s tool kit (hereinafter referred to as “SDK“) or API, your use of the SDK and API is governed by the terms of this “Terms and Conditions for Developers” in addition to the I.General Terms and Conditions. In the event of any conflict between the terms of the I.General Terms and Conditions and this Terms and Conditions for Developers, the terms of this Terms and Conditions for Developers shall govern. You should carefully read the following terms and conditions before using the SDK and API provided by STAR.
 The following teams Shall have the following meanings:
 The “SDK” is defined as the downloadable package of libraries, applications, and documentation that you may use solely in connection with development and testing of your software application(hereinafter referred to as “Application”) to enable it to communicate with a Star Product or device, as provided herein (hereinafter referred to as the “Permitted Use”). 
-The “API” is defined as the Application Programing interface information, specifications and documentation provided as a download for your Permitted Use.
+The “API” is defined as the Application Programming interface information, specifications and documentation provided as a download for your Permitted Use.
 
 1. LICENSE
-Star grants you a limited, non-exclusive, non-transferable license to use the SDK and API, including the human readable code of the SDK (hereinafter referred to as “Source Code”), subject to the terms and restrictions set forth in I.General Terms and Conditionsthis and Terms and Conditions for Developers.
+Star grants you a limited, non-exclusive, non-transferable license to use the SDK and API, including the human readable code of the SDK (hereinafter referred to as “Source Code”), subject to the terms and restrictions set forth in I.General Terms and Conditions and this Terms and Conditions for Developers.
 
 2.Use of Source Code 
 The SDK is licensed to be used on any personal computer or networked machines, provided that the SDK is used only in connection with the Permitted Use. You may use the Source Code internally to engage in the Permitted Use and you may use, modify or merge all or portions of the Source Code with your Application and distribute it only as part of your Application in object code form only. 
@@ -102,11 +102,10 @@ Please refer to the following for more information on the collection and use of 
 Privacy Policy for SDK: https://www.star-m.jp/prjump/000193.html              
 
 
-
 To read our latest Software License Agreement, please visit the following URL.
 https://www.star-m.jp/wp-content/uploads/SoftwareLicenseAgreement_web.pdf
 
-Copyright (c) 2013-2021 Niels Lohmann
+Copyright (c) 2013-2022 Niels Lohmann
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

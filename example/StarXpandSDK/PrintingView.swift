@@ -1,61 +1,87 @@
-//
-//  PrintingViewController.swift
-//  StarXpandSDK
-//
-//  Copyright © 2021 Star Micronics. All rights reserved.
-//
-
-import UIKit
+import SwiftUI
 import StarIO10
 
-class PrintingViewController: UIViewController {
-    
-    @IBOutlet weak var interfaceSelector: UISegmentedControl!
-    @IBOutlet weak var identifierTextField: UITextField!
-    @IBOutlet weak var printButton: UIButton!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @IBAction func touchUpPrintButton(_ sender: Any) {
-        
-        let identifier = identifierTextField.text ?? ""
-        
-        var selectedInterface: InterfaceType = InterfaceType.unknown
-        switch interfaceSelector.selectedSegmentIndex {
-        case 0:
-            selectedInterface = InterfaceType.lan
-        case 1:
-            selectedInterface = InterfaceType.bluetooth
-        case 2:
-            selectedInterface = InterfaceType.bluetoothLE
-        case 3:
-            selectedInterface = InterfaceType.usb
-        default:
-            return
+struct PrintingView: View {
+    @Binding var isProcessing: Bool
+    @State var interfaceType = DefaultConnectionSettings.get().interfaceType
+    @State var identifier = DefaultConnectionSettings.get().identifier
+    @StateObject var printingViewModel = PrintingViewModel()
+
+    var body: some View {
+        VStack {
+            Picker("Select a interfaceType", selection: $interfaceType) {
+                Text("Lan").tag(InterfaceType.lan)
+                Text("Bluetooth").tag(InterfaceType.bluetooth)
+                Text("BluetoothLE").tag(InterfaceType.bluetoothLE)
+                Text("Usb").tag(InterfaceType.usb)
+            }
+            .pickerStyle(SegmentedPickerStyle())
+            .padding()
+
+            TextField("Enter identifier", text: $identifier)
+                .padding(1)
+                .textFieldStyle(.roundedBorder)
+
+            Button("Print") {
+                let starConnectionSettings = StarConnectionSettings(interfaceType: interfaceType, identifier: identifier)
+                Task {
+                    isProcessing = true
+                     await printingViewModel.printing(starConnectionSettings)
+                    isProcessing = false
+                }
+            }
+            
+            Text(printingViewModel.logText)
+                .padding()
+
+            Spacer()
         }
-        
-        let starConnectionSettings = StarConnectionSettings(interfaceType: selectedInterface,
-                                                            identifier: identifier)
-        
+        .navigationTitle(Text("Printing"))
+        .padding()
+    }
+}
+
+@MainActor
+class PrintingViewModel: ObservableObject {
+    @Published var logText = ""
+    
+    func printing(_ starConnectionSettings: StarConnectionSettings) async {
+        var log = ""
+        logText = log
+
         let printer = StarPrinter(starConnectionSettings)
         
+        do {
+            try await printer.open()
+            defer {
+                Task {
+                    await printer.close()
+                }
+            }
+            try await printer.print(command: createDrawerCommand())
+
+            try await printer.print(command: createPrinterCommand())
+
+            log = "Success"
+        } catch let error {
+            log = "Error: \(error)"
+        }
+        print (log)
+        logText = log
+    }
+    
+    private func createPrinterCommand() -> String {
         guard let logo = UIImage(named: "logo_01") else {
             print("Failed to load \"logo_01.png\".")
-            return
+            return ""
         }
         
-        // TSP100III series does not support actionPrintText because these products are graphics-only printers.
+        // TSP100III series and TSP100LAN do not support actionPrintText because these products are graphics-only printers.
         // Please use the actionPrintImage method to create printing data for these products.
         // For other available methods, please also refer to "Supported Model" of each method.
         // https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-xpand-command/printer-builder/action-print-image.html
         let builder = StarXpandCommand.StarXpandCommandBuilder()
         _ = builder.addDocument(StarXpandCommand.DocumentBuilder()
-            // To open a cash drawer, comment out the following code.
-//          .addDrawer(StarXpandCommand.DrawerBuilder()
-//              .actionOpen(StarXpandCommand.Drawer.OpenParameter())
-//          )
             .addPrinter(StarXpandCommand.PrinterBuilder()
                 .actionPrintImage(StarXpandCommand.Printer.ImageParameter(image: logo, width: 406))
                 .styleInternationalCharacter(.usa)
@@ -126,24 +152,16 @@ class PrintingViewController: UIViewController {
                 .actionCut(StarXpandCommand.Printer.CutType.partial)
             )
         )
-        
-        let command = builder.getCommands()
-        
-        Task {
-            do {
-                try await printer.open()
-                defer {
-                    Task {
-                        await printer.close()
-                    }
-                }
-                
-                try await printer.print(command: command)
-                
-                print("Success")
-            } catch let error {
-                print("Error: \(error)")
-            }
-        }
+        return builder.getCommands()
+    }
+    
+    private func createDrawerCommand() -> String {
+        let builder = StarXpandCommand.StarXpandCommandBuilder()
+        _ = builder.addDocument(StarXpandCommand.DocumentBuilder()
+            .addDrawer(StarXpandCommand.DrawerBuilder()
+                .actionOpen(StarXpandCommand.Drawer.OpenParameter())
+            )
+        )
+        return builder.getCommands()
     }
 }

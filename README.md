@@ -5,6 +5,7 @@
     style="margin-top: 20px; margin-bottom: 20px;"
   />
 </div>
+
 - [日本語はこちら](docs/README_JP.md)
 
 # StarXpand SDK for iOS
@@ -31,7 +32,7 @@ Please refer [here](DIAG_INFO.md) for details.
 
 | Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
 | --- | --- | --- | --- | --- | --- |
-| Swift | 5 | iOS | iOS 14.0 or later | Device: arm64<br> Simulator: arm64, x86_64 | Xcode 16.3 |
+| Swift | 5 | iOS | iOS 15.0 or later | Device: arm64<br> Simulator: arm64, x86_64 | Xcode 26.2 |
 
 <a id="TestEnvironment"></a>*The sample app included with this SDK is being built, and its operation is being confirmed.
 
@@ -54,43 +55,53 @@ https://developer.apple.com/documentation/swift_packages/adding_package_dependen
 Some settings and approvals are required depending on the printer interface.  
 Please check the table below and take action.
 
-| Interface of the printer  | Necessary actions                                                                       |
-|---------------------------|-----------------------------------------------------------------------------------------|
-| Bluetooth                 | [2.1.](#SupportedEAProtocols) & [2.2.](#BluetoothAlwaysUsageDescription) & [2.4.](#MFi) |
-| Bluetooth Low Energy      | [2.2.](#BluetoothAlwaysUsageDescription)                                                |
-| Ethernet                  | [2.3.](#LocalNetworkUsageDescription)                                                   |
-| Lightning USB             | [2.1.](#SupportedEAProtocols) & [2.4.](#MFi)                                            |
+| Interface of the printer | Necessary actions                                                                       |
+| ------------------------ | --------------------------------------------------------------------------------------- |
+| Bluetooth                | [2.1.](#SupportedEAProtocols) & [2.2.](#BluetoothAlwaysUsageDescription) & [2.4.](#MFi) |
+| Bluetooth Low Energy     | [2.2.](#BluetoothAlwaysUsageDescription) & [2.5.](#PairingBluetoothLowEnergy)           |
+| Ethernet                 | [2.3.](#LocalNetworkUsageDescription)                                                   |
+| USB                      | [2.1.](#SupportedEAProtocols) & [2.4.](#MFi)                                            |
 
 <a id="SupportedEAProtocols"></a>
+
 #### 2.1. Set `Supported external accessory protocols` 
 
-1. Click on the information property list file (default : “Info.plist").
-2. Add the `Supported external accessory protocols` Key.
-3. Click the triangle of this key and set the value for the “Item 0" to `jp.star-m.starpro`.
+1. Select your project file in the Project Navigator.
+2. Select the app target from TARGETS and open the `Info` tab.
+3. Right-click in the `Custom iOS Target Properties` section and select `Add Row`.
+4. Add the `Supported external accessory protocols` Key.
+5. Click the triangle of this key and set the value for the "Item 0" to `jp.star-m.starpro`.
 
 > :warning: If you do not use the printer concerned, do not configure this setting.
 
 <a id="BluetoothAlwaysUsageDescription"></a>
+
 #### 2.2. Set `Bluetooth Always Usage Description`
 
-1. Click on the information property list file (default : “Info.plist").
-2. Add the `Privacy - Bluetooth Always Usage Description` Key.
-3. Set the reason for using Bluetooth in Value (e.g. `Use Bluetooth for communication with the printer.`)
-4. When communicating with the Bluetooth printer, an alert requesting permission to access Bluetooth is displayed. The string set in Value is displayed in the alert as the reason for using Bluetooth.
+1. Select your project file in the Project Navigator.
+2. Select the app target from TARGETS and open the `Info` tab.
+3. Right-click in the `Custom iOS Target Properties` section and select `Add Row`.
+4. Add the `Privacy - Bluetooth Always Usage Description` Key.
+5. Set the reason for using Bluetooth in Value (e.g. `Use Bluetooth for communication with the printer.`)
+6. When communicating with the Bluetooth printer, an alert requesting permission to access Bluetooth is displayed. The string set in Value is displayed in the alert as the reason for using Bluetooth.
 
 For more information, please refer to the following URL.
 
 https://developer.apple.com/documentation/bundleresources/information_property_list/nsbluetoothperipheralusagedescription
 
 <a id="LocalNetworkUsageDescription"></a>
+
 #### 2.3. Set `Local Network Usage Description`
 
-1. Click on the information property list file (default : “Info.plist").
-2. Add the `Privacy - Local Network Usage Description` Key.
-3. Set the reason for using Local Network in Value (e.g. `Use Local Network for communication with the printer or discovery the printers.`)
-4. When communicating with the Ethernet printer, an alert requesting permission to access Local Network is displayed. The string set in Value is displayed in the alert as the reason for using Local Network.
+1. Select your project file in the Project Navigator.
+2. Select the app target from TARGETS and open the `Info` tab.
+3. Right-click in the `Custom iOS Target Properties` section and select `Add Row`.
+4. Add the `Privacy - Local Network Usage Description` Key.
+5. Set the reason for using Local Network in Value (e.g. `Use Local Network for communication with the printer or discovery the printers.`)
+6. When communicating with the Ethernet printer, an alert requesting permission to access Local Network is displayed. The string set in Value is displayed in the alert as the reason for using Local Network.
 
 <a id="MFi"></a>
+
 #### 2.4. Apple Approval Process for STAR MFi Applications
 
 In order to offer your application that communicates a MFi certified printer on the Apple iTunes App Store, your application needs to be approved by the Apple MFi program before you submit it to the Apple iTunes App Store. Please follow the steps described in the URL below to obtain the app approval. This procedure must be completed before the app is reviewed by Apple.
@@ -98,6 +109,13 @@ In order to offer your application that communicates a MFi certified printer on 
 https://star-m.jp/eng/products/s_print/apple_app_mfi.html
 
 > :warning: In case of a Bluetooth Low Energy printer, you do not need to obtain this app approval.
+
+<a id="PairingBluetoothLowEnergy"></a>
+
+#### 2.5. Pairing (for Bluetooth Low Energy interface)
+
+When using Bluetooth Low Energy communication, it is necessary to perform pairing.  
+For the procedure of pairing, please refer to [here](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/pairing.html).
 
 ## Examples
 
@@ -127,7 +145,9 @@ The sample code and printed result images are also [available here](example/Star
 #### 8. [Update printer firmware](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/fw-update.html)
 
 <a id="GetPrinterStatus"></a>
+
 ### Get printer status
+
 ```swift
 func getStatus() {
     // Specify your printer connection settings.
@@ -159,7 +179,9 @@ func getStatus() {
 ```
 
 <a id="MonitorPrinter"></a>
+
 ### Monitor printer
+
 ```swift
 var printer: StarPrinter?
 

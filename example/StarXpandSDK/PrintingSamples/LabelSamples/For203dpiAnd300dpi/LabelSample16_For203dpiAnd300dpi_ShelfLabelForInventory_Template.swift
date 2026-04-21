@@ -1,8 +1,3 @@
-//
-//  StarXpandSDK
-//
-
-import UIKit
 import StarIO10
 
 class LabelSample16_For203dpiAnd300dpi_ShelfLabelForInventory_Template {

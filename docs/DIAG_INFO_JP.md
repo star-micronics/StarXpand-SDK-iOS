@@ -9,10 +9,10 @@ StarIO10フレームワーク（StarIO10.xcframework）が提供する一部のA
 
 ## 対象API
 
-フレームワーク バージョン V2.10.0において、情報の収集および送信を行うAPIは以下のとおりです。  
+フレームワーク バージョン V2.10.0 以降において、情報の収集および送信を行うAPIは以下のとおりです。  
 **これらのAPIを利用する場合、アプリ配信プラットフォームにおけるプライバシーポリシーに、適切な記載を行ってください。**
 
-- [StarPrinterSetting](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer-setting-firmware/index.html)
+- [StarPrinterSettingFirmware](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer-setting-firmware/index.html)
   - [update()](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer-setting-firmware/update-async.html)
 
 
