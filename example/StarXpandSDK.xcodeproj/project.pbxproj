@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2CA4F93C2FB2FF60005DA274 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 2CA4F93B2FB2FF60005DA274 /* StarIO10 */; };
 		611333742E45944C009D420B /* DefaultConnectionSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336B2E45944C009D420B /* DefaultConnectionSettings.swift */; };
 		611333752E45944C009D420B /* DiscoveryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6113336C2E45944C009D420B /* DiscoveryView.swift */; };
 		611333762E45944C009D420B /* TemplatePrintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333732E45944C009D420B /* TemplatePrintView.swift */; };
@@ -18,7 +19,6 @@
 		6113337C2E45944C009D420B /* StarXpandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333712E45944C009D420B /* StarXpandApp.swift */; };
 		6113337D2E45944C009D420B /* StatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611333722E45944C009D420B /* StatusView.swift */; };
 		881AAC16275F4D7300D6ED67 /* logo_01.png in Resources */ = {isa = PBXBuildFile; fileRef = 881AAC15275F4D7300D6ED67 /* logo_01.png */; };
-		8882FC91279968E0003AA845 /* StarIO10 in Frameworks */ = {isa = PBXBuildFile; productRef = 8882FC90279968E0003AA845 /* StarIO10 */; };
 		9F38F3602B15B72800BEED40 /* receipt2_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35E2B15B72800BEED40 /* receipt2_field_data.json */; };
 		9F38F3612B15B72800BEED40 /* receipt1_field_data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9F38F35F2B15B72800BEED40 /* receipt1_field_data.json */; };
 		9F7656E22B35259B00DBBEB6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 9F7656E12B35259B00DBBEB6 /* PrivacyInfo.xcprivacy */; };
@@ -422,12 +422,16 @@
 		DDE2B34B2B2FD8AE00D1D0A5 /* signature.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signature.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		B56E9E342F4FBA2B002F9D29 /* Sound */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Sound; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
 		AA2AE049272A8CCD00679414 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8882FC91279968E0003AA845 /* StarIO10 in Frameworks */,
+				2CA4F93C2FB2FF60005DA274 /* StarIO10 in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +481,7 @@
 		AA2AE04E272A8CCD00679414 /* StarXpandSDK */ = {
 			isa = PBXGroup;
 			children = (
+				B56E9E342F4FBA2B002F9D29 /* Sound */,
 				6113337F2E4594ED009D420B /* Image */,
 				6113337E2E4594D4009D420B /* TemplateSamples */,
 				DD32E79A28EA754F00372CB9 /* PrintingSamples */,
@@ -813,9 +818,12 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				B56E9E342F4FBA2B002F9D29 /* Sound */,
+			);
 			name = StarXpandSDK;
 			packageProductDependencies = (
-				8882FC90279968E0003AA845 /* StarIO10 */,
+				2CA4F93B2FB2FF60005DA274 /* StarIO10 */,
 			);
 			productName = StarXpandSDK;
 			productReference = AA2AE04C272A8CCD00679414 /* StarXpandSDK.app */;
@@ -846,6 +854,7 @@
 			);
 			mainGroup = AA2AE043272A8CCD00679414;
 			packageReferences = (
+				B5E6C4142F4D2CC60039314A /* XCLocalSwiftPackageReference ".." */,
 			);
 			productRefGroup = AA2AE04D272A8CCD00679414 /* Products */;
 			projectDirPath = "";
@@ -1220,7 +1229,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.12.0;
+				MARKETING_VERSION = 2.12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1253,7 +1262,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.12.0;
+				MARKETING_VERSION = 2.12.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.star-m.StarXpandSDK";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -1285,8 +1294,15 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		B5E6C4142F4D2CC60039314A /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
-		8882FC90279968E0003AA845 /* StarIO10 */ = {
+		2CA4F93B2FB2FF60005DA274 /* StarIO10 */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = StarIO10;
 		};

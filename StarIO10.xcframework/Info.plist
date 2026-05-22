@@ -25,12 +25,13 @@
 			<key>BinaryPath</key>
 			<string>StarIO10.framework/StarIO10</string>
 			<key>LibraryIdentifier</key>
-			<string>ios-arm64</string>
+			<string>ios-arm64_arm64e</string>
 			<key>LibraryPath</key>
 			<string>StarIO10.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
 				<string>arm64</string>
+				<string>arm64e</string>
 			</array>
 			<key>SupportedPlatform</key>
 			<string>ios</string>

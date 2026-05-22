@@ -1,12 +1,12 @@
 <div style="text-align: center;">
   <img
-    src="docs/logo.png"
+    src="Documents/logo.png"
     width="600"
     style="margin-top: 20px; margin-bottom: 20px;"
   />
 </div>
 
-- [日本語はこちら](docs/README_JP.md)
+- [日本語はこちら](Documents/README_JP.md)
 
 # StarXpand SDK for iOS
 
@@ -32,7 +32,7 @@ Please refer [here](DIAG_INFO.md) for details.
 
 | Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
 | --- | --- | --- | --- | --- | --- |
-| Swift | 5 | iOS | iOS 15.0 or later | Device: arm64<br> Simulator: arm64, x86_64 | Xcode 26.2 |
+| Swift | 5 | iOS | iOS 15.0 or later | Device: arm64, arm64e<br> Simulator: arm64, x86_64 | Xcode 26.4 |
 
 <a id="TestEnvironment"></a>*The sample app included with this SDK is being built, and its operation is being confirmed.
 

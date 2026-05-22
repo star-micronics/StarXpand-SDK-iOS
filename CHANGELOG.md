@@ -1,6 +1,16 @@
-- [日本語](docs/CHANGELOG_JP.md)
+- [日本語](Documents/CHANGELOG_JP.md)
 
 # Change Log
+
+## 2.12.1 (2026/05/22)
+
+#### Added
+
+* Added support for arm64e architecture.
+
+#### Fixed
+
+* Fixed an issue where the connection failure reason stored in `StarPrinter.errorDetail` was not set to `StarIO10Error.inUse` in some cases when a target LAN printer was being used by another host device and a connection cannot be established.
 
 ## 2.12.0 (2026/03/31)
 
