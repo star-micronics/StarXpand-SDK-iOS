@@ -2,6 +2,13 @@
 
 # Change Log
 
+## 2.13.0 (2026/7/10)
+
+#### Added
+
+* Added the `rssi` property to the Bluetooth LE communication information retrieval API (`StarPrinterInformationBluetoothLE`).
+* Added the `isEnabledFindSameDevice` property to the device discovery API (`StarDeviceDiscoveryManager`) to allow repeated discovery notifications (`didFind printer`) for the same device.
+
 ## 2.12.1 (2026/05/22)
 
 #### Added

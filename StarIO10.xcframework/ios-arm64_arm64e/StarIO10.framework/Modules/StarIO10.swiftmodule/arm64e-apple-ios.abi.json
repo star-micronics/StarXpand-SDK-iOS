@@ -2547,6 +2547,84 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "isEnabledFindSameDevice",
+            "printedName": "isEnabledFindSameDevice",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@StarIO10@objc(pl)STARIO10StarDeviceDiscoveryManager(py)isEnabledFindSameDevice",
+            "mangledName": "$s8StarIO100A22DeviceDiscoveryManagerP017isEnabledFindSameC0Sbvp",
+            "moduleName": "StarIO10",
+            "protocolReq": true,
+            "declAttributes": [
+              "ObjC"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StarIO10@objc(pl)STARIO10StarDeviceDiscoveryManager(im)isEnabledFindSameDevice",
+                "mangledName": "$s8StarIO100A22DeviceDiscoveryManagerP017isEnabledFindSameC0Sbvg",
+                "moduleName": "StarIO10",
+                "genericSig": "<τ_0_0 where τ_0_0 : StarIO10.StarDeviceDiscoveryManager>",
+                "sugared_genericSig": "<Self where Self : StarIO10.StarDeviceDiscoveryManager>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StarIO10@objc(pl)STARIO10StarDeviceDiscoveryManager(im)setIsEnabledFindSameDevice:",
+                "mangledName": "$s8StarIO100A22DeviceDiscoveryManagerP017isEnabledFindSameC0Sbvs",
+                "moduleName": "StarIO10",
+                "genericSig": "<τ_0_0 where τ_0_0 : StarIO10.StarDeviceDiscoveryManager>",
+                "sugared_genericSig": "<Self where Self : StarIO10.StarDeviceDiscoveryManager>",
+                "protocolReq": true,
+                "declAttributes": [
+                  "ObjC"
+                ],
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
             "kind": "Function",
             "name": "startDiscovery",
             "printedName": "startDiscovery()",
@@ -6225,6 +6303,67 @@
                 "declAttributes": [
                   "ObjC"
                 ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rssi",
+            "printedName": "rssi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8StarIO100A29PrinterInformationBluetoothLEC4rssiSiSgvp",
+            "mangledName": "$s8StarIO100A29PrinterInformationBluetoothLEC4rssiSiSgvp",
+            "moduleName": "StarIO10",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "SetterAccess"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8StarIO100A29PrinterInformationBluetoothLEC4rssiSiSgvg",
+                "mangledName": "$s8StarIO100A29PrinterInformationBluetoothLEC4rssiSiSgvg",
+                "moduleName": "StarIO10",
+                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -12955,6 +13094,7 @@
                     "moduleName": "StarIO10",
                     "declAttributes": [
                       "AccessControl",
+                      "RawDocComment",
                       "ObjC"
                     ],
                     "accessors": [
@@ -13026,6 +13166,7 @@
                     "moduleName": "StarIO10",
                     "declAttributes": [
                       "AccessControl",
+                      "RawDocComment",
                       "ObjC"
                     ],
                     "accessors": [
@@ -21307,6 +21448,7 @@
                     "moduleName": "StarIO10",
                     "declAttributes": [
                       "AccessControl",
+                      "RawDocComment",
                       "ObjC"
                     ],
                     "accessors": [
@@ -40706,14 +40848,14 @@
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarXpandCommand\/Printer\/PageModeAreaParameter.swift",
       "kind": "IntegerLiteral",
-      "offset": 263,
+      "offset": 308,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarXpandCommand\/Printer\/PageModeAreaParameter.swift",
       "kind": "IntegerLiteral",
-      "offset": 473,
+      "offset": 607,
       "length": 1,
       "value": "0"
     },
@@ -42860,6 +43002,13 @@
       "value": "500"
     },
     {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarDeviceDiscoveryManager\/BaseStarDeviceDiscoveryManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 556,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/RawPort\/UDPPort.swift",
       "kind": "IntegerLiteral",
       "offset": 136,
@@ -44899,14 +45048,14 @@
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarXpandCommand\/Printer\/RuledLineParameter.swift",
       "kind": "FloatLiteral",
-      "offset": 230,
+      "offset": 275,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarXpandCommand\/Printer\/RuledLineParameter.swift",
       "kind": "FloatLiteral",
-      "offset": 458,
+      "offset": 547,
       "length": 4,
       "value": "0.25"
     },
