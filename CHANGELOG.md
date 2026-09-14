@@ -2,6 +2,19 @@
 
 # Change Log
 
+## 2.14.0 (2026/9/15)
+
+#### Added
+
+* Added API to retrieve and reset the maintenance information of the printer.
+  * `maintenance` property of `StarPrinterSetting`
+  * `StarPrinterSettingMaintenance`
+  * `MaintenanceInformationType`
+
+#### Changed
+
+* Changed `StarIO10.xcframework` from dynamic to static. No configuration changes are required if you added `StarIO10.xcframework` using Swift Package Manager.
+
 ## 2.13.0 (2026/7/10)
 
 #### Added

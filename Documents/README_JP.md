@@ -15,7 +15,7 @@
 
 本ソフトウェア開発キットでは、スター精密デバイスを制御するためのフレームワークとして、StarIO10フレームワーク(StarIO10.xcframework)を提供しています。
 
-Apple社の指針に従い、StarIO10 V2.6.1以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2024年1月29日現在）
+Apple社の指針に従い、StarIO10 V2.6.1以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2026年9月15日現在）
 
 ## ドキュメント
 
@@ -144,6 +144,8 @@ StarXpand SDKにはプリンターと組み合わせて動作を確認できる[
 
 #### 8. [プリンターファームウェアの更新](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/fw-update.html)
 
+#### 9. [メンテナンス情報の取得](#Maintenance)
+
 <a id="GetPrinterStatus"></a>
 
 ### Get printer status
@@ -232,6 +234,47 @@ func displayDidConnect(printer: StarPrinter) {
 // ...
 // Please refer to document for other callback.
 ```
+
+<a id="Maintenance"></a>
+
+### メンテナンス情報の取得
+
+```swift
+func getMaintenanceInformation() {
+    // Specify your printer connection settings.
+    let starConnectionSettings = StarConnectionSettings(interfaceType: .lan,
+                                                        identifier: "00:11:62:00:00:00")
+
+    let printer = StarPrinter(starConnectionSettings)
+
+    Task {
+        do {
+            // Connect to the printer.
+            try await printer.open()
+            defer {
+                Task {
+                    // Disconnect from the printer.
+                    await printer.close()
+                }
+            }
+
+            // Get maintenance information.
+            // Information not supported by the printer is omitted from the returned data.
+            if let maintenance = printer.setting?.maintenance {
+                let information = try await maintenance.getInformation()
+                for (type, value) in information {
+                    print("\(type): \(value)")
+                }
+            }
+        } catch let error {
+            // Error.
+            print(error)
+        }
+    }
+}
+```
+
+リセット可能なメンテナンス情報は、`resetInformation()`関数にてリセットできます。使い方は[サンプルコード](../example/StarXpandSDK/MaintenanceView.swift)および[APIリファレンス](https://star-m.jp/products/s_print/sdk/starxpand/manual/ja/ios-swift-api-reference/star-printer-setting-maintenance/index.html)を参照してください。
 
 ## Copyright
 

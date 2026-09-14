@@ -2,6 +2,19 @@
 
 # 変更履歴
 
+## 2.14.0 (2026/9/15)
+
+#### 追加
+
+* プリンターのメンテナンス情報を取得・リセットするAPIを追加
+  * `StarPrinterSetting`の`maintenance`プロパティ
+  * `StarPrinterSettingMaintenance`
+  * `MaintenanceInformationType`
+
+#### 変更
+
+* `StarIO10.xcframework`を動的フレームワークから静的フレームワークに変更。Swift Package Managerより`StarIO10.xcframework`を追加した場合は、設定変更不要です。
+
 ## 2.13.0 (2026/7/10)
 
 #### 追加

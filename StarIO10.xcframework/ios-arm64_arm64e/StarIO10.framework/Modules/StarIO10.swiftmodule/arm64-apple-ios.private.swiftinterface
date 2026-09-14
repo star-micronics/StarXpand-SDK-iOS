@@ -9,6 +9,7 @@ import Foundation
 import Network
 @_exported import StarIO10
 import StarIO10.StarLogger
+import StarIO10.StarPRNTCommandUtilWrapper
 import StarIO10.StarXpandCommandParserWrapper
 import Swift
 import UIKit
@@ -875,6 +876,7 @@ extension StarIO10.StarXpandCommand.Printer {
 }
 @_hasMissingDesignatedInitializers @objc(STARIO10StarPrinterSetting) public class StarPrinterSetting : ObjectiveC.NSObject {
   @objc final public let firmware: StarIO10.StarPrinterSettingFirmware?
+  @objc final public let maintenance: StarIO10.StarPrinterSettingMaintenance?
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc(STARIO10StarPrinterSettingFirmware) public class StarPrinterSettingFirmware : ObjectiveC.NSObject {
@@ -1261,6 +1263,10 @@ extension StarIO10.StarXpandCommand.Printer {
   @objc(STARIO10ErrorCodeInvalidPassword) case invalidPassword = 4000
   @objc(STARIO10ErrorCodeNeedToChangePassword) case needToChangePassword = 4001
   @objc(STARIO10ErrorCodeJsonFormatError) case jsonFormatError = 5000
+  @objc(STARIO10ErrorCodeJsonInvalidIterator) case jsonInvalidIterator = 5001
+  @objc(STARIO10ErrorCodeJsonTypeError) case jsonTypeError = 5002
+  @objc(STARIO10ErrorCodeJsonOutOfRange) case jsonOutOfRange = 5003
+  @objc(STARIO10ErrorCodeJsonOtherError) case jsonOtherError = 5004
   @objc(STARIO10ErrorCodeStarConfigurationFormatError) case starConfigurationFormatError = 6000
   @objc(STARIO10ErrorCodeStarConfigurationParameterError) case starConfigurationParameterError = 6001
   @objc(STARIO10ErrorCodeStarConfigurationSpecifiedFileError) case starConfigurationSpecifiedFileError = 6002
@@ -1494,6 +1500,32 @@ extension StarIO10.StarXpandCommand.Printer {
     get
   }
 }
+@objc(STARIO10MaintenanceInformationType) public enum MaintenanceInformationType : Swift.Int, Swift.CustomStringConvertible, Swift.Sendable, Swift.CaseIterable {
+  @objc(STARIO10MaintenanceInformationTypeThermalHeadEnergizeCount) case thermalHeadEnergizeCount
+  @objc(STARIO10MaintenanceInformationTypeLineFeedMotorDistanceDots) case lineFeedMotorDistanceDots
+  @objc(STARIO10MaintenanceInformationTypeCutterDriveCount) case cutterDriveCount
+  @objc(STARIO10MaintenanceInformationTypePowerOnTimeMin) case powerOnTimeMin
+  public var description: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [StarIO10.MaintenanceInformationType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [StarIO10.MaintenanceInformationType] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers @objc(STARIO10StarPrinterSettingMaintenance) public class StarPrinterSettingMaintenance : ObjectiveC.NSObject {
+  @objc deinit
+}
+@available(iOS 13.0, *)
+extension StarIO10.StarPrinterSettingMaintenance {
+  public func getInformation() async throws -> [StarIO10.MaintenanceInformationType : Swift.Int]
+  public func resetInformation(_ types: [StarIO10.MaintenanceInformationType]) async throws
+}
 extension StarIO10.StarPrinterEmulation : Swift.Equatable {}
 extension StarIO10.StarPrinterEmulation : Swift.Hashable {}
 extension StarIO10.StarPrinterEmulation : Swift.RawRepresentable {}
@@ -1602,3 +1634,6 @@ extension StarIO10.StarXpandCommand.Printer.CJKCharacterType : Swift.RawRepresen
 extension StarIO10.FirmwareUpdateStep : Swift.Equatable {}
 extension StarIO10.FirmwareUpdateStep : Swift.Hashable {}
 extension StarIO10.FirmwareUpdateStep : Swift.RawRepresentable {}
+extension StarIO10.MaintenanceInformationType : Swift.Equatable {}
+extension StarIO10.MaintenanceInformationType : Swift.Hashable {}
+extension StarIO10.MaintenanceInformationType : Swift.RawRepresentable {}

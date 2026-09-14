@@ -20,4 +20,12 @@ framework module StarIO10 {
         
         export *
     }
+    
+    explicit module StarPRNTCommandUtilWrapper {
+        header "CommandGeneratorWrapper.h"
+        header "CommandParserWrapper.h"
+        header "SmcsProvisioningWrapper.h"
+
+        export *
+    }
 }

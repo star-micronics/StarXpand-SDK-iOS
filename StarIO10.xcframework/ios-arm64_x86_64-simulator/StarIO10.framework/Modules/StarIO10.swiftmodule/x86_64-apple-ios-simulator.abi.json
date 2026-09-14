@@ -34676,6 +34676,72 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "maintenance",
+            "printedName": "maintenance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StarIO10.StarPrinterSettingMaintenance?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StarPrinterSettingMaintenance",
+                    "printedName": "StarIO10.StarPrinterSettingMaintenance",
+                    "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSettingMaintenance"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSetting(py)maintenance",
+            "mangledName": "$s8StarIO100A14PrinterSettingC11maintenanceAA0acD11MaintenanceCSgvp",
+            "moduleName": "StarIO10",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "StarIO10.StarPrinterSettingMaintenance?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StarPrinterSettingMaintenance",
+                        "printedName": "StarIO10.StarPrinterSettingMaintenance",
+                        "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSettingMaintenance"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSetting(im)maintenance",
+                "mangledName": "$s8StarIO100A14PrinterSettingC11maintenanceAA0acD11MaintenanceCSgvg",
+                "moduleName": "StarIO10",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -36942,6 +37008,174 @@
           },
           {
             "kind": "Var",
+            "name": "jsonInvalidIterator",
+            "printedName": "jsonInvalidIterator",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.StarIO10ErrorCode.Type) -> StarIO10.StarIO10ErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StarIO10ErrorCode",
+                    "printedName": "StarIO10.StarIO10ErrorCode",
+                    "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.StarIO10ErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StarIO10ErrorCode",
+                        "printedName": "StarIO10.StarIO10ErrorCode",
+                        "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10ErrorCode@STARIO10ErrorCodeJsonInvalidIterator",
+            "mangledName": "$s8StarIO100aB9ErrorCodeO19jsonInvalidIteratoryA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10ErrorCodeJsonInvalidIterator",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 13
+          },
+          {
+            "kind": "Var",
+            "name": "jsonTypeError",
+            "printedName": "jsonTypeError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.StarIO10ErrorCode.Type) -> StarIO10.StarIO10ErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StarIO10ErrorCode",
+                    "printedName": "StarIO10.StarIO10ErrorCode",
+                    "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.StarIO10ErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StarIO10ErrorCode",
+                        "printedName": "StarIO10.StarIO10ErrorCode",
+                        "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10ErrorCode@STARIO10ErrorCodeJsonTypeError",
+            "mangledName": "$s8StarIO100aB9ErrorCodeO08jsonTypeC0yA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10ErrorCodeJsonTypeError",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 14
+          },
+          {
+            "kind": "Var",
+            "name": "jsonOutOfRange",
+            "printedName": "jsonOutOfRange",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.StarIO10ErrorCode.Type) -> StarIO10.StarIO10ErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StarIO10ErrorCode",
+                    "printedName": "StarIO10.StarIO10ErrorCode",
+                    "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.StarIO10ErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StarIO10ErrorCode",
+                        "printedName": "StarIO10.StarIO10ErrorCode",
+                        "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10ErrorCode@STARIO10ErrorCodeJsonOutOfRange",
+            "mangledName": "$s8StarIO100aB9ErrorCodeO14jsonOutOfRangeyA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10ErrorCodeJsonOutOfRange",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 15
+          },
+          {
+            "kind": "Var",
+            "name": "jsonOtherError",
+            "printedName": "jsonOtherError",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.StarIO10ErrorCode.Type) -> StarIO10.StarIO10ErrorCode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "StarIO10ErrorCode",
+                    "printedName": "StarIO10.StarIO10ErrorCode",
+                    "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.StarIO10ErrorCode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "StarIO10ErrorCode",
+                        "printedName": "StarIO10.StarIO10ErrorCode",
+                        "usr": "c:@M@StarIO10@E@STARIO10ErrorCode"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10ErrorCode@STARIO10ErrorCodeJsonOtherError",
+            "mangledName": "$s8StarIO100aB9ErrorCodeO09jsonOtherC0yA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10ErrorCodeJsonOtherError",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 16
+          },
+          {
+            "kind": "Var",
             "name": "starConfigurationFormatError",
             "printedName": "starConfigurationFormatError",
             "children": [
@@ -36980,7 +37214,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -37022,7 +37256,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -37064,7 +37298,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -37106,7 +37340,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -37148,7 +37382,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -37190,7 +37424,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -37232,7 +37466,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -37274,7 +37508,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Constructor",
@@ -39874,11 +40108,737 @@
             "mangledName": "$sSQ"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "StarIO10.StarPRNTCommandUtilWrapper",
+        "printedName": "StarIO10.StarPRNTCommandUtilWrapper",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "StarIO10.StarPRNTCommandUtilWrapper",
+        "printedName": "StarIO10.StarPRNTCommandUtilWrapper",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MaintenanceInformationType",
+        "printedName": "MaintenanceInformationType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "thermalHeadEnergizeCount",
+            "printedName": "thermalHeadEnergizeCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.MaintenanceInformationType.Type) -> StarIO10.MaintenanceInformationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.MaintenanceInformationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType@STARIO10MaintenanceInformationTypeThermalHeadEnergizeCount",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO24thermalHeadEnergizeCountyA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10MaintenanceInformationTypeThermalHeadEnergizeCount",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "lineFeedMotorDistanceDots",
+            "printedName": "lineFeedMotorDistanceDots",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.MaintenanceInformationType.Type) -> StarIO10.MaintenanceInformationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.MaintenanceInformationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType@STARIO10MaintenanceInformationTypeLineFeedMotorDistanceDots",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO25lineFeedMotorDistanceDotsyA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10MaintenanceInformationTypeLineFeedMotorDistanceDots",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "cutterDriveCount",
+            "printedName": "cutterDriveCount",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.MaintenanceInformationType.Type) -> StarIO10.MaintenanceInformationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.MaintenanceInformationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType@STARIO10MaintenanceInformationTypeCutterDriveCount",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO16cutterDriveCountyA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10MaintenanceInformationTypeCutterDriveCount",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "powerOnTimeMin",
+            "printedName": "powerOnTimeMin",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(StarIO10.MaintenanceInformationType.Type) -> StarIO10.MaintenanceInformationType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "StarIO10.MaintenanceInformationType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType@STARIO10MaintenanceInformationTypePowerOnTimeMin",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO14powerOnTimeMinyA2CmF",
+            "moduleName": "StarIO10",
+            "objc_name": "STARIO10MaintenanceInformationTypePowerOnTimeMin",
+            "declAttributes": [
+              "ObjC",
+              "RawDocComment"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "description",
+            "printedName": "description",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8StarIO1026MaintenanceInformationTypeO11descriptionSSvp",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO11descriptionSSvp",
+            "moduleName": "StarIO10",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8StarIO1026MaintenanceInformationTypeO11descriptionSSvg",
+                "mangledName": "$s8StarIO1026MaintenanceInformationTypeO11descriptionSSvg",
+                "moduleName": "StarIO10",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "StarIO10.MaintenanceInformationType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:8StarIO1026MaintenanceInformationTypeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO8rawValueACSgSi_tcfc",
+            "moduleName": "StarIO10",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8StarIO1026MaintenanceInformationTypeO8rawValueSivp",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO8rawValueSivp",
+            "moduleName": "StarIO10",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8StarIO1026MaintenanceInformationTypeO8rawValueSivg",
+                "mangledName": "$s8StarIO1026MaintenanceInformationTypeO8rawValueSivg",
+                "moduleName": "StarIO10",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[StarIO10.MaintenanceInformationType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:8StarIO1026MaintenanceInformationTypeO8allCasesSayACGvpZ",
+            "mangledName": "$s8StarIO1026MaintenanceInformationTypeO8allCasesSayACGvpZ",
+            "moduleName": "StarIO10",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[StarIO10.MaintenanceInformationType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:8StarIO1026MaintenanceInformationTypeO8allCasesSayACGvgZ",
+                "mangledName": "$s8StarIO1026MaintenanceInformationTypeO8allCasesSayACGvgZ",
+                "moduleName": "StarIO10",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType",
+        "mangledName": "$s8StarIO1026MaintenanceInformationTypeO",
+        "moduleName": "StarIO10",
+        "objc_name": "STARIO10MaintenanceInformationType",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[StarIO10.MaintenanceInformationType]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MaintenanceInformationType",
+                        "printedName": "StarIO10.MaintenanceInformationType",
+                        "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "StarPrinterSettingMaintenance",
+        "printedName": "StarPrinterSettingMaintenance",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "StarPrinterSettingMaintenance",
+                "printedName": "StarIO10.StarPrinterSettingMaintenance",
+                "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSettingMaintenance"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSettingMaintenance(im)init",
+            "mangledName": "$s8StarIO100A25PrinterSettingMaintenanceCACycfc",
+            "moduleName": "StarIO10",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "getInformation",
+            "printedName": "getInformation()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[StarIO10.MaintenanceInformationType : Swift.Int]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8StarIO100A25PrinterSettingMaintenanceC14getInformationSDyAA0eG4TypeOSiGyYaKF",
+            "mangledName": "$s8StarIO100A25PrinterSettingMaintenanceC14getInformationSDyAA0eG4TypeOSiGyYaKF",
+            "moduleName": "StarIO10",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetInformation",
+            "printedName": "resetInformation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[StarIO10.MaintenanceInformationType]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MaintenanceInformationType",
+                    "printedName": "StarIO10.MaintenanceInformationType",
+                    "usr": "c:@M@StarIO10@E@STARIO10MaintenanceInformationType"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:8StarIO100A25PrinterSettingMaintenanceC16resetInformationyySayAA0eG4TypeOGYaKF",
+            "mangledName": "$s8StarIO100A25PrinterSettingMaintenanceC16resetInformationyySayAA0eG4TypeOGYaKF",
+            "moduleName": "StarIO10",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@StarIO10@objc(cs)STARIO10StarPrinterSettingMaintenance",
+        "mangledName": "$s8StarIO100A25PrinterSettingMaintenanceC",
+        "moduleName": "StarIO10",
+        "objc_name": "STARIO10StarPrinterSettingMaintenance",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "StarIO10"
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Generated\/StarIO10VersionInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 61,
+      "length": 8,
+      "value": "\"2.14.0\""
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Generated\/StarIO10VersionInfo.swift",
+      "kind": "StringLiteral",
+      "offset": 104,
+      "length": 20,
+      "value": "\"jp.star-m.StarIO10\""
+    },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarXpandCommandForNative\/StarXpandCommandBuilder.swift",
       "kind": "StringLiteral",
@@ -40862,35 +41822,35 @@
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/CloudFirmwareFunction.swift",
       "kind": "IntegerLiteral",
-      "offset": 645,
+      "offset": 880,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/CloudFirmwareFunction.swift",
       "kind": "IntegerLiteral",
-      "offset": 660,
+      "offset": 895,
       "length": 12,
       "value": "1"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/CloudFirmwareFunction.swift",
       "kind": "IntegerLiteral",
-      "offset": 750,
+      "offset": 985,
       "length": 18,
       "value": "2"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/CloudFirmwareFunction.swift",
       "kind": "IntegerLiteral",
-      "offset": 825,
+      "offset": 1060,
       "length": 12,
       "value": "3"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/CloudFirmwareFunction.swift",
       "kind": "IntegerLiteral",
-      "offset": 945,
+      "offset": 1180,
       "length": 19,
       "value": "4"
     },
@@ -42556,119 +43516,154 @@
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1561,
+      "offset": 1637,
+      "length": 5,
+      "value": "9000"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1720,
       "length": 5,
       "value": "3000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1603,
+      "offset": 1762,
       "length": 5,
       "value": "3001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1634,
+      "offset": 1793,
       "length": 5,
       "value": "3002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1722,
+      "offset": 1881,
       "length": 5,
       "value": "4000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1760,
+      "offset": 1919,
       "length": 5,
       "value": "4001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1863,
+      "offset": 2022,
       "length": 5,
       "value": "5000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1943,
+      "offset": 2059,
+      "length": 5,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2090,
+      "length": 5,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2122,
+      "length": 5,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2154,
+      "length": 5,
+      "value": "5004"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2234,
       "length": 5,
       "value": "6000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 1985,
+      "offset": 2276,
       "length": 5,
       "value": "6001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2031,
+      "offset": 2322,
       "length": 5,
       "value": "6002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2130,
+      "offset": 2421,
       "length": 5,
       "value": "7000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2189,
+      "offset": 2480,
       "length": 5,
       "value": "7001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2252,
+      "offset": 2543,
       "length": 5,
       "value": "7002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2309,
+      "offset": 2600,
       "length": 5,
       "value": "7003"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2409,
+      "offset": 2700,
       "length": 5,
       "value": "8000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2441,
+      "offset": 2732,
       "length": 5,
       "value": "8001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2486,
+      "offset": 2777,
       "length": 5,
       "value": "8002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorMessage.swift",
       "kind": "IntegerLiteral",
-      "offset": 2529,
+      "offset": 2820,
       "length": 5,
       "value": "8003"
     },
@@ -42909,55 +43904,6 @@
       "offset": 2567,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 298,
-      "length": 90,
-      "value": "\"https:\/\/func-star-printer-setting-firmware-production.azurewebsites.net\/v1\/firmware\/info\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 656,
-      "length": 88,
-      "value": "\"https:\/\/func-star-printer-setting-firmware-production.azurewebsites.net\/v1\/client\/info\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 979,
-      "length": 90,
-      "value": "\"https:\/\/func-star-printer-setting-firmware-production.azurewebsites.net\/v1\/firmware\/data\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1158,
-      "length": 20,
-      "value": "\"FirmwareUpdate\/1.0\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1277,
-      "length": 15,
-      "value": "\"iOS_StarIO10\/\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1462,
-      "length": 58,
-      "value": "\"EZdqVM-KtG7TMckXPzfqCKt2UeqhFLtTjzWPHdykKlLcAzFuRJBgaQ==\""
-    },
-    {
-      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/FirmwareConstant.swift",
-      "kind": "StringLiteral",
-      "offset": 1704,
-      "length": 58,
-      "value": "\"TVPpxHSx_LJeIXlK03oIcVRD9EBHh49Fl5AxnprhGy8zAzFu8NDCsA==\""
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/CommandParser\/ControlInternalFileCommandParser.swift",
@@ -44915,56 +45861,84 @@
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1296,
+      "offset": 1278,
+      "length": 5,
+      "value": "5001"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1347,
+      "length": 5,
+      "value": "5002"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1418,
+      "length": 5,
+      "value": "5003"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1489,
+      "length": 5,
+      "value": "5004"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1588,
       "length": 5,
       "value": "6000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1401,
+      "offset": 1693,
       "length": 5,
       "value": "6001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1514,
+      "offset": 1806,
       "length": 5,
       "value": "6002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1587,
+      "offset": 1879,
       "length": 5,
       "value": "7000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1676,
+      "offset": 1968,
       "length": 5,
       "value": "8000"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1747,
+      "offset": 2039,
       "length": 5,
       "value": "8001"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1844,
+      "offset": 2136,
       "length": 5,
       "value": "8002"
     },
     {
       "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/Error\/StarIO10ErrorCode.swift",
       "kind": "IntegerLiteral",
-      "offset": 1937,
+      "offset": 2229,
       "length": 5,
       "value": "8003"
     },
@@ -45317,6 +46291,111 @@
       "offset": 228,
       "length": 12,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPRNTCommandUtil\/CommandGeneratorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 196,
+      "length": 2,
+      "value": "19"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPRNTCommandUtil\/CommandGeneratorType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 238,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPRNTCommandUtil\/CommandParserType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 185,
+      "length": 2,
+      "value": "11"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingMaintenance\/MaintenanceInformationType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 382,
+      "length": 25,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingMaintenance\/MaintenanceInformationType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 508,
+      "length": 16,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingMaintenance\/MaintenanceInformationType.swift",
+      "kind": "IntegerLiteral",
+      "offset": 688,
+      "length": 14,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingMaintenance\/StarPrinterSettingMaintenance.swift",
+      "kind": "IntegerLiteral",
+      "offset": 536,
+      "length": 5,
+      "value": "5000"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 482,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 507,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 639,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 694,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 746,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 826,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 905,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Users\/smjbuildpc\/builds\/3sVdDEWwD\/0\/Software\/Library\/stario10\/stario10_ios\/StarIO10\/StarPrinterSetting\/StarPrinterSettingFirmware\/SmcsProvisioning.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1014,
+      "length": 1,
+      "value": "5"
     }
   ]
 }

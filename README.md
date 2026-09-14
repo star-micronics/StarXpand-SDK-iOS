@@ -15,7 +15,7 @@
 This software development kit provides the StarIO10 framework (StarIO10.xcframework) as a framework to control the Star Micronics devices.
 
 In accordance with Apple's guidelines, StarIO10 V2.6.1 or later includes a privacy manifest file. Please see [here](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) for the Manifest file.
-However, StarIO10 does not use the Required Reason API from the first release. (As of January 29, 2024)
+However, StarIO10 does not use the Required Reason API from the first release. (As of September 15, 2026)
 
 ## Documentation
 
@@ -144,6 +144,8 @@ The sample code and printed result images are also [available here](example/Star
 
 #### 8. [Update printer firmware](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/fw-update.html)
 
+#### 9. [Get maintenance information](#Maintenance)
+
 <a id="GetPrinterStatus"></a>
 
 ### Get printer status
@@ -232,6 +234,47 @@ func displayDidConnect(printer: StarPrinter) {
 // ...
 // Please refer to document for other callback.
 ```
+
+<a id="Maintenance"></a>
+
+### Get maintenance information
+
+```swift
+func getMaintenanceInformation() {
+    // Specify your printer connection settings.
+    let starConnectionSettings = StarConnectionSettings(interfaceType: .lan,
+                                                        identifier: "00:11:62:00:00:00")
+
+    let printer = StarPrinter(starConnectionSettings)
+
+    Task {
+        do {
+            // Connect to the printer.
+            try await printer.open()
+            defer {
+                Task {
+                    // Disconnect from the printer.
+                    await printer.close()
+                }
+            }
+
+            // Get maintenance information.
+            // Information not supported by the printer is omitted from the returned data.
+            if let maintenance = printer.setting?.maintenance {
+                let information = try await maintenance.getInformation()
+                for (type, value) in information {
+                    print("\(type): \(value)")
+                }
+            }
+        } catch let error {
+            // Error.
+            print(error)
+        }
+    }
+}
+```
+
+Resettable maintenance information values can be reset by the `resetInformation()` method. Please refer to the [sample code](example/StarXpandSDK/MaintenanceView.swift) and the [API reference](https://star-m.jp/products/s_print/sdk/starxpand/manual/en/ios-swift-api-reference/star-printer-setting-maintenance/index.html) for the usage.
 
 ## Copyright
 

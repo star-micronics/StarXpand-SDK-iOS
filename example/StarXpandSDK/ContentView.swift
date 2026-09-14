@@ -52,6 +52,12 @@ struct ContentView: View {
                     }
                     .disabled(isProcessing)
                     .padding()
+
+                    NavigationLink(destination: MaintenanceView(isProcessing: $isProcessing)) {
+                        Text("Maintenance")
+                    }
+                    .disabled(isProcessing)
+                    .padding()
                 }
                 .navigationTitle("StarXpand")
             }.navigationViewStyle(StackNavigationViewStyle())
@@ -84,6 +90,7 @@ struct Previews: PreviewProvider {
 //            MonitorView(isProcessing: $isProcessing)
 //            StatusView(isProcessing: $isProcessing)
 //            FirmwareUpdateView(isProcessing: $isProcessing)
+//            MaintenanceView(isProcessing: $isProcessing)
         }
     }
 }
