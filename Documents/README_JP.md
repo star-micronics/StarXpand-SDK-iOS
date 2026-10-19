@@ -15,7 +15,7 @@
 
 本ソフトウェア開発キットでは、スター精密デバイスを制御するためのフレームワークとして、StarIO10フレームワーク(StarIO10.xcframework)を提供しています。
 
-Apple社の指針に従い、StarIO10 V2.6.1以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2026年9月15日現在）
+Apple社の指針に従い、StarIO10 V2.6.1以降はプライバシーマニフェストファイルを含みます。Manifest fileについては[こちら](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files)をご参照ください。ただし、StarIO10では過去バージョンを含め、Required Reason APIは使用しておりません。（2026年10月21日現在）
 
 ## ドキュメント
 
@@ -32,7 +32,7 @@ StarIO10フレームワークが提供するAPIの一部は、実行時にユー
 
 | Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
 | --- | --- | --- | --- | --- | --- |
-| Swift | 5 |iOS | iOS 15.0 以降 | 実機: arm64, arm64e<br> シミュレータ: arm64, x86_64 | Xcode 26.4 |
+| Swift | 5 |iOS | iOS 15.0 以降 | 実機: arm64, arm64e<br> シミュレータ: arm64, x86_64 | Xcode 27.0 |
 
 <a id="TestEnvironment"></a>*SDK同梱のサンプルアプリをビルドして動作することを確認しています。
 

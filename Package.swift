@@ -5,7 +5,7 @@ import PackageDescription
 
 let package = Package(
     name: "StarIO10",
-    platforms: [.iOS(.v12)],
+    platforms: [.iOS("15.0")],
     products: [
         .library(
             name: "StarIO10",

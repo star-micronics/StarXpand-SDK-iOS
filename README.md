@@ -15,7 +15,7 @@
 This software development kit provides the StarIO10 framework (StarIO10.xcframework) as a framework to control the Star Micronics devices.
 
 In accordance with Apple's guidelines, StarIO10 V2.6.1 or later includes a privacy manifest file. Please see [here](https://developer.apple.com/documentation/bundleresources/privacy_manifest_files) for the Manifest file.
-However, StarIO10 does not use the Required Reason API from the first release. (As of September 15, 2026)
+However, StarIO10 does not use the Required Reason API from the first release. (As of October 21, 2026)
 
 ## Documentation
 
@@ -32,7 +32,7 @@ Please refer [here](DIAG_INFO.md) for details.
 
 | Language | Language Version | Platform | OS Version | Arch | Test Environment[*](#TestEnvironment) |
 | --- | --- | --- | --- | --- | --- |
-| Swift | 5 | iOS | iOS 15.0 or later | Device: arm64, arm64e<br> Simulator: arm64, x86_64 | Xcode 26.4 |
+| Swift | 5 | iOS | iOS 15.0 or later | Device: arm64, arm64e<br> Simulator: arm64, x86_64 | Xcode 27.0 |
 
 <a id="TestEnvironment"></a>*The sample app included with this SDK is being built, and its operation is being confirmed.
 

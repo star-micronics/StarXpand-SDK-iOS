@@ -2,6 +2,16 @@
 
 # Change Log
 
+## 2.14.1 (2026/10/21)
+
+#### Changed
+
+* Changed the minimum supported OS version declared in the Swift Package from 12.0 to 15.0.
+
+#### Fixed
+
+* Fixed an issue where the application rarely crashed when disconnecting from a printer with LAN interface communication. [#48](https://github.com/star-micronics/StarXpand-SDK-iOS/issues/48)
+
 ## 2.14.0 (2026/9/15)
 
 #### Added
